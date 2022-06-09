@@ -1,0 +1,257 @@
+html, body {margin:0; padding: 0; color:#101A37; font-family: 'Roboto', serif; width: 100%; font-weight: 900}
+.font24{font-soize: 24px}
+
+body {background-color:#fff; font-size: 20px;line-height: 1.5; color:#fff}
+#main {width: 100%; margin: 0 auto; overflow: hidden; }
+body a {color: #fff}
+#flag {position: absolute;
+    top: 0;
+    height: 500px;
+    width: 100%;}
+	
+.hash {
+    font-weight: 900;
+}
+#topHash, .hash2{ margin: 0 auto; width: fit-content}
+
+#phone {
+    color: #fff;
+    cursor: pointer;
+    bottom: 20%;
+    padding: 20px 40px;
+	width: 260px;
+	margin: 50px auto;
+	border: #fff solid 2px
+}
+a {text-decoration: none}
+
+.hash2 {color: #1F41A2;}
+
+.blockB, .blockY, .block {padding: 50px 0 50px 0; width: 100%; position:relative}
+.blockB {background-color: #194094; border-bottom: 3px solid #FFD800;}
+.blockY {background-color: #FFD800}
+.block, .block a {background-color: #eee; color:#194094}
+#block1 {padding: 0}
+
+.icons img {width: 30px; margin: 2px}
+.icons.right { position: absolute; bottom: -12px; right: 5px}
+
+#header {background-color: #1F41A2;  padding: 3px 0; width: 100%; }
+#header2 {background-color: #FFD800;  padding: 10px 0; width: 100%; }
+#footer {color: #fff; text-align: center; padding: 50px 0 50px 0; width: 100%; height: 60px; background-color: #FFD800; position: relative}
+#footer2 {color: #fff; text-align: center; padding: 50px 0 50px 0; width: 100%; height: 200px; background-color: #091530; position: relative}
+
+#paypalBtn {display: block;  margin: 0 auto}
+
+#help {height: auto; transition: height 0.5s; width: 320px;
+    text-align: left;
+    margin: 0 auto;}
+	#help span{ display:block; margin-top: 20px}
+	
+#helpBtn.hid, #help.hid, #err2.hid{height: 0; padding: 0; margin: 0 auto; transition: height 0.5s; overflow: hidden; border: none}
+#err2 {margin: 30px 0 }
+.error {
+    height: fit-content;
+    transition: height 0.5s;
+    overflow: hidden;
+	    color: #CF0F0F;
+    background-color: #E0C039;
+    padding: 10px 5px;
+    max-width: 300px;
+    margin: 5px auto;
+}
+input, .but1, .but2, .error {font-size: 18px;}
+input {	
+	display:block;
+    font-weight: 300;
+    min-height: 0px;
+    margin: 5px auto;
+	width: 300px;
+    height: 22px;
+    padding: 10px 5px;
+}
+.but1, .but2 {text-align:center; border: 2px solid #fff; color: #fff; cursor: pointer; padding: 10px 5px; max-width: 300px; margin: 7px auto}
+.but2 {border: none; border-bottom: 2px solid #CF0F0F; width: 200px; margin : 10px auto}
+.but1:hover, .but2:hover {background-color: #CF0F0F; color: #FFF}
+input, .but1, .but2, .error {font-size: 20px;}
+
+.txt{ margin: 0 auto}
+.txt a {text-decoration: underline}
+.call2{
+    color: #fff;
+    cursor: pointer;
+	display:block;
+    bottom: 20%;
+    padding: 20px 0px;
+	width: 300px;
+	margin: 5px auto;
+	border: 2px solid #fff;
+	    background-color: transparent;
+		text-align: center;
+	font-size: 30px;
+	line-height: 1;
+}
+.call2.blue {color:#194094; border: 2px solid #194094}
+.call2.blueAll {background-color:#194094; color:#FFD800}
+.call2.b2 {font-size: 20px; margin: 50px auto 5px auto}
+
+a {text-decoration: none}
+
+
+#contact {
+    width: 300px;
+    margin: 50px auto;}
+#contact input, #contact textarea {font-weight: 900; padding: 5px; margin: 3px auto; width: calc(100% - 20px);
+font-size: 18px;
+    font-family: 'roboto', sans-serif;}
+	
+	
+.btn {
+    color: #fff;
+    cursor: pointer;
+    border: 2px solid #fff;
+    padding: 5px;
+    width: 80%;
+    margin: 25px auto;
+    text-align: center;
+    font-size: 18px;
+}
+
+.sep {display: block; margin: 50px auto; width: 90%; height: 3px; clear: both; overflow: hidden}
+.sep span {width:50%; float: left}
+.sep1 {background-color: #194094} 
+.sep2 {background-color: #FFD800}
+
+
+.left {width: 90%; margin: 0 auto}
+/*
+.left, .right {display:block; float: left}
+.left {width: calc(75% - 100px); padding-right: 100px}
+.right {width: calc(25% - 2px); border-left: 1px solid #fff}
+.right img {width: 80%}
+
+*/
+
+#grid {border-top: 1px solid #fff; padding-top: 30px}
+.spot {display: block; width: 30%; margin: 0 20px 20px 0; float: left}
+.item {display: block; width: calc(25% - 22px); border: 1px solid #fff; margin: 10px; background-color: #eee; float: left; padding: 0}
+.rest .item {display: block; width: calc(10% - 12px); border: 1px solid #fff; margin: 5px; background-color: #eee; float: left; padding: 0}
+.item img {display: block; width:100%}
+
+.clear {width: 100%; clear:both}
+.clearTop {width: 100%; clear:both; border-top:1px solid #fff; margin: 5px 0 20px 0}
+.flex {
+	display: flex; /* or inline-flex */
+	flex-wrap: wrap;
+	width: 100%;
+}
+
+.fItem{
+	display: block;
+	padding: 10px 0;
+	width: calc(50% - 2px);
+	max-width: 450px;
+	order: 1; 	
+	margin: 50px auto;
+	position:relative
+}
+.fItem img {width: 100%}
+
+h1 {margin: 0px 0 15px 0; line-height: 1.3;}
+		
+.testimonials {min-width: 320px; margin: 0 auto}
+.testimonials p {font-family: 'Ubuntu', sans-serif; font-size:22px; line-height: 1.5; color:#fff;}
+.testimonials img.face {width:200px; float:left; margin: 0 20px 10px 0}
+
+.samples img { dispaly:block; width: calc(25% - 20px); padding: 10px}
+.samples2 img { dispaly:block; width: calc(35% - 20px); padding: 10px}
+
+
+
+#video1{    width: calc(60% - 20px); 
+    display: block;
+	z-index: 10;
+    position: relative; border-radius: 10px;
+    border: 5px solid #fff;;
+	margin: 0 auto}
+	
+.w70 { margin: 0 auto; position:relative}
+#topHash1 { line-height: 1.2; width: 95%; text-align: left; margin: 0 auto; font-weight: 400;}
+#topHash1 div {    font-size: 16px;
+    border-top: 1px solid #fff;
+    margin-top: 5px;
+    font-weight: 400;
+	width: 60%}
+
+
+#dImg {
+    margin: 10px auto 30px auto;
+    width: 400px;
+    height: 400px;
+}
+
+
+#dImg img  {position: absolute; left: 0px;
+	opacity: 1;
+	transition: all 3s}
+
+#dImg img.hide {opacity: 0;
+	transition: all 1s}
+	
+#dImg img.top {z-index: 20}
+#dImg img.next, #dImg img.other {position:absolute; z-index: 10}
+
+#dImg img.other  {opacity: 0;
+	transition: opacity 1s 1s}
+	#topHash1 div {width: 70%}
+@media (min-width:320px) { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ 
+
+	#video1 {width: 95%}
+	.fItem{width: 100%; margin: 0px auto }
+	#main {width: 100%}
+	
+	#header {font-size: 25px;}
+	.txt {width: 95%}
+	#topHash, .hash2{ font-size: 25px;}
+	.fItem{width: 100%}
+	
+	#julia{
+	float: none;
+	width: 220px;
+    margin: 20px auto 10px auto;
+    clear: both;
+    display: block;}
+
+	.w70 { width: 100%}
+	#topHash1 span {display: block}
+	#thanks span, #line1 span {display: inline-block}
+	#where {font-size: 28px}
+	#dImg {margin: 10px auto 30px auto; width: 320px; height: 220px}
+	#line1 {padding: 0}
+}
+
+@media screen and (min-width: 1200px) {
+	#video1{    width: calc(60% - 20px)}
+	.fItem {width: calc(50% - 2px); margin: 0px auto}
+	#header {font-size: 35px;}
+	.txt {width: 70%}
+	.hash2{ font-size: 45px;}
+	#topHash{font-size: 36px}
+	
+	#julia{
+	float: left;
+	height: 100% ;
+    margin: 0px 20px 0 0;}
+	
+	.w70 { width: 70%}
+	#topHash1 span {display: inline-block}
+	#thanks span {display: block}
+	#where {font-size: 38px}
+	#dImg {
+		margin: 10px auto 30px auto;
+		width: 400px;
+		height: 300px;
+	}
+	#line1 {padding: 30px}
+	#line1 span {display: block}
+}

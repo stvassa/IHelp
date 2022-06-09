@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+
+<head>
+
+	<title>IHelpUkrainianWomen.com</title>
+	<link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+	<link href='//fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="//code.jquery.com/jquery-1.12.4.js"></script>
+
+	<link href="//fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat&family=Roboto:wght@100&display=swap"
+		rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="//fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+
+	<script>
+		var mobileInd = false;
+		if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+			// mobile device detected
+			mobileInd = true;
+		}
+	</script>
+	<style>
+		html,
+		body {
+			margin: 0;
+			padding: 0;
+			color: #101A37;
+			font-family: 'Playfair Display', serif;
+			width: 100%;
+		}
+
+		body {
+			background-color: #fff;
+			font-size: 20px;
+			line-height: 1.5;
+			color: #fff
+		}
+
+		#main {
+			width: 100%;
+			margin: 0 auto;
+			overflow: hidden;
+		}
+
+		body a {
+			color: #fff
+		}
+
+		.flag {
+			position: absolute;
+			top: 0;
+			height: 500px;
+			width: 100%;
+		}
+
+		.hash {
+			font-weight: 900;
+		}
+
+		#topHash,
+		.hash2 {
+			margin: 0 auto;
+			width: fit-content
+		}
+
+		.hash2 {
+			color: #1F41A2;
+		}
+
+		.blockB,
+		.blockY,
+		.block {
+			padding: 50px 0 50px 0;
+			width: 100%;
+			position: relative
+		}
+
+		.blockB {
+			background-color: #194094
+		}
+
+		.blockY {
+			background-color: #FFD800
+		}
+
+		.block,
+		.block a {
+			background-color: #eee;
+			color: #194094
+		}
+
+		#header {
+			background-color: #1F41A2;
+			padding: 10px 0;
+			width: 100%;
+		}
+
+		#footer {
+			color: #fff;
+			text-align: center;
+			padding: 50px 0 50px 0;
+			width: 100%;
+			height: 100px;
+			background-color: #FFD800
+		}
+
+		#paypalBtn {
+			display: block;
+			margin: 0 auto
+		}
+
+		#help {
+			height: auto;
+			transition: height 0.5s;
+			width: 320px;
+			text-align: left;
+			margin: 0 auto;
+		}
+
+		#help span {
+			display: block;
+			margin-top: 20px
+		}
+
+		#helpBtn.hid,
+		#help.hid,
+		#err2.hid {
+			height: 0;
+			padding: 0;
+			margin: 0 auto;
+			transition: height 0.5s;
+			overflow: hidden;
+			border: none
+		}
+
+		#err2 {
+			margin: 30px 0
+		}
+
+		.error {
+			height: fit-content;
+			transition: height 0.5s;
+			overflow: hidden;
+			color: #CF0F0F;
+			background-color: #E0C039;
+			padding: 10px 5px;
+			max-width: 300px;
+			margin: 5px auto;
+		}
+
+		input,
+		.but1,
+		.but2,
+		.error {
+			font-size: 18px;
+		}
+
+		input {
+			display: block;
+			font-weight: 300;
+			min-height: 0px;
+			margin: 5px auto;
+			width: 300px;
+			height: 22px;
+			padding: 10px 5px;
+		}
+
+		.but1,
+		.but2 {
+			text-align: center;
+			border: 2px solid #fff;
+			color: #fff;
+			cursor: pointer;
+			padding: 10px 5px;
+			max-width: 300px;
+			margin: 7px auto
+		}
+
+		.but2 {
+			border: none;
+			border-bottom: 2px solid #CF0F0F;
+			width: 200px;
+			margin: 10px auto
+		}
+
+		.but1:hover,
+		.but2:hover {
+			background-color: #CF0F0F;
+			color: #FFF
+		}
+
+		input,
+		.but1,
+		.but2,
+		.error {
+			font-size: 20px;
+		}
+
+		.txt {
+			margin: 0 auto
+		}
+
+		.txt a {
+			text-decoration: underline
+		}
+
+		.call2 {
+			color: #fff;
+			cursor: pointer;
+			display: block;
+			bottom: 20%;
+			padding: 20px 0px;
+			width: 300px;
+			margin: 5px auto;
+			border: 2px solid #fff;
+			background-color: transparent;
+			text-align: center;
+			font-size: 30px;
+			line-height: 1;
+		}
+
+		a {
+			text-decoration: none
+		}
+
+
+		#contact {
+			width: 300px;
+			margin: 50px auto;
+		}
+
+		#contact input,
+		#contact textarea {
+			font-weight: 900;
+			padding: 5px;
+			margin: 3px auto;
+			width: calc(100% - 20px);
+			font-size: 18px;
+			font-family: 'roboto', sans-serif;
+		}
+
+
+		.btn {
+			color: #fff;
+			cursor: pointer;
+			border: 2px solid #fff;
+			padding: 5px;
+			width: 80%;
+			margin: 25px auto;
+			text-align: center;
+			font-size: 18px;
+		}
+
+		.sep {
+			display: block;
+			margin: 50px auto;
+			width: 90%;
+			height: 3px;
+			clear: both;
+			overflow: hidden
+		}
+
+		.sep span {
+			width: 50%;
+			float: left
+		}
+
+		.sep1 {
+			background-color: #194094
+		}
+
+		.sep2 {
+			background-color: #FFD800
+		}
+	</style>
+	<style>
+		.left {
+			width: 90%;
+			margin: 0 auto
+		}
+
+		/*
+.left, .right {display:block; float: left}
+.left {width: calc(75% - 100px); padding-right: 100px}
+.right {width: calc(25% - 2px); border-left: 1px solid #fff}
+.right img {width: 80%}
+
+*/
+
+		#grid {
+			border-top: 1px solid #fff;
+			padding-top: 30px
+		}
+
+		.spot {
+			display: block;
+			width: 30%;
+			margin: 0 20px 20px 0;
+			float: left
+		}
+
+		.item {
+			display: block;
+			width: calc(25% - 22px);
+			border: 1px solid #fff;
+			margin: 10px;
+			background-color: #eee;
+			float: left;
+			padding: 0
+		}
+
+		.rest .item {
+			display: block;
+			width: calc(10% - 12px);
+			border: 1px solid #fff;
+			margin: 5px;
+			background-color: #eee;
+			float: left;
+			padding: 0
+		}
+
+		.item img {
+			display: block;
+			width: 100%
+		}
+
+		.clear {
+			width: 100%;
+			clear: both
+		}
+
+		.clearTop {
+			width: 100%;
+			clear: both;
+			border-top: 1px solid #fff;
+			margin: 5px 0 20px 0
+		}
+
+		.flex {
+			display: flex;
+			/* or inline-flex */
+			flex-wrap: wrap;
+			width: 100%;
+		}
+
+		.fItem {
+			display: block;
+			padding: 10px 0;
+			width: calc(50% - 2px);
+			max-width: 450px;
+			order: 1;
+			margin: 50px auto;
+			position: relative
+		}
+
+		.fItem img {
+			width: 100%
+		}
+
+		h1 {
+			margin: 0px 0 15px 0;
+			line-height: 1.3;
+		}
+
+		.testimonials {
+			min-width: 320px;
+			margin: 0 auto
+		}
+
+		.testimonials p {
+			font-family: 'Ubuntu', sans-serif;
+			font-size: 22px;
+			line-height: 1.5;
+			color: #fff;
+		}
+
+		.testimonials img.face {
+			width: 200px;
+			float: left;
+			margin: 0 20px 10px 0
+		}
+
+		.samples img {
+			display: block;
+			width: calc(25% - 20px);
+			padding: 10px
+		}
+
+		.samples2 img {
+			display: block;
+			width: calc(35% - 20px);
+			padding: 10px
+		}
+
+
+
+		#video1 {
+			width: calc(60% - 20px);
+			display: block;
+			z-index: 10;
+			position: relative;
+			border-radius: 10px;
+			border: 5px solid #fff;
+			;
+			margin: 0 auto
+		}
+
+		@media (min-width:320px) {
+			/* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
+
+			#video1 {
+				width: 95%
+			}
+
+			.fItem {
+				width: 100%;
+				margin: 0px auto
+			}
+
+			#main {
+				width: 100%
+			}
+
+			#header {
+				font-size: 25px;
+			}
+
+			.txt {
+				width: 95%
+			}
+
+			#topHash,
+			.hash2 {
+				font-size: 25px;
+			}
+
+			.fItem {
+				width: 100%
+			}
+		}
+
+		@media screen and (min-width: 1200px) {
+			#video1 {
+				width: calc(60% - 20px)
+			}
+
+			.fItem {
+				width: calc(50% - 2px);
+				margin: 0px auto
+			}
+
+			#header {
+				font-size: 45px;
+			}
+
+			.txt {
+				width: 70%
+			}
+
+			#topHash,
+			.hash2 {
+				font-size: 45px;
+			}
+		}
+	</style>
+
+	<script>
+		function fEmail() {
+
+
+			var errStr = '<i style="font-size:24px; color:#c2c23a" class="fa">&#xf071;</i> - ';
+			try {
+				$("#err").html("");
+
+				if (true) {
+
+					if ($("input[id=sName]").val().trim() == '' &&
+						$("input[id=sPhone]").val().trim() == '' &&
+						$("#sEmail").val().trim() == '' &&
+						$("#sMsg").val().trim() == '') {
+
+						console.log("Please enter info");
+					} else {
+						var str = "";
+
+						submitInd = 0;
+
+						str += "&name=" + encodeURIComponent($("#sName").val());
+						str += "&phone=" + encodeURIComponent($("#sPhone").val());
+						str += "&email=" + encodeURIComponent($("#sEmail").val());
+						str += "&msg=" + encodeURIComponent($("#sMsg").val());
+
+						$.ajax({
+							url: "/ajax/email_ajax.php?task=email" + str,
+							context: document.body
+						}).done(function (msg) {
+							$("#result").html("Thank you for message");
+							$("#contact").addClass("hid2");
+							$("#result").removeClass("hid2");
+							fReset();
+						}).fail(function (msg) {
+							alert("error1" + msg);
+						});
+
+					}
+				}
+
+			} catch (e) {
+				alert("err: " + e);
+			}
+		}
+
+		function fReset() {
+			$("#sName").val('');
+			$("#sPhone").val('');
+			$("#sEmail").val('');
+			$("#sMsg").val('');
+
+		}
+
+		function help() {
+			$("#help").removeClass('hid');
+			$("#helpBtn").addClass("hid");
+		}
+
+		function fCancel() {
+			fReset(2);
+			$("#helpBtn").removeClass("hid");
+			$("#help").addClass("hid");
+
+			$("#nName").val('');
+			$("#nLName").val('');
+			$("#nId").val('');
+			$("#nCountry").val('');
+			$("#nPaypal").val('');
+			$("#nEmail").val('');
+			$("#nPhone").val('');
+
+		}
+
+		function fReset(arg) {
+			//console.log("fReset");	
+			var name = "#err" + arg;
+			$(name).addClass("hid");
+			$(name).html("");
+		}
+
+		function fError(arg, txt) {
+
+			var name = "#err" + arg;
+			$(name).html(txt);
+			$(name).removeClass("hid");
+
+		}
+
+		function fCreate() {
+			var name = "#err2";
+
+
+			if ($("#nName").val() == '' || $("#nName").val() == '' || $("#nLName").val() == '' || $("#nId").val() == '' || $(
+					"#nCountry").val() == '' || $("#nPaypal").val() == '' || $("#nEmail").val() == '' || $("#nPhone").val() == '') {
+				fError(2, "Please enter all the information above");
+			} else if (!email_valid($("#nEmail").val())) {
+				fError(2, "Please enter valid email");
+			} else {
+				ajax(1);
+			}
+
+
+
+		}
+
+		function email_valid(str) {
+
+			var result;
+
+			result = true;
+
+			if (str.indexOf('.') == -1) {
+				result = false;
+			}
+			if (str.indexOf('@') == -1) {
+				result = false;
+			}
+
+			return result;
+		}
+
+		function ajax(arg) {
+			var xmlhttp;
+			var cpt;
+
+			if (window.XMLHttpRequest) {
+				// code for IE7+, Firefox, Chrome, Opera, Safari
+				xmlhttp = new XMLHttpRequest();
+			} else if (window.ActiveXObject) {
+				// code for IE6, IE5
+				xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+			} else {
+				alert("Your browser does not support XMLHTTP!");
+			}
+
+
+			xmlhttp.onreadystatechange = function () {
+				if (xmlhttp.readyState == 4) {
+
+					console.log(arg + " : " + xmlhttp.responseText);
+					var result = xmlhttp.responseText.split("!@#$");
+
+					if (arg == 1) {
+						fCancel();
+					}
+
+
+				}
+
+			}
+
+			if (arg == 1) {
+				var nName = encodeURIComponent($("#nName").val());
+				var nLName = encodeURIComponent($("#nLName").val());
+				var nId = encodeURIComponent($("#nId").val());
+				var nCountry = encodeURIComponent($("#nCountry").val());
+				var nPaypal = encodeURIComponent($("#nPaypal").val());
+				var nEmail = encodeURIComponent($("#nEmail").val());
+				var nPhone = encodeURIComponent($("#nPhone").val());
+
+				str = "ajax/main.php?task=new&nName=" + nName + "&nLName=" + nLName + "&nId=" + nId + "&nCountry=" + nCountry +
+					"&nPaypal=" + nPaypal + "&nEmail=" + nEmail + "&nPhone=" + nPhone;
+			}
+
+			xmlhttp.open("Post", str, true);
+			xmlhttp.send(null);
+
+
+		}
+	</script>
+</head>
+
+<body>
+
+	<div id="header">
+		<div id="topHash"><span class="hash">&#35;</span>IHelpUkrainianWomen</div>
+	</div>
+	<div id="main">
+		<div class="blockY">
+			<img class="flag" src="/images/flag.png" />
+			<div class="fItem">
+				<img src="/images/help-ukraine2.png" />
+				<div class="clear"></div>
+
+			</div>
+
+
+		</div>
+		<div class="blockB">
+
+			<form name="formPaypal" action="https://www.paypal.com/donate" method="post" target="_top">
+				<input type="hidden" name="hosted_button_id" value="5UYQ6SRMXK5U6" />
+				<input type="submit" class="call2" value="Donate Now" style="height: auto">
+				<!--input id="paypalBtn" type="image" src="/images/donate.png" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" /-->
+				<img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+			</form>
+
+
+			<div id="helpBtn" class="call2" onclick="help()">I need help</div>
+
+			<div id="help" class="hid">
+
+				<span>Ім'я:</span>
+				<input type="text" id="nName" onfocus="fReset(2)" />
+				<span>Прізвище:</span>
+				<input type="text" id="nLName" onfocus="fReset(2)" />
+				<span>
+					Український IПН (Індивідуальний податковий номер):
+				</span>
+				<input type="text" id="nId" onfocus="fReset(2)" />
+
+				<span>
+					У якій країні ви зараз знаходитесь:
+				</span>
+				<input type="text" id="nCountry" onfocus="fReset(2)" />
+
+				<span>
+					Номер картки українського банку або Paypal email (для отримання коштів):
+				</span>
+				<input type="text" id="nPaypal" onfocus="fReset(2)" />
+
+				<span>
+					Ваш емейл:
+				</span>
+				<input type="text" id="nEmail" onfocus="fReset(2)" />
+
+				<span>
+					Ваш телефонний номер (з кодом країни):
+				</span>
+				<input type="text" id="nPhone" onfocus="fReset(2)" />
+
+				<div id="err2" class="error hid"></div>
+				<div class="but1" onclick="fCreate()">Submit</div>
+				<div class="but1" onclick="fCancel()">Cancel</div>
+			</div>
+
+
+
+		</div>
+		<div class="block" style="padding: 50px 0 150px 0">
+
+			<div class="txt">
+				<h1>Обращение главы украинского офиса компании BIJB Бернацкой Юлии.</h1>
+
+				То что сейчас твориться в моей стране это ужасно и бесчеловечно.
+				Миллионы украинских женщин с детьми оказались вырванными из своей привычной жизни и вынуждены искать убежище в
+				других странах, спасаясь от войны.
+				Они остались одни, без мужей, без возможности зарабатывать на жизнь и кормить детей.
+				Страх, боль, отчаяние – это те чувства которые сейчас живут в сердце каждой украинки.
+				Я на себе знаю что это такое. И я знаю, как важно дать им возможность пережить это сложное время и стать на
+				ноги.
+				Поэтому наша компания BIJB выступает с инициативой адресной финансовой помощи женщинам Украины вынужденным
+				бежать от военной агрессии.
+				Мы просим вас внести свой вклад в поддержку украинских беженцев.
+
+
+				<div class="sep"><span class="sep1">&nbsp;</span><span class="sep2">&nbsp;</span></div>
+
+				<h1>Helpful Resources</h1>
+
+				<a href="https://hospitality-helps.org/">Hotel rooms for Ukrainian in need</a>
+
+			</div>
+		</div>
+
+		<div class="blockB" style="text-align:center">
+			<div class="txt">
+				<h1>Thank you for your help and support!</h1>
+			</div>
+		</div>
+
+	</div>
+	<div id="footer">
+		<div class="hash2"><span class="hash">&#35;</span>IHelpUkrainianWomen</div>
+	</div>
+
+	</html>
