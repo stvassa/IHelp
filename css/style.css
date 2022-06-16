@@ -1,0 +1,46 @@
+.bg-primary {
+  background-color: var(--primary) !important;
+}
+
+.btn {
+  border-radius: 2rem;
+  padding: 10px 40px;
+}
+
+.btn-primary {
+  color: var(--light);
+  background-color: var(--primary);
+  border-color: var(--primary);
+}
+
+.btn-warning {
+  color: var(--dark);
+  background-color: var(--secondary);
+  border-color: var(--secondary);
+}
+
+.social a {
+  text-decoration: none;
+  color: var(--light);
+}
+
+.pt {
+  padding-top: 70px;
+}
+
+.dmb {
+  margin-bottom: 130px;
+}
+
+.swiper {
+  padding-top: 70px;
+  max-width: 1400px;
+  height: 100%;
+}
+
+.swiper-slide img {
+
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
