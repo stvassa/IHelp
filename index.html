@@ -5,14 +5,21 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&family=Ubuntu:wght@400;500;700&display=swap"
+    rel="stylesheet">
+  <!-- Slider -->
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- css -->
   <link rel="stylesheet" href="css/variables.css">
   <link rel="stylesheet" href="css/style.css">
-
+  <!-- js -->
   <script defer src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script defer src="js/swiperslider.js"></script>
 
@@ -23,7 +30,7 @@
   <header>
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-primary" id="navbar">
       <div class="container">
-        <a class="navbar-brand text-warning me-5" href="#">#Ihelpukranianwoman</a>
+        <a class="navbar-brand me-4" href="#">#Ihelpukranianwoman</a>
         <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
           data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
           aria-label="Toggle navigation">
@@ -38,12 +45,11 @@
               <a class="nav-link" aria-current="page" href="#help">We've&nbsp;helped</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#partners">Partners</a>
-            </li>
-            <li class="nav-item">
               <a class="nav-link " aria-current="page" href="#news">News</a>
             </li>
-
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#partners">Partners</a>
+            </li>
             <li class="nav-item">
               <a class="nav-link" aria-current="page" href="#contacts">Contacts</a>
             </li>
@@ -102,24 +108,22 @@
   </header>
 
   <main class="container my-5">
-    <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 dmb">
+    <div class="row  p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 dmb">
       <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
-        <h1 class="display-4 fw-bold lh-1">Border hero with cropped image and shadows</h1>
-        <p class="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most
-          popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive
-          prebuilt components, and powerful JavaScript plugins.
+        <h1 class="display-4 fw-bold lh-1">Aid fund for Ukrainian women</h1>
+        <p class="lead">The company BIJB advance the initiative to raise money for Ukrainian women with children, who
+          were forced to escape from war. We are concerned about their financial possibility to feed themselves and
+          their children.
         </p>
         <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
-          <button type="button" class="btn btn-warning btn-lg px-4 me-md-2 fw-bold">Donate&nbsp;now</button>
+          <button type="button" class="btn btn-primary btn-lg px-4 me-md-2 fw-bold">Donate&nbsp;now</button>
           <!-- <button type="button" class="btn btn-outline-secondary btn-lg px-4">Default</button> -->
         </div>
       </div>
-      <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
-        <img class="rounded-lg-3" src="img/hero2.png" alt="" width="720">
+      <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg hero-img">
+        <img class="hero-img" src="img/hero2.png" alt="" width="760">
       </div>
     </div>
-
-
 
     <div class="container">
       <div class="row featurette dmb pt" id="aboutus">
@@ -157,52 +161,48 @@
       </div>
 
 
-      <!-- Three columns of text -->
-      <div class="row justify-content-center dmb">
+      <div class="row">
         <h2 class="display-4 fw-bold lh-2 text-center mb-5">How we help</h2>
-        <div class="col-lg-4 text-start">
-          <svg xmlns="http://www.w3.org/2000/svg" width="82" height="82" fill="var(--accent)" class="bi bi-boxes"
-            viewBox="0 0 16 16">
-            <path
-              d="M7.752.066a.5.5 0 0 1 .496 0l3.75 2.143a.5.5 0 0 1 .252.434v3.995l3.498 2A.5.5 0 0 1 16 9.07v4.286a.5.5 0 0 1-.252.434l-3.75 2.143a.5.5 0 0 1-.496 0l-3.502-2-3.502 2.001a.5.5 0 0 1-.496 0l-3.75-2.143A.5.5 0 0 1 0 13.357V9.071a.5.5 0 0 1 .252-.434L3.75 6.638V2.643a.5.5 0 0 1 .252-.434L7.752.066ZM4.25 7.504 1.508 9.071l2.742 1.567 2.742-1.567L4.25 7.504ZM7.5 9.933l-2.75 1.571v3.134l2.75-1.571V9.933Zm1 3.134 2.75 1.571v-3.134L8.5 9.933v3.134Zm.508-3.996 2.742 1.567 2.742-1.567-2.742-1.567-2.742 1.567Zm2.242-2.433V3.504L8.5 5.076V8.21l2.75-1.572ZM7.5 8.21V5.076L4.75 3.504v3.134L7.5 8.21ZM5.258 2.643 8 4.21l2.742-1.567L8 1.076 5.258 2.643ZM15 9.933l-2.75 1.571v3.134L15 13.067V9.933ZM3.75 14.638v-3.134L1 9.933v3.134l2.75 1.571Z" />
-          </svg>
-          <h2 class="fw-normal">Financial addressed help</h2>
-          <p class="text-start">Some representative placeholder content for the three columns of text below the
-            carousel.
-            This is the first
-            column. Another exciting bit of representative placeholder content. This time, we've moved on to the second
-            column.</p>
-          <button type="button" class="btn btn-outline-primary">More information</button>
-        </div><!-- /.col-lg-4 -->
-
-        <div class="col-lg-4 text-start">
-          <svg xmlns="http://www.w3.org/2000/svg" width="82" height="82" fill="var(--accent)"
-            class="bi bi-balloon-heart" viewBox="0 0 16 16">
-            <path fill-rule="evenodd"
-              d="m8 2.42-.717-.737c-1.13-1.161-3.243-.777-4.01.72-.35.685-.451 1.707.236 3.062C4.16 6.753 5.52 8.32 8 10.042c2.479-1.723 3.839-3.29 4.491-4.577.687-1.355.587-2.377.236-3.061-.767-1.498-2.88-1.882-4.01-.721L8 2.42Zm-.49 8.5c-10.78-7.44-3-13.155.359-10.063.045.041.089.084.132.129.043-.045.087-.088.132-.129 3.36-3.092 11.137 2.624.357 10.063l.235.468a.25.25 0 1 1-.448.224l-.008-.017c.008.11.02.202.037.29.054.27.161.488.419 1.003.288.578.235 1.15.076 1.629-.157.469-.422.867-.588 1.115l-.004.007a.25.25 0 1 1-.416-.278c.168-.252.4-.6.533-1.003.133-.396.163-.824-.049-1.246l-.013-.028c-.24-.48-.38-.758-.448-1.102a3.177 3.177 0 0 1-.052-.45l-.04.08a.25.25 0 1 1-.447-.224l.235-.468ZM6.013 2.06c-.649-.18-1.483.083-1.85.798-.131.258-.245.689-.08 1.335.063.244.414.198.487-.043.21-.697.627-1.447 1.359-1.692.217-.073.304-.337.084-.398Z" />
-          </svg>
-          <h2 class="fw-normal">Psychological Support</h2>
-          <p class="text-start">Another exciting bit of representative placeholder content. This time, we've moved on to
-            the second column.
-            Another exciting bit of representative placeholder content. This time, we've moved on to the second column.
-          </p>
-          <button type="button" class="btn btn-outline-primary">More information</button>
-        </div><!-- /.col-lg-4 -->
-
-        <div class="col-lg-4 text-start">
-          <svg xmlns="http://www.w3.org/2000/svg" width="82" height="82" fill="var(--accent)"
-            class="bi bi-brightness-high-fill" viewBox="0 0 16 16">
-            <path
-              d="M12 8a4 4 0 1 1-8 0 4 4 0 0 1 8 0zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z" />
-          </svg>
-
-          <h2 class="fw-normal">Certificate for courses</h2>
-          <p class="text-start">And lastly this, the third column of representative placeholder content. Another
-            exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
-          <button type="button" class="btn btn-outline-primary">More information</button>
-        </div><!-- /.col-lg-4 -->
-
-      </div><!-- /.row -->
+        <div class="col-md-4 my-2">
+          <div class="card">
+            <div class="card-body">
+              <img src="img/hands5.png" style="height: 140px" alt="">
+              <h5 class="card-title">Psychological Support</h5>
+              <p class="card-text">Confused mothers and their children need to tune in to new conditions, calm
+                down and
+                give support not only to their child but also to themselves. Our psychologist helps to adapt and
+                replenish the resource.</p>
+              <a href="#" class="btn btn-outline-primary">More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 my-2">
+          <div class="card">
+            <div class="card-body">
+              <img src="img/card5.png" style="height: 140px" alt="">
+              <h5 class="card-title">Financial addressed help</h5>
+              <p class="card-text">Female refugees are torn from usual life with the child in arms and backpack with
+                documents. Vulnerable, bewildered and scared.They need some time to calm down and find a job.</p>
+              <p class="card-text">Searching for a job can take from 2 to 6 months. During this time they need to feed
+                and provide their children.
+                Address financial help gives them time for pause, rehabilitation and job search.</p>
+              <a href="#" class="btn btn-outline-primary">Donate&nbsp;now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 my-2">
+          <div class="card">
+            <div class="card-body">
+              <img src="img/sertificat5.png" style="height: 140px" alt="">
+              <h5 class="card-title">Certificate for courses</h5>
+              <p class="card-text">Anyone can pay for a certificate for training for women who need to gain new
+                knowledge for employment.</p>
+              <p class="card-text">We provide access to courses such as English, Analytics, English, Analytics</p>
+              <a href="#" class="btn btn-outline-primary">Donate&nbsp;now</a>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <!-- Slider main container -->
       <div class="swiper mb-5 pt" id="help">
@@ -250,6 +250,45 @@
         </div>
       </div>
       <!-- ./counter -->
+
+      <div class="news dmb pt" id="news">
+        <h2 class="display-4 fw-bold lh-2 text-center mb-5">Our News</h2>
+        <div class="row justify-content-center">
+          <div class="card col-lg-3 m-2" style="width: 18rem;">
+            <img src="img/hero1.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.
+              </p>
+            </div>
+          </div>
+          <div class="card col-lg-3 m-2" style="width: 18rem;">
+            <img src="img/hero1.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.
+              </p>
+            </div>
+          </div>
+          <div class="card col-lg-3 m-2" style="width: 18rem;">
+            <img src="img/hero1.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.
+              </p>
+            </div>
+          </div>
+          <div class="card col-lg-3 m-2" style="width: 18rem;">
+            <img src="img/hero1.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ./news -->
 
       <div class="container dmb pt" id="partners">
         <h2 class="display-4 fw-bold lh-2 text-center mb-5">Our partners</h2>
@@ -313,44 +352,6 @@
       </div>
       <!-- ./partners -->
 
-      <div class="news dmb pt" id="news">
-        <h2 class="display-4 fw-bold lh-2 text-center mb-5">Our News</h2>
-        <div class="row justify-content-center">
-          <div class="card col-lg-3 m-2" style="width: 18rem;">
-            <img src="img/hero1.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.
-              </p>
-            </div>
-          </div>
-          <div class="card col-lg-3 m-2" style="width: 18rem;">
-            <img src="img/hero1.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.
-              </p>
-            </div>
-          </div>
-          <div class="card col-lg-3 m-2" style="width: 18rem;">
-            <img src="img/hero1.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.
-              </p>
-            </div>
-          </div>
-          <div class="card col-lg-3 m-2" style="width: 18rem;">
-            <img src="img/hero1.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- ./news -->
 
       <section>
         <h2 class="display-4 fw-bold lh-2 text-center">Contact us</h2>

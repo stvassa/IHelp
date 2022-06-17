@@ -1,7 +1,11 @@
 :root {
   --light: #ffffff;
-  --dark: #000000;
-  --primary: #194094;
-  --secondary: #FFD800;
-  --accent: #00000034;
+  --dark: #171717;
+  /* --gray: #000000; */
+  --primary: #3184FF;
+  --secondary: #f6f6f6;
+  --accent: #FFD11C;
 }
+
+/* #194094 */
+/* #FFD800 */
