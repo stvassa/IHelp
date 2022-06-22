@@ -123,3 +123,11 @@ img {
   object-fit: cover;
   border-radius: 1rem;
 }
+
+.partners {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow: hidden;
+}
