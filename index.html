@@ -59,66 +59,45 @@
             <li class="nav-item">
               <a class="nav-link" aria-current="page" href="#contacts">Contacts</a>
             </li>
+            <li class="dropdown nav-item language">
+              <button class="language-btn d-flex" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <svg class="d-none d-lg-block ms-lg-3 icon icon-light">
+                  <use xlink:href="assets/icons/icons.svg#ri_translate-2"></use>
+                </svg>
+                <span class="d-block d-lg-none">Language</span>
+              </button>
+              <ul style="width: 25%;" class="dropdown-menu bg-secondary border-0" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="!#">Українська</a></li>
+                <li><a class="dropdown-item" href="#">English</a></li>
+                <li><a class="dropdown-item" href="#">日本</a></li>
+              </ul>
+            </li>
           </ul>
           <!-- ./nav-bar -->
 
-          <div class="mx-4 text-center">
-            <button class="btn btn-warning my-1 me-3" type="button" data-bs-toggle="modal"
+          <div class="mx-2 text-center">
+            <button class="btn btn-warning my-1 me-2" type="button" data-bs-toggle="modal"
               data-bs-target="#canHelpModal">I&nbsp;can&nbsp;help</button>
 
-            <button class="btn btn-outline-light my-1 me-3" type="button" data-bs-toggle="modal"
+            <button class="btn btn-outline-light my-1 me-2" type="button" data-bs-toggle="modal"
               data-bs-target="#needHelpModal">I&nbsp;need&nbsp;help</button>
           </div>
           <!-- ./buttons -->
-
-          <div class="social d-flex align-items-center justify-content-center">
-            <div class="m-1">
-              <a href="https://www.facebook.com/ihelpukrainianwomen-102229992445070">
-                <svg class="icon icon-light">
-                  <use xlink:href="img/icons/icons.svg#ri_facebook-box-fill">
-                  </use>
-                </svg>
-              </a>
-            </div>
-            <div class="m-1">
-              <a href="">
-                <svg class="icon icon-light">
-                  <use xlink:href="img/icons/icons.svg#ri_telegram-fill"></use>
-                </svg>
-              </a>
-            </div>
-
-            <div class="m-1">
-              <a href="https://www.linkedin.com/in/bernatska/">
-                <svg class="icon icon-light">
-                  <use xlink:href="img/icons/icons.svg#ri_linkedin-box-fill"></use>
-                </svg>
-              </a>
-            </div>
-
-            <div class="m-1">
-              <a href="https://www.instagram.com/ihelpukrainianwomen/">
-                <svg class="icon icon-light">
-                  <use xlink:href="img/icons/icons.svg#ri_instagram-fill"></use>
-                </svg>
-              </a>
-            </div>
-          </div>
-          <!-- ./social -->
 
         </div>
       </div>
     </nav>
   </header>
 
-  <main class="my-5">
+  <main class="mt-5">
     <div class="container">
       <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 dmb">
         <div class="col-lg-4 order-lg-2 offset-lg-1 p-0 overflow-hidden shadow-lg hero-img">
-          <img class="hero-img" src="img/hero2.png" alt="" width="760">
+          <img class="hero-img" src="assets/img/hero2.png" alt="" width="760">
         </div>
         <div class="col-lg-7 order-lg-1 p-3 p-lg-5 pt-lg-3">
-          <h1 class="display-1 fw-bold">Aid fund for Ukrainian women</h1>
+          <h1 class="display-1 fw-bold">Aid&nbsp;fund for&nbsp;Ukrainian women</h1>
           <p class="lead" style="color: #7A7A7A;">The company BIJB advance the initiative to raise money for Ukrainian
             women with children, who
             were forced to escape from war. We are concerned about their financial possibility to feed themselves and
@@ -134,18 +113,138 @@
 
     <div class="container">
       <section class="dmb pt" id="aboutus">
+        <div class="text-center">
+          <h2 class="display-2 fw-bold lh-2 text-center mb-5">Meet our team</h2>
+          <div class="row justify-content-between">
+            <div class="col-md-3 my-5 text-start">
+              <div class="team-img mb-3"><img class="team-thumb" src="assets/img/Julia.jpg" alt="">
+              </div>
+              <span class="fw-bold display-6">Julia</span>
+              <p class="text-muted fst-italic">&#8220;Займатися благодійністю - це дарувати знайомому, абсолютно
+                невідомій
+                людині або
+                будь-якій істоті, з
+                яким мешкаєш на одній планеті, допомога, радість, турботу або будь-яке інше щастя.&#8221;</p>
+              <div class="social d-flex">
+                <div class="me-1">
+                  <a href="https://www.facebook.com/ihelpukrainianwomen-102229992445070">
+                    <svg class="icon icon-dark">
+                      <use xlink:href="assets/icons/icons.svg#ri_facebook-box-fill">
+                      </use>
+                    </svg>
+                  </a>
+                </div>
+                <div class="me-1">
+                  <a href="">
+                    <svg class="icon icon-dark">
+                      <use xlink:href="assets/icons/icons.svg#ri_telegram-fill"></use>
+                    </svg>
+                  </a>
+                </div>
+
+                <div class="me-1">
+                  <a href="https://www.linkedin.com/in/bernatska/">
+                    <svg class="icon icon-dark">
+                      <use xlink:href="assets/icons/icons.svg#ri_linkedin-box-fill"></use>
+                    </svg>
+                  </a>
+                </div>
+
+                <div class="">
+                  <a href="https://www.instagram.com/ihelpukrainianwomen/">
+                    <svg class="icon icon-dark">
+                      <use xlink:href="assets/icons/icons.svg#ri_instagram-fill"></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <!-- ./social -->
+            </div>
+
+            <div class="col-md-3 my-5 text-start">
+              <div class="team-img mb-3"><img class="team-thumb" src="assets/img/Evgen.jpg" alt="">
+              </div>
+              <span class="fw-bold display-6">Eugen</span>
+              <p class="text-muted fst-italic">&#8220;Кожна людина може стати благодійником, навіть без грошей. Бути
+                волонтером,
+                віддати
+                речі
+                тим людям,
+                яким вони справді потрібні, підтримати в тяжку хвилину. Просто прийти в лікарню і пограти
+                з
+                дітьми.&#8221;</p>
+            </div>
+
+            <div class="col-md-3 my-5 text-start">
+              <div class="team-img mb-3"><img class="team-thumb" src="assets/img/Olena.jpg" alt="">
+              </div>
+              <span class="fw-bold display-6">Olena</span>
+              <p class="text-muted fst-italic">&#8220;Довіра в благодійності - це основа відносин, без якої неможлива
+                реальна
+                допомога.
+                Чесність,
+                відкритість і підзвітність дозволяють довіряти один одному і ефективно творити добро.&#8221;
+              </p>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="row mt-4 mb-5">
+          <h3 class="display-3 fw-bold lh-2 text-center mb-5">How do we help</h3>
+          <div class="col-lg-4 col-md-12 order-lg-2 my-2">
+            <div class="card">
+              <div class="card-body">
+                <img src="assets/icons/card10.png" style="height: 140px" alt="">
+                <h5 class="card-title">Financial addressed help</h5>
+                <p class="card-text">Female refugees are torn from usual life with the child in arms and backpack
+                  with
+                  documents. Vulnerable, bewildered and scared.They need some time to calm down and find a job.
+                </p>
+                <p class="card-text">Searching for a job can take from 2 to 6 months. During this time they need
+                  to feed
+                  and provide their children.
+                  Address financial help gives them time for pause, rehabilitation and job search.</p>
+                <a href="#" class="btn btn-outline-primary">Donate&nbsp;now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 my-2 order-lg-1">
+            <div class="card">
+              <div class="card-body">
+                <img src="assets/icons/psychologist10.png" style="height: 140px" alt="">
+                <h5 class="card-title">Psychological Support</h5>
+                <p class="card-text">Confused mothers and their children need to tune in to new conditions, calm
+                  down and
+                  give support not only to their child but also to themselves. Our psychologist helps to adapt and
+                  replenish the resource.</p>
+                <a href="#" class="btn btn-outline-primary">More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 order-lg-3 my-2">
+            <div class="card">
+              <div class="card-body">
+                <img src="assets/icons/sertificat10.png" style="height: 140px" alt="">
+                <h5 class="card-title">Certificate for study</h5>
+                <p class="card-text">Anyone can pay for a certificate for training for women who need to gain new
+                  knowledge for employment.</p>
+                <p class="card-text">We provide access to courses such as English, Analytics, English, Analytics</p>
+                <a href="#" class="btn btn-outline-primary">Donate&nbsp;now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div class="row featurette">
+          <h3 class="display-3 fw-bold lh-2 text-center mb-5">Why do we help</h3>
           <div class="col-md-5 order-md-1">
-            <img class="aboutus-img img-fluid mx-auto" src="img\julia-bernatska.jpg" alt="">
+            <img class="aboutus-img img-fluid mx-auto my-5" src="assets/img/julia-bernatska.jpg" alt="">
           </div>
           <div class="col-md-7 order-md-2">
-            <h2 class="featurette-heading">Julia Bernatska</h2>
-            <p class="lead">owner of BIJB's woman-owned company based in Kyiv that mainly focuses on
-              Microsoft Power BI
-              analytics. Company has an urgent plea to assist the women and children
-              who fled Ukraine.</p>
-            <p class="lead"> </p>
-
+            <p class="lead">Julia Bernatska owner of BIJB's woman-owned company based in Kyiv that mainly focuses on
+              Microsoft Power BI analytics. Company has an urgent plea to assist the women and children who fled
+              Ukraine.</p>
             <blockquote class="blockquote m-3">
               <div class="text-muted fst-italic">
                 <p>&#8220; As a single mother, I am heartbroken to witness what is happening
@@ -153,7 +252,8 @@
                   with children are forced to flee the war, leaving behind all they have to seek asylum
                   in other countries.</p>
                 <p>Fear, pain, and despair are the emotions that now permeate every Ukrainian woman's heart. That is
-                  something I am fully aware of and fully comprehend how critical it is to give them a chance to get out
+                  something I am fully aware of and fully comprehend how critical it is to give them a chance to get
+                  out
                   of this challenging period and back on their feet.
                   As a result, our company, BIJB, has launched an initiative that can provide direct financial support
                   to
@@ -174,69 +274,36 @@
               </svg> Wath video</button>
           </div>
         </div>
-
-        <div class="row">
-          <h2 class="display-2 fw-bold lh-2 text-center mb-5">How we help</h2>
-          <div class="col-lg-4 col-md-12 order-lg-2 my-2">
-            <div class="card">
-              <div class="card-body">
-                <img src="img/icons/card10.png" style="height: 140px" alt="">
-                <h5 class="card-title">Financial addressed help</h5>
-                <p class="card-text">Female refugees are torn from usual life with the child in arms and backpack
-                  with
-                  documents. Vulnerable, bewildered and scared.They need some time to calm down and find a job.
-                </p>
-                <p class="card-text">Searching for a job can take from 2 to 6 months. During this time they need
-                  to feed
-                  and provide their children.
-                  Address financial help gives them time for pause, rehabilitation and job search.</p>
-                <a href="#" class="btn btn-outline-primary">Donate&nbsp;now</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 my-2 order-lg-1">
-            <div class="card">
-              <div class="card-body">
-                <img src="img/icons/psychologist10.png" style="height: 140px" alt="">
-                <h5 class="card-title">Psychological Support</h5>
-                <p class="card-text">Confused mothers and their children need to tune in to new conditions, calm
-                  down and
-                  give support not only to their child but also to themselves. Our psychologist helps to adapt and
-                  replenish the resource.</p>
-                <a href="#" class="btn btn-outline-primary">More</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 order-lg-3 my-2">
-            <div class="card">
-              <div class="card-body">
-                <img src="img/icons/sertificat10.png" style="height: 140px" alt="">
-                <h5 class="card-title">Certificate for study</h5>
-                <p class="card-text">Anyone can pay for a certificate for training for women who need to gain new
-                  knowledge for employment.</p>
-                <p class="card-text">We provide access to courses such as English, Analytics, English, Analytics</p>
-                <a href="#" class="btn btn-outline-primary">Donate&nbsp;now</a>
-              </div>
-            </div>
-          </div>
-        </div>
       </section>
+
       <!-- Slider main container -->
       <section class="mb-5 pt" id="help">
         <h2 class="display-2 fw-bold lh-2 text-center">We`ve helped</h2>
         <div class="swiper help-swiper mb-5">
           <div class="swiper-wrapper help-wrapper">
-            <div class="swiper-slide help-slide"><img src="img/ua/Алена-Саенко.jpg" alt=""></div>
-            <div class="swiper-slide help-slide"><img src="img/ua/Віра-Щевченко.jpg" alt=""></div>
-            <div class="swiper-slide help-slide"><img src="img/ua/Елена-Рязанова.jpg" alt=""></div>
-            <div class="swiper-slide help-slide"><img src="img/ua/Валентина-Угренюк.jpg" alt=""></div>
-            <div class="swiper-slide help-slide"><img src="img/ua/Олеся-Сильчук.jpg" alt=""></div>
-            <div class="swiper-slide help-slide"><img src="img/ua/Инесса-Блозовская.jpg" alt=""></div>
-            <div class="swiper-slide help-slide"><img src="img/ua/София-Белая.jpg" alt=""></div>
+            <div class="swiper-slide help-slide"><img src="assets/img/ua/Алена-Саенко.jpg" alt=""></div>
+            <div class="swiper-slide help-slide"><img src="assets/img/ua/Віра-Щевченко.jpg" alt=""></div>
+            <div class="swiper-slide help-slide"><img src="assets/img/ua/Елена-Рязанова.jpg" alt=""></div>
+            <div class="swiper-slide help-slide"><img src="assets/img/ua/Валентина-Угренюк.jpg" alt=""></div>
+            <div class="swiper-slide help-slide"><img src="assets/img/ua/Олеся-Сильчук.jpg" alt=""></div>
+            <div class="swiper-slide help-slide"><img src="assets/img/ua/Инесса-Блозовская.jpg" alt=""></div>
+            <div class="swiper-slide help-slide"><img src="assets/img/ua/София-Белая.jpg" alt=""></div>
           </div>
           <div class="swiper-pagination help-pagination"></div>
-          <div class="help-button help-button-prev mt-5"><img src="img/icons/angle-left.svg" alt=""></div>
-          <div class="help-button help-button-next mt-5"><img src="img/icons/angle-right.svg" alt=""></div>
+          <div class="help-button help-button-prev">
+            <!-- поставить спрайт -->
+            <svg class="arrow icon-dark">
+              <use xlink:href="assets/icons/icons.svg#angle-left"></use>
+            </svg>
+            <!-- <img src="assets/icons/angle-left.svg" alt=""> -->
+          </div>
+          <div class="help-button help-button-next">
+            <!-- поставить спрайт -->
+            <svg class="arrow icon-dark">
+              <use xlink:href="assets/icons/icons.svg#angle-right"></use>
+            </svg>
+            <!-- <img src="assets/icons/angle-right.svg" alt=""> -->
+          </div>
         </div>
         <!-- ./swiper -->
 
@@ -271,7 +338,8 @@
           <div class="card col-lg-3 m-2" style="width: 18rem;">
             <img src="img/hero1.png" class="card-img-top" alt="...">
             <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                the
                 card's
                 content.
               </p>
@@ -280,7 +348,8 @@
           <div class="card col-lg-3 m-2" style="width: 18rem;">
             <img src="img/hero1.png" class="card-img-top" alt="...">
             <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                the
                 card's
                 content.
               </p>
@@ -289,7 +358,8 @@
           <div class="card col-lg-3 m-2" style="width: 18rem;">
             <img src="img/hero1.png" class="card-img-top" alt="...">
             <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                the
                 card's
                 content.
               </p>
@@ -298,7 +368,8 @@
           <div class="card col-lg-3 m-2" style="width: 18rem;">
             <img src="img/hero1.png" class="card-img-top" alt="...">
             <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                the
                 card's
                 content.
               </p>
@@ -309,16 +380,13 @@
       <!-- ./news -->
     </div>
 
-    <section class="container dmb pt" id="partners">
+    <section class="bg-secondary dmb p-5 text-center" id="partners">
       <h2 class="display-2 fw-bold lh-2 text-center">Our partners</h2>
-      <div class="text-center mb-5">
-        <span class="fw-bold lh-2 fs-2 text-muted">
-          Women of Ukraine thank you for your help and support!
-        </span>
-      </div>
-
+      <span class="fs-4">
+        Women&nbsp;of&nbsp;Ukraine thank&nbsp;you for&nbsp;your&nbsp;help and support!
+      </span>
       <!-- бегущая строка цсс -->
-      <div class="partnersticker">
+      <div class="partnersticker py-5">
         <span>
           <a class='listitem me-5'>Dima B. Tbilisi, GEORGIA $100</a>
           <a class='listitem me-5'>Alex G. East Walpole, MA USA $30</a>
@@ -337,6 +405,7 @@
           <a class='listitem me-5'>Brett M. Arlington, VA USA $100</a>
         </span>
       </div>
+      <button type="button" class="btn btn-primary btn-lg px-4 fw-bold">Donate&nbsp;now</button>
     </section>
     <!-- ./partners -->
 
@@ -344,6 +413,7 @@
     <section class="container dmb">
       <h2 class="display-2 fw-bold lh-2 text-center">FAQ</h2>
       <div class="accordion" id="accordionExample" style="max-width: 860px; margin: 0 auto;">
+
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingOne">
             <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
@@ -354,11 +424,14 @@
           <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
             data-bs-parent="#accordionExample">
             <div class="accordion-body">
-              <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse
-              plugin adds the appropriate classes that we use to style each element. These classes control the overall
+              <strong>This is the first item's accordion body.</strong> It is shown by default, until the
+              collapse
+              plugin adds the appropriate classes that we use to style each element. These classes control the
+              overall
               appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with
               custom
-              CSS or overriding our default variables. It's also worth noting that just about any HTML can go within
+              CSS or overriding our default variables. It's also worth noting that just about any HTML can go
+              within
               the
               <code>.accordion-body</code>, though the transition does limit overflow.
             </div>
@@ -374,11 +447,14 @@
           <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
             data-bs-parent="#accordionExample">
             <div class="accordion-body">
-              <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse
-              plugin adds the appropriate classes that we use to style each element. These classes control the overall
+              <strong>This is the second item's accordion body.</strong> It is hidden by default, until the
+              collapse
+              plugin adds the appropriate classes that we use to style each element. These classes control the
+              overall
               appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with
               custom
-              CSS or overriding our default variables. It's also worth noting that just about any HTML can go within
+              CSS or overriding our default variables. It's also worth noting that just about any HTML can go
+              within
               the
               <code>.accordion-body</code>, though the transition does limit overflow.
             </div>
@@ -395,11 +471,14 @@
           <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
             data-bs-parent="#accordionExample">
             <div class="accordion-body">
-              <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse
-              plugin adds the appropriate classes that we use to style each element. These classes control the overall
+              <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
+              collapse
+              plugin adds the appropriate classes that we use to style each element. These classes control the
+              overall
               appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with
               custom
-              CSS or overriding our default variables. It's also worth noting that just about any HTML can go within
+              CSS or overriding our default variables. It's also worth noting that just about any HTML can go
+              within
               the
               <code>.accordion-body</code>, though the transition does limit overflow.
             </div>
@@ -409,18 +488,21 @@
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingFour">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-              data-bs-target="#collapsFoure" aria-expanded="false" aria-controls="collapseFour">
+              data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
               Accordion Item #4
             </button>
           </h2>
           <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
             data-bs-parent="#accordionExample">
             <div class="accordion-body">
-              <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse
-              plugin adds the appropriate classes that we use to style each element. These classes control the overall
+              <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
+              collapse
+              plugin adds the appropriate classes that we use to style each element. These classes control the
+              overall
               appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with
               custom
-              CSS or overriding our default variables. It's also worth noting that just about any HTML can go within
+              CSS or overriding our default variables. It's also worth noting that just about any HTML can go
+              within
               the
               <code>.accordion-body</code>, though the transition does limit overflow.
             </div>
@@ -437,11 +519,14 @@
           <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
             data-bs-parent="#accordionExample">
             <div class="accordion-body">
-              <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse
-              plugin adds the appropriate classes that we use to style each element. These classes control the overall
+              <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
+              collapse
+              plugin adds the appropriate classes that we use to style each element. These classes control the
+              overall
               appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with
               custom
-              CSS or overriding our default variables. It's also worth noting that just about any HTML can go within
+              CSS or overriding our default variables. It's also worth noting that just about any HTML can go
+              within
               the
               <code>.accordion-body</code>, though the transition does limit overflow.
             </div>
@@ -462,49 +547,49 @@
           </div>
 
           <div class="col-lg-3 my-3 me-3">
-            <h5 class="text-dark lh-2 mb-3 text-secondary">You can contact us in any convenient way:</h5>
+            <h5 class="lh-2 mb-3 text-light">You can contact us in any convenient way:</h5>
             <div class="my-2">
-              <a class="text-dark" href="">
+              <a class="text-light" href="">
                 <svg class="icon icon-light me-2">
-                  <use xlink:href="img/icons/icons.svg#ri_phone-fill"></use>
+                  <use xlink:href="assets/icons/icons.svg#ri_phone-fill"></use>
                 </svg>+1 732-625-0554
               </a>
             </div>
             <div class="my-2">
-              <a class="text-dark" href="">
+              <a class="text-light" href="">
                 <svg class="icon icon-light me-2">
-                  <use xlink:href="img/icons/icons.svg#ri_mail-fill"></use>
+                  <use xlink:href="assets/icons/icons.svg#ri_mail-fill"></use>
                 </svg>Email@mail.com
               </a>
             </div>
 
             <div class="my-2">
-              <a class="text-dark" href="">
+              <a class="text-light" href="">
                 <svg class="icon icon-light me-2">
-                  <use xlink:href="img/icons/icons.svg#ri_facebook-box-fill"></use>
+                  <use xlink:href="assets/icons/icons.svg#ri_facebook-box-fill"></use>
                 </svg>Facebook
               </a>
             </div>
 
             <div class="my-2">
-              <a class="text-dark" href="">
+              <a class="text-light" href="">
                 <svg class="icon icon-light me-2">
-                  <use xlink:href="img/icons/icons.svg#ri_telegram-fill"></use>
+                  <use xlink:href="assets/icons/icons.svg#ri_telegram-fill"></use>
                 </svg>Telegram
               </a>
             </div>
             <div class="my-2">
-              <a class="text-dark" href="">
+              <a class="text-light" href="">
                 <svg class="icon icon-light me-2">
-                  <use xlink:href="img/icons/icons.svg#ri_linkedin-box-fill"></use>
+                  <use xlink:href="assets/icons/icons.svg#ri_linkedin-box-fill"></use>
                 </svg>Linkedin
               </a>
             </div>
 
             <div class="my-2">
-              <a class="text-dark" href="">
+              <a class="text-light" href="">
                 <svg class="icon icon-light me-2">
-                  <use xlink:href="img/icons/icons.svg#ri_instagram-fill"></use>
+                  <use xlink:href="assets/icons/icons.svg#ri_instagram-fill"></use>
                 </svg>Instagram
               </a>
             </div>
@@ -514,19 +599,19 @@
             <h5 class="lh-2 mb-3 text-secondary">You can send in the form any ideas for help or
               cooperation:</h5>
             <div class="row mb-3">
-              <label for="inputName3" class="col-sm-2 col-form-label">Name*</label>
+              <label for="inputName3" class="col-sm-2 col-form-label text-light">Name*</label>
               <div class="col-sm-10">
                 <input type="text" class="form-control" id="inputName3">
               </div>
             </div>
             <div class="row mb-3">
-              <label for="inputEmail3" class="col-sm-2 col-form-label">Email*</label>
+              <label for="inputEmail3" class="col-sm-2 col-form-label text-light">Email*</label>
               <div class="col-sm-10">
                 <input type="email" class="form-control" id="inputEmail3">
               </div>
             </div>
             <div class="row mb-3">
-              <label for="exampleFormControlTextarea1" class="col-sm-2 col-form-label">Message*</label>
+              <label for="exampleFormControlTextarea1" class="col-sm-2 col-form-label text-light">Message*</label>
               <div class="col-sm-10">
                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder=""></textarea>
               </div>
@@ -536,13 +621,13 @@
               <div class="col-sm-10 offset-sm-2">
                 <div class="form-check">
                   <input class="form-check-input" type="checkbox" id="gridCheck1">
-                  <label class="form-check-label" for="gridCheck1">
+                  <label class="form-check-label text-light" for="gridCheck1">
                     I agree to the data processing
                   </label>
                 </div>
               </div>
             </div>
-            <div class="text-end"><button type="submit" class="btn btn-outline-light" disabled>Sign in</button></div>
+            <div class="text-end"><button type="submit" class="btn btn-outline-light" disabled>Send</button></div>
           </form>
         </div>
       </section>
