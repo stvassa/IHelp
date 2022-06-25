@@ -33,12 +33,10 @@
 
 <body data-bs-spy="scroll" data-bs-target="#navbar">
   <header>
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-primary" id="navbar">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-primary p-0" id="navbar">
       <div class="container">
-        <a class="navbar-brand me-5" href="#">
-          <span>#Ihelp</span>
-          <span>ukranian</span>
-          <span>woman</span>
+        <a class="navbar-brand py-2 me-5" href="#">
+          <img class="navbar-brand__thumb p-0" src="assets/icons/logo.png" alt="">
         </a>
         <button class="navbar-toggler collapsed " type="button" data-bs-toggle="collapse"
           data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
@@ -60,8 +58,8 @@
               <a class="nav-link" aria-current="page" href="#contacts">Contacts</a>
             </li>
             <li class="dropdown nav-item language">
-              <button class="language-btn d-flex" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
-                aria-expanded="false">
+              <button class="language-btn d-flex dropdown-toggle align-items-center" type="button"
+                id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                 <svg class="d-none d-lg-block ms-lg-3 icon icon-light">
                   <use xlink:href="assets/icons/icons.svg#ri_translate-2"></use>
                 </svg>
@@ -93,7 +91,7 @@
   <main class="mt-5">
     <div class="container">
       <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 dmb">
-        <div class="col-lg-4 order-lg-2 offset-lg-1 p-0 overflow-hidden shadow-lg hero-img">
+        <div class="col-lg-4 order-lg-2 offset-lg-1 p-0 overflow-hidden">
           <img class="hero-img" src="assets/img/hero2.png" alt="" width="760">
         </div>
         <div class="col-lg-7 order-lg-1 p-3 p-lg-5 pt-lg-3">
@@ -105,22 +103,38 @@
           </p>
           <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
             <button type="button" class="btn btn-primary btn-lg px-4 me-md-2 fw-bold">Donate&nbsp;now</button>
-            <!-- <button type="button" class="btn btn-outline-secondary btn-lg px-4">Default</button> -->
           </div>
         </div>
       </div>
     </div>
 
     <div class="container">
-      <section class="dmb pt" id="aboutus">
+      <section class=" text-center dmb pt" id="aboutus">
         <div class="text-center">
           <h2 class="display-2 fw-bold lh-2 text-center mb-5">Meet our team</h2>
-          <div class="row justify-content-between">
-            <div class="col-md-3 my-5 text-start">
-              <div class="team-img mb-3"><img class="team-thumb" src="assets/img/Julia.jpg" alt="">
+          <div class="row justify-content-md-between">
+
+            <div class="col-md-6 col-lg-3 my-5 text-start">
+              <div class="team-img ms-5 mt-5 mb-4"><img class="team-thumb" src="assets/img/Evgen.jpg" alt="">
+              </div>
+              <span class="fw-bold display-6">Evgen</span>
+              <p class="text-muted fst-italic">&#8220;Кожна людина може стати благодійником,
+                навіть без грошей. Бути
+                волонтером,
+                віддати
+                речі
+                тим людям,
+                яким вони справді потрібні, підтримати в тяжку хвилину. Просто прийти в лікарню і пограти
+                з
+                дітьми.&#8221;</p>
+            </div>
+
+            <div class="col-md-6 col-lg-3 my-5 text-start">
+              <div class="team-img ms-5 mt-5 mb-4"><img class="team-thumb" src="assets/img/Julia.jpg" alt="">
               </div>
               <span class="fw-bold display-6">Julia</span>
-              <p class="text-muted fst-italic">&#8220;Займатися благодійністю - це дарувати знайомому, абсолютно
+              <p class="text-muted fst-italic">&#8220;Займатися благодійністю - це дарувати
+                знайомому, абсолютно
                 невідомій
                 людині або
                 будь-якій істоті, з
@@ -160,26 +174,12 @@
               </div>
               <!-- ./social -->
             </div>
-
-            <div class="col-md-3 my-5 text-start">
-              <div class="team-img mb-3"><img class="team-thumb" src="assets/img/Evgen.jpg" alt="">
-              </div>
-              <span class="fw-bold display-6">Eugen</span>
-              <p class="text-muted fst-italic">&#8220;Кожна людина може стати благодійником, навіть без грошей. Бути
-                волонтером,
-                віддати
-                речі
-                тим людям,
-                яким вони справді потрібні, підтримати в тяжку хвилину. Просто прийти в лікарню і пограти
-                з
-                дітьми.&#8221;</p>
-            </div>
-
-            <div class="col-md-3 my-5 text-start">
-              <div class="team-img mb-3"><img class="team-thumb" src="assets/img/Olena.jpg" alt="">
+            <div class="col-md-6 col-lg-3 my-5 text-start">
+              <div class="team-img ms-5 mt-5 mb-4"><img class="team-thumb" src="assets/img/Olena.jpg" alt="">
               </div>
               <span class="fw-bold display-6">Olena</span>
-              <p class="text-muted fst-italic">&#8220;Довіра в благодійності - це основа відносин, без якої неможлива
+              <p class="text-muted fst-italic">&#8220;Довіра в благодійності - це основа
+                відносин, без якої неможлива
                 реальна
                 допомога.
                 Чесність,
@@ -189,14 +189,58 @@
 
           </div>
         </div>
+        <div class="row featurette">
+          <h3 class="display-6 fw-bold lh-2 text-center mb-5" style="margin-top: 100px;">Why do we help</h3>
+          <div class="col-md-5 order-md-1">
+            <img class="aboutus-img img-fluid mt-0 my-5" src="assets/img/hero1.png" alt="">
+          </div>
+          <div class="col-md-7 order-md-2">
+            <p class="lead">Julia Bernatska owner of BIJB's woman-owned company based in Kyiv that mainly focuses on
+              Microsoft Power BI analytics. Company has an urgent plea to assist the women and children who fled
+              Ukraine. Millions of Ukrainian women
+              with children are forced to flee the war, leaving behind all they have to seek asylum
+              in other countries.</p>
+            </p>
+            <blockquote class="blockquote m-3">
+              <div class="text-muted fst-italic">
+                <p>&#8220; As a single mother, I am heartbroken to witness what is happening
+                  in my country.
+                  <p>Fear, pain, and despair are the emotions that now permeate every Ukrainian woman's heart. That is
+                    something I am fully aware of and fully comprehend how critical it is to give them a chance to get
+                    out
+                    of this challenging period and back on their feet.
+                    As a result, our company, BIJB, has launched an initiative that can provide direct financial support
+                    to
+                    Ukrainian women who've been forced to flee military aggression.
+                  </p>
+
+                  <p> We ask that you contribute to the support of Ukrainian refugees. Any contribution does have a
+                    significant
+                    impact. Together we can make a difference.&#8221;</p>
+              </div>
+            </blockquote>
+            <div class="text-end">
+              <p>Julia Bernatska</p>
+            </div>
+
+            <button type="button" class="btn btn-outline-primary mb-5"><svg xmlns="http://www.w3.org/2000/svg"
+                width="16" height="16" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                <path
+                  d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z" />
+              </svg> Wath video</button>
+          </div>
+        </div>
+
+
 
         <div class="row mt-4 mb-5">
-          <h3 class="display-3 fw-bold lh-2 text-center mb-5">How do we help</h3>
+          <h3 class="display-6 fw-bold lh-2 text-center mb-5" style="margin-top: 100px;">How do we help</h3>
           <div class="col-lg-4 col-md-12 order-lg-2 my-2">
             <div class="card">
               <div class="card-body">
                 <img src="assets/icons/card10.png" style="height: 140px" alt="">
-                <h5 class="card-title">Financial addressed help</h5>
+                <h5 class="card-title fw-bold">Financial addressed help</h5>
                 <p class="card-text">Female refugees are torn from usual life with the child in arms and backpack
                   with
                   documents. Vulnerable, bewildered and scared.They need some time to calm down and find a job.
@@ -213,7 +257,7 @@
             <div class="card">
               <div class="card-body">
                 <img src="assets/icons/psychologist10.png" style="height: 140px" alt="">
-                <h5 class="card-title">Psychological Support</h5>
+                <h5 class="card-title fw-bold">Psychological Support</h5>
                 <p class="card-text">Confused mothers and their children need to tune in to new conditions, calm
                   down and
                   give support not only to their child but also to themselves. Our psychologist helps to adapt and
@@ -226,7 +270,7 @@
             <div class="card">
               <div class="card-body">
                 <img src="assets/icons/sertificat10.png" style="height: 140px" alt="">
-                <h5 class="card-title">Certificate for study</h5>
+                <h5 class="card-title fw-bold">Certificate for study</h5>
                 <p class="card-text">Anyone can pay for a certificate for training for women who need to gain new
                   knowledge for employment.</p>
                 <p class="card-text">We provide access to courses such as English, Analytics, English, Analytics</p>
@@ -235,51 +279,12 @@
             </div>
           </div>
         </div>
-
-        <div class="row featurette">
-          <h3 class="display-3 fw-bold lh-2 text-center mb-5">Why do we help</h3>
-          <div class="col-md-5 order-md-1">
-            <img class="aboutus-img img-fluid mx-auto my-5" src="assets/img/julia-bernatska.jpg" alt="">
-          </div>
-          <div class="col-md-7 order-md-2">
-            <p class="lead">Julia Bernatska owner of BIJB's woman-owned company based in Kyiv that mainly focuses on
-              Microsoft Power BI analytics. Company has an urgent plea to assist the women and children who fled
-              Ukraine.</p>
-            <blockquote class="blockquote m-3">
-              <div class="text-muted fst-italic">
-                <p>&#8220; As a single mother, I am heartbroken to witness what is happening
-                  in my country. Millions of Ukrainian women
-                  with children are forced to flee the war, leaving behind all they have to seek asylum
-                  in other countries.</p>
-                <p>Fear, pain, and despair are the emotions that now permeate every Ukrainian woman's heart. That is
-                  something I am fully aware of and fully comprehend how critical it is to give them a chance to get
-                  out
-                  of this challenging period and back on their feet.
-                  As a result, our company, BIJB, has launched an initiative that can provide direct financial support
-                  to
-                  Ukrainian women who've been forced to flee military aggression.
-                </p>
-
-                <p> We ask that you contribute to the support of Ukrainian refugees. Any contribution does have a
-                  significant
-                  impact. Together we can make a difference.&#8221;</p>
-              </div>
-            </blockquote>
-
-            <button type="button" class="btn btn-outline-primary mb-5"><svg xmlns="http://www.w3.org/2000/svg"
-                width="16" height="16" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
-                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
-                <path
-                  d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z" />
-              </svg> Wath video</button>
-          </div>
-        </div>
       </section>
 
       <!-- Slider main container -->
       <section class="mb-5 pt" id="help">
         <h2 class="display-2 fw-bold lh-2 text-center">We`ve helped</h2>
-        <div class="swiper help-swiper mb-5">
+        <div class="swiper help-swiper" style="margin-bottom: 75px;">
           <div class="swiper-wrapper help-wrapper">
             <div class="swiper-slide help-slide"><img src="assets/img/ua/Алена-Саенко.jpg" alt=""></div>
             <div class="swiper-slide help-slide"><img src="assets/img/ua/Віра-Щевченко.jpg" alt=""></div>
@@ -291,39 +296,35 @@
           </div>
           <div class="swiper-pagination help-pagination"></div>
           <div class="help-button help-button-prev">
-            <!-- поставить спрайт -->
             <svg class="arrow icon-dark">
               <use xlink:href="assets/icons/icons.svg#angle-left"></use>
             </svg>
-            <!-- <img src="assets/icons/angle-left.svg" alt=""> -->
           </div>
           <div class="help-button help-button-next">
-            <!-- поставить спрайт -->
             <svg class="arrow icon-dark">
               <use xlink:href="assets/icons/icons.svg#angle-right"></use>
             </svg>
-            <!-- <img src="assets/icons/angle-right.svg" alt=""> -->
           </div>
         </div>
         <!-- ./swiper -->
 
         <div class="row counter dmb">
           <div class="col-md-6 mt-1 mb-1">
-            <div class="card">
+            <div class="card" style="background-color: var(--primary);">
               <div class="card-body text-center">
-                <span class="card-num display-1 fw-bold">123</span>
-                <p class="card-text">Families with children need help</p>
+                <span class="card-num display-1 fw-bold" style="color: var(--secondary);">123</span>
+                <p class="card-text text-light">Families with children need help</p>
                 <button class="btn btn-warning my-1 me-3" type="button" data-bs-toggle="modal"
                   data-bs-target="#canHelpModal">Help&nbsp;now</button>
               </div>
             </div>
           </div>
           <div class="col-md-6 mt-1 mb-1">
-            <div class="card">
+            <div class="card" style="background-color: var(--primary);">
               <div class="card-body text-center">
-                <span class="card-num display-1 fw-bold">35</span>
-                <p class="card-text">Families have been helped</p>
-                <button class="btn btn-outline-primary my-1 me-3" type="button" data-bs-toggle="modal"
+                <span class="card-num display-1 fw-bold" style="color: var(--secondary);">35</span>
+                <p class="card-text text-light">Families have been helped</p>
+                <button class="btn btn-outline-light my-1 me-3" type="button" data-bs-toggle="modal"
                   data-bs-target="#needHelpModal">I&nbsp;need&nbsp;help</button>
               </div>
             </div>
