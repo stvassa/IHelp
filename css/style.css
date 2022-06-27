@@ -100,6 +100,13 @@
   z-index: 10;
 }
 
+.card-video {
+  width: 90%;
+  height: auto;
+  border-radius: 0.5rem;
+  margin: 0 auto;
+}
+
 .listitem {
   font-size: 2rem;
   font-weight: bold;
@@ -227,8 +234,8 @@
 
 .accordion-button::before {
   content: "";
-  width: 0.9rem;
-  height: 1rem;
+  width: 10px;
+  height: 16px;
   background-image: url(../assets/icons/box.svg);
   background-repeat: no-repeat;
   margin-right: 0.5rem;
