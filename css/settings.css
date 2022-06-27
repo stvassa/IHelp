@@ -1,0 +1,115 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.875;
+  font-weight: 400;
+  line-height: 1.2;
+  color: var(--dark);
+}
+
+.pt {
+  padding-top: 70px;
+}
+
+.mb-6 {
+  margin-bottom: 75px;
+}
+
+@media (min-width: 680px) {
+  body {
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+
+  .mb-6 {
+    margin-bottom: 120px;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+h2 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  padding-bottom: 1rem;
+}
+
+img {
+  border-radius: 1rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.bg-primary {
+  background-color: var(--primary) !important;
+}
+
+.bg-secondary {
+  background-color: var(--secondary) !important;
+}
+
+.text-warning {
+  color: var(--accent) !important;
+}
+
+.text-muted {
+  color: var(--gray) !important;
+}
+
+.text-secondary {
+  color: var(--secondary) !important;
+}
+
+.btn {
+  border-radius: 2rem;
+  padding: 0.5rem 2rem;
+}
+
+.btn:focus {
+  box-shadow: none;
+}
+
+.btn-primary {
+  color: var(--light);
+  background-color: var(--primary);
+  border-color: var(--primary);
+}
+
+.btn-warning {
+  color: var(--dark);
+  background-color: var(--accent);
+  border-color: var(--accent);
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+}
+
+.icon-light {
+  fill: rgba(255, 255, 255, 0.8);
+}
+
+.icon-dark {
+  fill: var(--primary);
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: var(--secondary);
+  background-clip: border-box;
+  border: none;
+  border-radius: 1rem;
+}
