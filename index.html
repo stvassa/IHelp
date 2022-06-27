@@ -461,11 +461,9 @@
               </div>
             </div>
           </div>
-
         </div>
 
         <div class="mx-2 text-center my-3">
-          <button class="btn btn-primary fw-bold my-1 me-2" type="button">Donate&nbsp;now</button>
           <button class="btn btn-outline-primary my-1 me-2" type="button">Read&nbsp;more</button>
         </div>
       </section>
@@ -741,34 +739,44 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <form class="col my-3">
-            <div class="row mb-3">
-              <label for="inputName3" class="col-sm-2 col-form-label text-dark">Ім'я*</label>
-              <div class="col">
-                <input type="text" class="form-control" id="inputName3">
-              </div>
+          <form>
+            <div class="mb-3">
+              <label for="Name1" class="form-label">Ім'я та Прізвище*</label>
+              <input type="name" class="form-control" id="name1">
             </div>
-            <div class="row mb-3">
-              <label for="inputEmail3" class="col-sm-2 col-form-label text-dark">Пошта*</label>
-              <div class="col">
-                <input type="email" class="form-control" id="inputEmail3">
-              </div>
+            <div class="mb-3">
+              <label for="Email1" class="form-label">Е-мейл*</label>
+              <input type="email" class="form-control" id="Email1" aria-describedby="emailHelp">
             </div>
-            <div class="row mb-3">
-              <label for="exampleFormControlTextarea1" class="col-sm-3 col-form-label text-dark">Повідомлення*</label>
-              <div class="col-sm-9">
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder=""></textarea>
-              </div>
+            <div class="mb-3">
+              <label for="Phone1" class="form-label">Телефон*</label>
+              <input type="phone" class="form-control" id="Phone1">
             </div>
-            <div class="row mb-3">
-              <div class="col">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" id="gridCheck1">
-                  <label class="form-check-label text-dark" for="gridCheck1">
-                    Я погоджуюсь на обробку даних
-                  </label>
-                </div>
-              </div>
+            <div class="mb-3">
+              <label for="custom1" class="form-label">Громадянство*</label>
+              <input type="text" class="form-control" id="custom1" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+              <label for="custom2" class="form-label">Країна перебування*</label>
+              <input type="text" class="form-control" id="custom2" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+              <label for="custom3" class="form-label">Яку допомогу Ви потребуєте:*</label>
+              <select class="form-select" aria-label="Default select example">
+                <option selected>финансова підтримка</option>
+                <option value="1">психологічна підтримка</option>
+                <option value="2">курси аналітика Power BI</option>
+                <option value="3">курс англійської мови</option>
+                <option value="4">інше</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label">Напишіть інший варінт:</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">я даю згоду на обробку персональних данних</label>
             </div>
           </form>
         </div>
@@ -820,8 +828,7 @@
           </form>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
+          <button type="button" class="btn btn-primary">Send</button>
         </div>
       </div>
     </div>
