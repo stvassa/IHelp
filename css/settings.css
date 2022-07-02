@@ -1,6 +1,6 @@
 body {
   font-family: 'Open Sans', sans-serif;
-  font-size: 0.875;
+  font-size: 0.875rem;
   font-weight: 400;
   line-height: 1.2;
   color: var(--dark);
@@ -21,7 +21,7 @@ body {
   }
 
   .mb-6 {
-    margin-bottom: 120px;
+    margin-bottom: 150px;
   }
 }
 
@@ -38,6 +38,26 @@ h2 {
   font-size: 3.5rem;
   font-weight: 700;
   padding-bottom: 1rem;
+  color: var(--gray);
+}
+
+/* style element for h2 */
+.square {
+  position: relative;
+  z-index: 2;
+}
+
+.square::before {
+  position: absolute;
+  content: '';
+  background: var(--accent);
+  width: 3rem;
+  height: 3.5rem;
+  left: -0.2rem;
+  bottom: 0.8rem;
+  border-radius: 0.2rem;
+  transform: rotate(20deg);
+  z-index: -1;
 }
 
 img {
@@ -70,7 +90,6 @@ a {
 
 .btn {
   border-radius: 2rem;
-  padding: 0.5rem 2rem;
 }
 
 .btn:focus {
@@ -100,6 +119,10 @@ a {
 
 .icon-dark {
   fill: var(--primary);
+}
+
+.icon:hover {
+  fill: var(--accent);
 }
 
 .card {
