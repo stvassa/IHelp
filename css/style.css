@@ -96,11 +96,6 @@
   border-radius: 1rem;
 }
 
-.arrow {
-  width: 4rem;
-  height: 4rem;
-}
-
 .help-button-prev {
   position: absolute;
   top: 50%;

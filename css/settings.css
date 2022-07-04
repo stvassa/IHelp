@@ -108,6 +108,17 @@ a {
   border-color: var(--accent);
 }
 
+.btn-warning:hover {
+  background-color: var(--primary);
+  border-color: var(--primary);
+}
+
+.btn-light:hover {
+  color: var(--dark);
+  background-color: var(--accent);
+  border-color: var(--accent);
+}
+
 .icon {
   width: 24px;
   height: 24px;
@@ -125,6 +136,15 @@ a {
   fill: var(--accent);
 }
 
+.arrow {
+  width: 4rem;
+  height: 4rem;
+}
+
+.arrow:hover {
+  fill: var(--accent);
+}
+
 .card {
   position: relative;
   display: flex;
@@ -135,4 +155,8 @@ a {
   background-clip: border-box;
   border: none;
   border-radius: 1rem;
+}
+
+.modal-header {
+  border-bottom: none;
 }
