@@ -9,6 +9,7 @@
 .navbar-brand__thumb {
   object-fit: cover;
   width: 60px;
+  height: auto;
   border-radius: 0 !important;
 }
 
@@ -89,7 +90,7 @@
   padding: 3rem 0;
 }
 
-.help-slide img {
+.help-slide__thumb {
   width: 100%;
   height: 100%;
   object-fit: cover;
