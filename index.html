@@ -2,9 +2,26 @@
 <html lang="en">
 
 <head>
-  <!-- Required meta tags -->
+  <title>#Ihelpukranianwoman</title>
+  <link rel="icon" type="image/x-icon" href="assets/icons/favicons/Vectorheart.ico">
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+  <meta property="og:url" content="IHelpUkrainianWomen.com" />
+  <meta property="og:title" content="Help Ukrainian Women" />
+  <meta property="og:description" content="Aid fund for Ukrainian women - Initiative of BIJB" />
+
+  <meta property="og:image" content="http://ihelpukrainianwomen.com/assets/img/hero3.png" />
+  <meta property="og:image:secure_url" content="https://ihelpukrainianwomen.com/assets/img/hero3.png" />
+
+  <!-- Google tag manager -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-R4J8387X85"></script>
+  <script type="text/javascript" src="js/google.js"></script>
+
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,8 +46,6 @@
   <script defer src="js/swiperslider.js"></script>
   <script defer src="js/main.js"></script>
 
-
-  <title>#Ihelpukranianwoman</title>
 </head>
 
 <body data-bs-spy="scroll" data-bs-target="#navbar">
@@ -77,9 +92,15 @@
           <!-- ./nav-bar -->
 
           <div class="m-2 text-center">
-            <button class="btn btn-light my-1 me-2" type="button">Donate&nbsp;now</button>
+            <!-- PayPal form -->
+            <form name="formPaypal" action="https://www.paypal.com/donate" method="post" target="_top">
+              <input type="hidden" name="hosted_button_id" value="5UYQ6SRMXK5U6" />
+              <input type="submit" class="btn btn-light my-1 me-2" value="Donate&nbsp;now">
+              <!--input id="paypalBtn" type="image" src="/images/donate.png" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" /-->
+              <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+            </form>
           </div>
-          <!-- ./buttons -->
+          <!-- ./PayPal button -->
 
         </div>
       </div>
@@ -100,7 +121,13 @@
             about their financial possibility to&nbsp;feed themselves and&nbsp;their children.
           </p>
           <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
-            <button type="button" class="btn btn-primary btn-lg px-4 me-md-2 fw-bold">Donate&nbsp;now</button>
+            <!-- PayPal form -->
+            <form name="formPaypal" action="https://www.paypal.com/donate" method="post" target="_top">
+              <input type="hidden" name="hosted_button_id" value="5UYQ6SRMXK5U6" />
+              <input type="submit" class="btn btn-primary btn-lg px-4 me-md-2 fw-bold" value="Donate&nbsp;now">
+              <!--input id="paypalBtn" type="image" src="/images/donate.png" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" /-->
+              <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+            </form>
           </div>
         </div>
       </div>
@@ -184,7 +211,6 @@
             <div class="text-start">
               <div class="">
                 <img class="block-icon" src="assets/icons/bank-card-2-line.svg" alt="">
-                <!-- <img src="assets/icons/card10.png" style="height: 65px; margin-top: -8px;" alt=""> -->
               </div>
               <div class="">
                 <h3 class="card-title fw-bold">Financial addressed help</h3>
@@ -201,7 +227,6 @@
             <div class="text-start">
               <div class="">
                 <img class="block-icon" src="assets/icons/chat-smile-3-line.svg" alt="">
-                <!-- <img src="assets/icons/psychologist10.png" style="height: 65px; margin-top: -8px;" alt=""> -->
               </div>
               <div class="">
                 <h3 class="card-title fw-bold">Psychological Support</h3>
@@ -218,7 +243,6 @@
             <div class="text-start">
               <div class="">
                 <img class="block-icon" src="assets/icons/award-line.svg" alt="">
-                <!-- <img src="assets/icons/sertificat10.png" style="height: 65px; margin-top: -8px;" alt=""> -->
               </div>
               <div class="">
                 <h3 class="card-title fw-bold">Certificate for training</h3>
@@ -233,7 +257,12 @@
             </div>
           </div>
           <div class="d-grid gap-2 d-md-flex justify-content-center mt-5 mb-4 mb-lg-3">
-            <button type="button" class="btn btn-primary btn-lg px-4 me-md-2 fw-bold">Donate&nbsp;now</button>
+            <form name="formPaypal" action="https://www.paypal.com/donate" method="post" target="_top">
+              <input type="hidden" name="hosted_button_id" value="5UYQ6SRMXK5U6" />
+              <input type="submit" class="btn btn-primary btn-lg px-4 me-md-2 fw-bold" value="Donate&nbsp;now">
+              <!--input id="paypalBtn" type="image" src="/images/donate.png" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" /-->
+              <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+            </form>
             <button type="button" class="btn btn-outline-primary btn-lg px-4 me-md-2 fw-bold" data-bs-toggle="modal"
               data-bs-target="#canHelpModal">Provide&nbsp;assistance</button>
           </div>
@@ -562,7 +591,12 @@
         </span>
       </div>
       <div class="d-grid gap-2 d-md-flex justify-content-center mt-5 mb-4 mb-lg-3">
-        <button type="button" class="btn btn-primary btn-lg px-4 me-md-2 fw-bold">Donate&nbsp;now</button>
+        <form name="formPaypal" action="https://www.paypal.com/donate" method="post" target="_top">
+          <input type="hidden" name="hosted_button_id" value="5UYQ6SRMXK5U6" />
+          <input type="submit" class="btn btn-primary btn-lg px-4 me-md-2 fw-bold" value="Donate&nbsp;now">
+          <!--input id="paypalBtn" type="image" src="/images/donate.png" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" /-->
+          <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+        </form>
         <button type="button" class="btn btn-outline-primary btn-lg px-4 me-md-2 fw-bold" data-bs-toggle="modal"
           data-bs-target="#canHelpModal">Provide&nbsp;assistance</button>
       </div>
@@ -711,7 +745,7 @@
           <div class="col-lg-3 my-3 me-3">
             <h5 class="lh-2 mb-3 text-light">You can contact us in any convenient way:</h5>
             <div class="my-2">
-              <a class="text-light" href="">
+              <a class="text-light" href="tel:+1 732-625-0554">
                 <svg class="icon icon-light me-2">
                   <use xlink:href="assets/icons/icons.svg#ri_phone-fill"></use>
                 </svg>+1 732-625-0554
@@ -727,7 +761,7 @@
             </div> -->
 
             <div class="my-2">
-              <a class="text-light" href="">
+              <a class="text-light" href="https://www.facebook.com/ihelpukrainianwomen-102229992445070">
                 <svg class="icon icon-light me-2">
                   <use xlink:href="assets/icons/icons.svg#ri_facebook-box-fill"></use>
                 </svg>Facebook
@@ -735,14 +769,14 @@
             </div>
 
             <div class="my-2">
-              <a class="text-light" href="">
+              <a class="text-light" href="https://t.me/Yuliia_Bernatska">
                 <svg class="icon icon-light me-2">
                   <use xlink:href="assets/icons/icons.svg#ri_telegram-fill"></use>
                 </svg>Telegram
               </a>
             </div>
             <div class="my-2">
-              <a class="text-light" href="">
+              <a class="text-light" href="https://www.linkedin.com/in/bernatska/">
                 <svg class="icon icon-light me-2">
                   <use xlink:href="assets/icons/icons.svg#ri_linkedin-box-fill"></use>
                 </svg>Linkedin
@@ -750,7 +784,7 @@
             </div>
 
             <div class="my-2">
-              <a class="text-light" href="">
+              <a class="text-light" href="https://www.instagram.com/ihelpukrainianwomen/">
                 <svg class="icon icon-light me-2">
                   <use xlink:href="assets/icons/icons.svg#ri_instagram-fill"></use>
                 </svg>Instagram
