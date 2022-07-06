@@ -799,25 +799,25 @@
             </div>
           </div>
 
-          <form class="col-lg-5 my-3">
+          <form action="send.php" method="POST" class="col-lg-5 my-3">
             <h5 class="lh-2 mb-3 text-light">You can send in the form any ideas for help or
               cooperation:</h5>
             <div class="row mb-3">
               <label for="validationDefault01" class="col-sm-2 col-form-label text-light">Name*</label>
               <div class="col-sm-10">
-                <input type="text" class="form-control" id="validationDefault01" required>
+                <input type="text" class="form-control" id="validationDefault01" name="name" required>
               </div>
             </div>
             <div class="row mb-3">
               <label for="validationDefault02" class="col-sm-2 col-form-label text-light">Email*</label>
               <div class="col-sm-10">
-                <input type="email" class="form-control" id="validationDefault02" required>
+                <input type="email" class="form-control" id="validationDefault02" name="email" required>
               </div>
             </div>
             <div class="row mb-3">
               <label for="validationTextarea" class="col-sm-2 col-form-label text-light">Message*</label>
               <div class="col-sm-10">
-                <textarea class="form-control" rows="3" id="validationTextarea" required></textarea>
+                <textarea class="form-control" rows="3" id="validationTextarea" name="message" required></textarea>
               </div>
             </div>
             <div class="row text-light offset-sm-2 mb-3">* Required to fill</div>
@@ -852,42 +852,42 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <form>
+          <form action="uasend.php" method="POST">
             <div class="mb-3">
               <label for="name1" class="form-label">Ім'я та Прізвище*</label>
-              <input type="text" name="name1" class="form-control" id="name1" required>
+              <input type="text" name="name" class="form-control" id="name1" required>
             </div>
             <div class="mb-3">
               <label for="Email1" class="form-label">Е-мейл*</label>
-              <input type="email" class="form-control" id="Email1" aria-describedby="Email1" name="Email1" required>
+              <input type="email" class="form-control" id="Email1" aria-describedby="Email1" name="email" required>
             </div>
             <div class="mb-3">
               <label for="Phone1" class="form-label">Телефон*</label>
-              <input type="tel" class="form-control" id="Phone1" name="Phone1" required>
+              <input type="tel" class="form-control" id="Phone1" name="phone" required>
             </div>
             <div class="mb-3">
               <label for="custom1" class="form-label">Громадянство*</label>
-              <input type="text" class="form-control" id="custom1" aria-describedby="custom1" name="Citizenship"
+              <input type="text" class="form-control" id="custom1" aria-describedby="custom1" name="citizenship"
                 required>
             </div>
             <div class="mb-3">
               <label for="custom2" class="form-label">Країна перебування*</label>
-              <input type="text" class="form-control" id="custom2" aria-describedby="custom2" name="Country of stay"
-                required>
+              <input type="text" class="form-control" id="custom2" aria-describedby="custom2" name="country" required>
             </div>
             <div class="mb-3">
               <label for="custom3" class="form-label">Яку допомогу Ви потребуєте:*</label>
-              <select class="form-select" aria-label="custom3" id="custom3" required>
-                <option value="" selected>финансова підтримка</option>
-                <option value="1">психологічна підтримка</option>
-                <option value="2">курси аналітика Power BI</option>
-                <option value="3">курс англійської мови</option>
-                <option value="4">інше</option>
+              <select class="form-select" aria-label="custom3" id="custom3" name="select" required>
+                <option value="" selected>оберіть варіант</option>
+                <option value="финансова підтримка">финансова підтримка</option>
+                <option value="психологічна підтримка">психологічна підтримка</option>
+                <option value="курси аналітика Power BI">курси аналітика Power BI</option>
+                <option value="курс англійської мови">курс англійської мови</option>
+                <option value="інше">інше</option>
               </select>
             </div>
             <div class="mb-3">
               <label for="exampleFormControlTextarea1" class="form-label">Напишіть інший варінт:</label>
-              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="text"></textarea>
             </div>
             <div class="col mb-3">* Обов'язково для заповнення</div>
             <div class="mb-3 form-check">
@@ -914,23 +914,24 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <form class="col my-3">
+          <form action="send.php" method="POST" class="col my-3">
             <div class="row mb-3">
               <label for="inputName3" class="col-sm-2 col-form-label text-dark">Name*</label>
               <div class="col">
-                <input type="text" class="form-control" id="inputName3" name="inputName3" required>
+                <input type="text" class="form-control" id="inputName3" name="name" required>
               </div>
             </div>
             <div class="row mb-3">
               <label for="inputEmail3" class="col-sm-2 col-form-label text-dark">Email*</label>
               <div class="col">
-                <input type="email" class="form-control" id="inputEmail3" required>
+                <input type="email" class="form-control" id="inputEmail3" name="email" required>
               </div>
             </div>
             <div class="row mb-3">
               <label for="validationTextarea2" class="col-sm-3 col-form-label text-dark">Message*</label>
               <div class="col-sm-9">
-                <textarea class="form-control" id="validationTextarea2" rows="3" placeholder="" required></textarea>
+                <textarea class="form-control" id="validationTextarea2" rows="3" placeholder="" name="message"
+                  required></textarea>
               </div>
             </div>
             <div class="col mb-3">* Required to fill</div>
