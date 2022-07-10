@@ -36,7 +36,7 @@ try {
     $mail->setFrom('vassatret@gmail.com', 'vassatret@gmail.com'); // Адрес самой почты и имя отправителя
 
     // Получатель письма
-    $mail->addAddress('st.vassa@gmail.com');  
+    $mail->addAddress('olena@ihelpukrainianwomen.com');  
 
 
     // Прикрипление файлов к письму
