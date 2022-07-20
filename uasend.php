@@ -1,8 +1,13 @@
 <?php
-// Файлы phpmailer
-require 'phpmailer/PHPMailer.php';
-require 'phpmailer/SMTP.php';
-require 'phpmailer/Exception.php';
+// Импортируем классы PHPMailer в глобальное пространство имен
+// Эти строки должны быть вначале скрипта, не внутри функции
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+use PHPMailer\PHPMailer\SMTP;
+
+require 'PHPMailer/src/Exception.php';
+require 'PHPMailer/src/PHPMailer.php';
+require 'PHPMailer/src/SMTP.php';
 
 // Переменные, которые отправляет пользователь
 $name = $_POST['name'];
@@ -15,52 +20,36 @@ $text = $_POST['text'];
 
 
 // Формирование самого письма
-$title = "Заявка на допомогу";
+$title = "Help form";
 $body = "
-<h2>Новий лист</h2>
-<b>Ім'я та Прізвище:</b> $name<br>
-<b>Е-мейл:</b> $email<br>
-<b>Телефон:</b> $phone<br>
-<b>Громадянство:</b> $citizenship<br>
-<b>Країна перебування</b> $country<br>
-<b>Форма допомоги:</b> $select<br>
+<h2>Заявка на допомогу</h2>
+<b>Ім'я та Прізвище:</b> $name<br><br>
+<b>Е-мейл:</b> $email<br><br>
+<b>Телефон:</b> $phone<br><br>
+<b>Громадянство:</b> $citizenship<br><br>
+<b>Країна перебування</b> $country<br><br>
+<b>Форма допомоги:</b> $select<br><br>
 <b>Інше:</b> $text<br>
 ";
 
-// Настройки PHPMailer
-$mail = new PHPMailer\PHPMailer\PHPMailer();
+//Create an instance; passing `true` enables exceptions
+$mail = new PHPMailer(true);
+
 try {
-    $mail->isSMTP();   
-    $mail->CharSet = "UTF-8";
-    $mail->SMTPAuth   = true;
-    // $mail->SMTPDebug = 2;
-    $mail->Debugoutput = function($str, $level) {$GLOBALS['status'][] = $str;};
+    //Server settings
+    $mail->SMTPDebug = SMTP::DEBUG_SERVER;                      //Enable verbose debug output
+    $mail->isSMTP();                                            //Send using SMTP
+    $mail->Host       = 'smtp.gmail.com';                     //Set the SMTP server to send through
+    $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
+    $mail->Username   = 'ihelpuw@gmail.com';                     //SMTP username
+    $mail->Password   = 'wwapbtqnlnzhzhqp';                               //SMTP password
+    $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
+    $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
-    // Настройки вашей почты
-    $mail->Host       = 'smtp.gmail.com'; // SMTP сервера вашей почты
-    $mail->Username   = 'vassatret@gmail.com'; // Логин на почте
-    $mail->Password   = 'yvpirgdhfnwxcmxr'; // Пароль на почте
-    $mail->SMTPSecure = 'ssl';
-    $mail->Port       = 465;
-    $mail->setFrom('vassatret@gmail.com', 'vassatret@gmail.com'); // Адрес самой почты и имя отправителя
+    //Recipients
+    $mail->setFrom('ihelpuw@gmail.com', 'Елена Рязанова');
+    $mail->addAddress('ihelpuw@gmail.com');     //Add a recipient //Name is optional
 
-    // Получатель письма
-    $mail->addAddress('olena@ihelpukrainianwomen.com');  
-
-
-    // Прикрипление файлов к письму
-// if (!empty($file['name'][0])) {
-//     for ($ct = 0; $ct < count($file['tmp_name']); $ct++) {
-//         $uploadfile = tempnam(sys_get_temp_dir(), sha1($file['name'][$ct]));
-//         $filename = $file['name'][$ct];
-//         if (move_uploaded_file($file['tmp_name'][$ct], $uploadfile)) {
-//             $mail->addAttachment($uploadfile, $filename);
-//             $rfile[] = "Файл $filename прикреплён";
-//         } else {
-//             $rfile[] = "Не удалось прикрепить файл $filename";
-//         }
-//     }   
-// }
 // Отправка сообщения
 $mail->isHTML(true);
 $mail->Subject = $title;
@@ -77,3 +66,4 @@ else {$result = "error";}
 
 // Отображение результата
 header('Location: index.html');
+?>
