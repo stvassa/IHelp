@@ -41,7 +41,9 @@ try {
 
     //Recipients
     $mail->setFrom('ihelpuw@gmail.com', 'Елена Рязанова');
-    $mail->addAddress('ihelpuw@gmail.com');     //Add a recipient //Name is optional
+    $mail->addAddress('olena@ihelpukrainianwomen.com');    //Add a recipient 
+    $mail->addAddress('contact@bijb.study');   //Name is optional
+       
 
 // Отправка сообщения
 $mail->isHTML(true);
