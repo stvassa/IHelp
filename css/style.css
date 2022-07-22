@@ -109,7 +109,7 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  left: 0;
+  left: -20px;
   z-index: 10;
 }
 
@@ -117,7 +117,7 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  right: 0;
+  right: -20px;
   z-index: 10;
 }
 
@@ -137,8 +137,24 @@
   z-index: 10;
 }
 
+@media (max-width: 768px) {
+  .news-button-prev {
+    position: absolute;
+    top: 25%;
+    left: -10px;
+    z-index: 10;
+  }
+
+  .news-button-next {
+    position: absolute;
+    top: 25%;
+    right: -10px;
+    z-index: 10;
+  }
+}
+
 .card-video {
-  max-height: 450px;
+  max-height: 520px;
   border-radius: 0.5rem;
   margin-bottom: 20px;
 }
@@ -146,7 +162,7 @@
 .news-img {
   max-width: 560px;
   width: 100%;
-  max-height: 420px;
+  max-height: 520px;
 }
 
 .news-img__top {
