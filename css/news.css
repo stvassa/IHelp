@@ -1,0 +1,18 @@
+.wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.achievement-img {
+  max-width: 420px;
+  width: 100%;
+}
+
+.achievement-accordion {
+  border-radius: 1rem;
+}
+
+.achievement-video {
+  max-height: 420px;
+  border-radius: 0.5rem;
+}
