@@ -9,6 +9,7 @@
 
 .achievement-img {
   max-width: 420px;
+  min-width: 180px;
   width: 100%;
 }
 

@@ -44,7 +44,7 @@
   <link rel="stylesheet" href="css/variables.css">
   <link rel="stylesheet" href="css/settings.css">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/stories.css">
+  <link rel="stylesheet" href="css/news.css">
 
   <!-- js -->
   <script defer src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
@@ -97,7 +97,7 @@
             </li> -->
           </ul>
           <!-- ./nav-bar -->
-          <div class="m-2 text-center">
+          <div class="m-2 text-center d-md-block">
             <!-- PayPal form -->
             <form name="formPaypal" action="https://www.paypal.com/donate" method="post" target="_top">
               <input type="hidden" name="hosted_button_id" value="5UYQ6SRMXK5U6" />
@@ -114,22 +114,27 @@
   <main class="mt-5">
     <div class="p-5 p-md-5 mb-6 text-white rounded bg-primary">
       <div class="container">
-        <div class="row py-5">
-          <div class="col-lg-8 py-5">
-            <h1 class="display-3 fw-bold">Initiative
-              <span class="text-warning">I&nbsp;help Ukrainian women</span>
-              was&nbsp;launched In&nbsp;April&nbsp;2022
-            </h1>
-            <p class="lead my-3 text-secondary">During the existence of the initiative, various things were collected
-              and
-              donated
-              to help mothers with children who left Ukraine because of the war. Here you can read about all the
-              activities
-              and our achievements</p>
-          </div>
-          <div class="col-lg-4 text-center">
-            <img src="" alt="">
-          </div>
+        <div class="col-lg-8 pt-5">
+          <h1 class="display-3 fw-bold">Initiative
+            <span class="text-warning">I&nbsp;help Ukrainian women</span>
+            was&nbsp;launched In&nbsp;April&nbsp;2022
+          </h1>
+          <p class="lead my-3 text-secondary">During the existence of the initiative, various things were collected
+            and
+            donated
+            to help mothers with children who left Ukraine because of the war. Here you can read about all the
+            activities
+            and our achievements</p>
+        </div>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-start justify-content-center mt-5 mb-4 mb-lg-3">
+          <form name="formPaypal" action="https://www.paypal.com/donate" method="post" target="_top">
+            <input type="hidden" name="hosted_button_id" value="5UYQ6SRMXK5U6" />
+            <input type="submit" class="btn btn-light btn-lg px-5 me-md-2 fw-bold" value="Donate&nbsp;now">
+            <!--input id="paypalBtn" type="image" src="/images/donate.png" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" /-->
+            <img alt="" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+          </form>
+          <button type="button" class="btn btn-outline-light btn-lg px-3 me-md-2 fw-bold" data-bs-toggle="modal"
+            data-bs-target="#canHelpModal">Provide&nbsp;assistance</button>
         </div>
       </div>
     </div>
@@ -155,7 +160,7 @@
 
 
     <section class="pt container" id="achievements">
-      <h2 class="display-2 fw-bold lh-2 text-center mb-5"><span class="square">Achievements</span></h2>
+      <h2 class="display-2 fw-bold lh-2 text-center mb-5"><span class="square">Our</span> results & news</h2>
       <div class="achievements-items wrapper">
         <div class="shadow mb-5 p-3 achievement-accordion">
           <div class="achievement-text">
@@ -371,14 +376,14 @@
               </div>
             </div>
           </div>
-          <div class="row mt-2 collapse" id="panel3">
+          <div class="row mt-2 collapse text-center" id="panel3">
             <div class="col text-center">
               <video class="achievement-video" src="assets/video/IMG_0276.MOV" controls></video>
             </div>
             <div class="col">
               <img class="achievement-img m-1" src="assets/img/news/photo_2022-07-16_15-07-51.jpg" alt="">
             </div>
-            <div class="col"></div>
+            <div class="col d-none d-md-block"></div>
           </div>
           <button class="btn btn-outline-primary mt-1 achievements-btn" type="button" data-bs-toggle="collapse"
             data-bs-target="#panel3" aria-expanded="false" aria-controls="panel3">Read more</button>
