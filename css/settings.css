@@ -192,3 +192,8 @@ a {
 .modal-header {
   border-bottom: none;
 }
+
+.message {
+  margin-top: 200px;
+  margin-bottom: 200px;
+}

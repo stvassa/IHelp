@@ -1026,7 +1026,6 @@
 
   <!-- ./page content -->
 
-  <!-- Modal I need help -->
   <div class="modal fade" id="needHelpModal" tabindex="-1" aria-labelledby="needHelpModal" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -1035,18 +1034,19 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <form action="uasend.php" method="POST">
+          <form _action="uasend.php" method="POST">
             <div class="mb-3">
               <label for="name1" class="form-label">Ім'я та Прізвище*</label>
-              <input type="text" name="name" class="form-control" id="name1" required>
+              <input type="text" name="name" class="form-control" id="name1" placeholder="Ім'я та Прізвище" required>
             </div>
             <div class="mb-3">
               <label for="Email1" class="form-label">Е-мейл*</label>
-              <input type="email" class="form-control" id="Email1" aria-describedby="Email1" name="email" required>
+              <input type="email" class="form-control" id="Email1" aria-describedby="Email1" name="email"
+                placeholder="name@mail.com" required>
             </div>
             <div class="mb-3">
               <label for="Phone1" class="form-label">Телефон*</label>
-              <input type="tel" class="form-control" id="Phone1" name="phone" required>
+              <input type="tel" class="form-control" id="Phone1" name="phone" placeholder="+38 077 777 77 77" required>
             </div>
             <div class="mb-3">
               <label for="custom1" class="form-label">Громадянство*</label>
@@ -1068,19 +1068,19 @@
                 <option value="other">інше</option>
               </select>
               <div class="mb-3 mt-2" id="show">
-                <label for="exampleFormControlTextarea1" class="form-label">Напишіть інший варінт:</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="text"></textarea>
+                <label for="message3" class="form-label">Напишіть інший варінт:</label>
+                <textarea class="form-control" id="message3" rows="3" name="text"></textarea>
               </div>
             </div>
 
             <div class="col mb-3">* Обов'язково для заповнення</div>
             <div class="mb-3 form-check">
-              <input type="checkbox" class="form-check-input" value="" id="exampleCheck1" required>
-              <label class="form-check-label" for="exampleCheck1">Я даю згоду на обробку персональних
+              <input type="checkbox" class="form-check-input" value="" id="Check2" required>
+              <label class="form-check-label" for="Check2">Я даю згоду на обробку персональних
                 данних</label>
             </div>
             <div class="text-end">
-              <button type="submit" class="btn btn-outline-primary px-4 px-lg-5">Send</button>
+              <button onclick="fEmail(2)" _type="submit" class="btn btn-outline-primary px-4 px-lg-5">Send</button>
             </div>
           </form>
         </div>
@@ -1098,7 +1098,7 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <form action="send.php" method="POST" class="col my-3">
+          <form _action="send.php" method="POST" class="col my-3">
             <div class="row mb-3">
               <label for="inputName3" class="col-sm-2 col-form-label text-dark">Name*</label>
               <div class="col">
@@ -1122,15 +1122,15 @@
             <div class="row mb-3">
               <div class="col">
                 <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="gridCheck1" required>
-                  <label class="form-check-label text-dark" for="gridCheck1">
+                  <input class="form-check-input" type="checkbox" value="" id="Check3" required>
+                  <label class="form-check-label text-dark" for="Check3">
                     I agree to the data processing
                   </label>
                 </div>
               </div>
             </div>
             <div class="text-end">
-              <button type="submit" class="btn btn-primary px-4 px-lg-5">Send</button>
+              <button onclick="fEmail(3)" _type="submit" class="btn btn-primary px-4 px-lg-5">Send</button>
             </div>
           </form>
         </div>
