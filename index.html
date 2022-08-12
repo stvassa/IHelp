@@ -70,36 +70,52 @@
         </button>
 
         <div class="navbar-collapse collapse order-lg-3" id="navbarCollapse" style="transition: 0.8s;">
-          <ul class="navbar-nav me-auto mb-md-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#aboutus">About&nbsp;Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link " aria-current="page" href="#news">News</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#partners">Partners</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#contacts">Contacts</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="news.html"> Our&nbsp;results</a>
-            </li>
-            <!-- <li class="dropdown nav-item language">
+          <ul class="navbar-nav me-auto mb-md-0 align-items-lg-center">
+            <li class="dropdown language me-2">
               <button class="language-btn d-flex dropdown-toggle align-items-center" type="button"
                 id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                <a href="index.html" class="nav-link active">Home</a>
+              </button>
+              <ul style="width: 25%; background: rgba(255, 255, 255, 0.9);" class="dropdown-menu border-0"
+                aria-labelledby="dropdownMenuButton1">
+                <li>
+                  <a class="dropdown-item" aria-current="page" href="#aboutus">About&nbsp;Us</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" aria-current="page" href="#team">Our&nbsp;team</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" aria-current="page" href="#help">Our&nbsp;help</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" aria-current="page" href="#news">News</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" aria-current="page" href="#partners">Partners</a>
+                </li>
+                <li class="nav-item">
+                  <a class="dropdown-item" aria-current="page" href="#contacts">Contacts</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item pt-2">
+              <a class="nav-link" aria-current="page" href="news.html">Our&nbsp;results&nbsp;&&nbsp;news</a>
+            </li>
+            <li class="dropdown nav-item language me-3">
+              <button class="language-btn d-flex dropdown-toggle align-items-center" type="button"
+                id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
                 <svg class="d-none d-lg-block ms-lg-3 icon icon-light">
                   <use xlink:href="assets/icons/icons.svg#ri_translate-2"></use>
                 </svg>
                 <span class="d-block d-lg-none">Language</span>
               </button>
-              <ul style="width: 25%;" class="dropdown-menu bg-secondary border-0" aria-labelledby="dropdownMenuButton1">
-                <li><a class="dropdown-item" href="#">Українська</a></li>
-                <li><a class="dropdown-item" href="#">English</a></li>
-                <li><a class="dropdown-item" href="#">日本</a></li>
+              <ul style="width: 25%; background: rgba(255, 255, 255, 0.9);" class="dropdown-menu border-0"
+                aria-labelledby="dropdownMenuButton2">
+                <li><a class="dropdown-item" href="uk/index.html">Українська</a></li>
+                <!-- <li><a class="dropdown-item" href="#">English</a></li> -->
+                <!-- <li><a class="dropdown-item" href="#">日本</a></li> -->
               </ul>
-            </li> -->
+            </li>
           </ul>
           <!-- ./nav-bar -->
           <div class="m-2 text-center">
@@ -144,8 +160,8 @@
     </div>
 
 
-    <section class="text-center pt" id="aboutus">
-      <div class="py-5 mb-6">
+    <section class="text-center">
+      <div class="py-5 mb-6 pt" id="aboutus">
         <h2 class="display-2 fw-bold lh-2 mt-3 mb-4"><span class="square">Why</span> do we help</h2>
         <div class="container row align-items-center justify-content-between mx-auto mb-4">
           <div class="col-xl-6">
@@ -297,7 +313,7 @@
       </div>
 
 
-      <div class=" container text-center pt mb-6">
+      <div class=" container text-center pt mb-6" id="team">
         <h2 class="display-2 fw-bold lh-2 mb-4">Meet our <span class="square">team</span></h2>
         <div class="row justify-content-between">
           <div class="col-md-6 col-lg-3 my-5 text-start order-lg-2">
@@ -773,10 +789,7 @@
       </div> -->
 
     </section>
-
     <!-- ./news -->
-
-
 
     <section class="text-center pt mb-6" id="partners">
       <h2 class="display-2 fw-bold lh-2 text-center mb-4">Our <span class="square">partners</span></h2>
