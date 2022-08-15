@@ -45,6 +45,11 @@
   <link rel="stylesheet" href="../css/settings.css">
   <link rel="stylesheet" href="../css/style.css">
 
+  <!-- language -->
+  <link rel="alternate" hreflang="en" href="https://ihelpukrainianwomen.com/">
+  <link rel="alternate" hreflang="uk" href="https://ihelpukrainianwomen.com/uk/">
+  <link rel="alternate" hreflang="ru" href="https://ihelpukrainianwomen.com/uk/">
+
   <!-- js -->
   <script defer src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script defer src="../js/swiperslider.js"></script>
@@ -59,7 +64,7 @@
         <a class="navbar-brand py-2" href="#">
           <img class="navbar-brand__thumb p-0" src="../../assets/icons/logo.png" alt="Logo: IHelpUkrainianWomen">
         </a>
-        <div class="col-3 col-sm-9 col-lg-6 text-light navbar-brand__text">
+        <div class="col-3 col-sm-8 col-lg-4 text-light navbar-brand__text">
           Aid&nbsp;fund&nbsp;for&nbsp;Ukrainian&nbsp;women
           <br>Initiative&nbsp;of&nbsp;Julia&nbsp;Bernatska, owner&nbsp;of&nbsp;BIJB's&nbsp;Kyiv's&nbsp;office.</div>
 
@@ -69,12 +74,12 @@
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="navbar-collapse collapse order-lg-3" id="navbarCollapse" style="transition: 0.8s;">
+        <div class="navbar-collapse collapse order-lg-3 mb-4 mb-lg-0" id="navbarCollapse" style="transition: 0.8s;">
           <ul class="navbar-nav me-auto mb-md-0 align-items-lg-center">
             <li class="dropdown language me-2">
               <button class="language-btn d-flex dropdown-toggle align-items-center" type="button"
                 id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                <a href="uk/index.html" class="nav-link active">Головна</a>
+                <a href="index.html" class="nav-link active">Головна</a>
               </button>
               <ul style="width: 25%; background: rgba(255, 255, 255, 0.9);" class="dropdown-menu border-0"
                 aria-labelledby="dropdownMenuButton1">
@@ -82,13 +87,13 @@
                   <a class="dropdown-item" aria-current="page" href="#aboutus">Про&nbsp;Нас</a>
                 </li>
                 <li>
-                  <a class="dropdown-item" aria-current="page" href="#howhelp">Яка&nbsp;допомога</a>
+                  <a class="dropdown-item" aria-current="page" href="#howhelp">Види&nbsp;допомоги</a>
                 </li>
                 <li>
                   <a class="dropdown-item" aria-current="page" href="#team">Наша&nbsp;команда</a>
                 </li>
                 <li>
-                  <a class="dropdown-item" aria-current="page" href="#help">Кому&nbsp;допомогли</a>
+                  <a class="dropdown-item" aria-current="page" href="#help">Вже&nbsp;допомогли</a>
                 </li>
                 <li>
                   <a class="dropdown-item" aria-current="page" href="#news">Новини</a>
@@ -102,34 +107,27 @@
               </ul>
             </li>
             <li class="nav-item pt-2">
-              <a class="nav-link" href="news.html">Наші&nbsp;досягнення&nbsp;та&nbsp;новини</a>
+              <a class="nav-link" href="news.html">Досягнення&nbsp;та&nbsp;новини</a>
             </li>
-            <li class="dropdown nav-item language me-3">
+            <li class="dropdown nav-item language me-3 mb-3 mb-lg-0">
               <button class="language-btn d-flex dropdown-toggle align-items-center" type="button"
                 id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
-                <svg class="d-none d-lg-block ms-lg-3 icon icon-light">
+                <svg class=" ms-lg-3 icon icon-light">
                   <use xlink:href="../../assets/icons/icons.svg#ri_translate-2"></use>
                 </svg>
-                <span class="d-block d-lg-none">Мова</span>
               </button>
               <ul style="width: 25%; background: rgba(255, 255, 255, 0.9);" class="dropdown-menu border-0"
                 aria-labelledby="dropdownMenuButton2">
-                <!-- <li><a class="dropdown-item" href="#">Українська</a></li> -->
                 <li><a class="dropdown-item" href="../index.html">English</a></li>
                 <!-- <li><a class="dropdown-item" href="#">日本</a></li> -->
               </ul>
             </li>
           </ul>
           <!-- ./nav-bar -->
-          <div class="m-2 text-center">
-            <!-- PayPal form -->
-            <form name="formPaypal" action="https://www.paypal.com/donate" method="post" target="_top">
-              <input type="hidden" name="hosted_button_id" value="5UYQ6SRMXK5U6" />
-              <input type="submit" class="btn btn-light my-1 me-2" value="Допомогти">
-
-            </form>
+          <div class="mx-2 text-center">
+            <button type="button" class="btn btn-warning" data-bs-toggle="modal"
+              data-bs-target="#needHelpModal">Мені&nbsp;потрібна&nbsp;допомога</button>
           </div>
-          <!-- ./PayPal button -->
         </div>
       </div>
     </nav>
@@ -151,7 +149,7 @@
             <!-- PayPal form -->
             <form name="formPaypal" action="https://www.paypal.com/donate" method="post" target="_top">
               <input type="hidden" name="hosted_button_id" value="5UYQ6SRMXK5U6" />
-              <input type="submit" class="btn btn-primary btn-lg px-4 me-md-2 fw-bold" value="Допомогти">
+              <input type="submit" class="btn btn-primary px-4 me-md-2 fw-bold" value="Задонатити">
             </form>
           </div>
         </div>
@@ -166,7 +164,6 @@
           <div class="col-xl-6">
             <img class="aboutus-img align-items-start justify-content-center" src="../assets/img/Julia2.png"
               alt="Julia Bernatska">
-            <!-- <video class="card-video mt-2" src="../assets/video" controls></video> -->
           </div>
           <div class="col-xl-6 text-start">
             Юлія Бернацька, власниця&nbsp;<a href="http://bi-jb.com/">Київського&nbsp;офісу&nbsp;BIJB</a>,
@@ -244,7 +241,6 @@
                   Наш фонд допомагає українським жінкам, які були змушені&nbsp;залишити свій дім і&nbsp;рятувати своїх
                   дітей.
                   Наша допомога адресна – жінки-заявники отримають матеріальну допомогу на&nbsp;платіжні картки.</p>
-                <!-- <a href="#" class="btn btn-outline-primary">Допомогти</a> -->
               </div>
             </div>
           </div>
@@ -259,7 +255,6 @@
                   та&nbsp;їх
                   дітей.
                   Це важкі часи, їм потрібно&nbsp;налаштуватися&nbsp;на&nbsp;нові умови та&nbsp;заспокоїтися.</p>
-                <!-- <a href="#" class="btn btn-outline-primary">Допомогти</a> -->
               </div>
             </div>
           </div>
@@ -275,16 +270,15 @@
                   потребують швидко отримати нові&nbsp;навички, щоб&nbsp;знайти роботу. Оплатити&nbsp;сертифікат&nbsp;на
                   &nbsp;навчання може кожен бажаючий.
                   Нові знання допоможуть їм&nbsp;якнайшвидше&nbsp;знайти&nbsp;роботу.</p>
-                <!-- <a href="#" class="btn btn-outline-primary">Допомогти</a> -->
               </div>
             </div>
           </div>
           <div class="d-grid gap-2 d-md-flex justify-content-center mt-5 mb-4 mb-lg-3">
             <form name="formPaypal" action="https://www.paypal.com/donate" method="post" target="_top">
               <input type="hidden" name="hosted_button_id" value="5UYQ6SRMXK5U6" />
-              <input type="submit" class="btn btn-primary btn-lg px-5 me-md-2 fw-bold" value="Допомогти">
+              <input type="submit" class="btn btn-primary px-5 me-md-2 fw-bold" value="Задонатити">
             </form>
-            <button type="button" class="btn btn-outline-primary btn-lg px-3 me-md-2 fw-bold" data-bs-toggle="modal"
+            <button type="button" class="btn btn-outline-primary px-3 me-md-2 fw-bold" data-bs-toggle="modal"
               data-bs-target="#canHelpModal">Запропонувати&nbsp;допомогу</button>
           </div>
         </div>
@@ -440,9 +434,9 @@
       </div>
 
       <div class="d-grid gap-2 d-md-flex justify-content-center mt-5 mb-4 mb-lg-3">
-        <button type="button" class="btn btn-warning btn-lg px-5 me-md-2 fw-bold" data-bs-toggle="modal"
+        <button type="button" class="btn btn-warning px-5 me-md-2" data-bs-toggle="modal"
           data-bs-target="#needHelpModal">Мені&nbsp;потрібна&nbsp;допомога</button>
-        <button type="button" class="btn btn-outline-primary btn-lg px-3 me-md-2 fw-bold" data-bs-toggle="modal"
+        <button type="button" class="btn btn-outline-primary px-3 me-md-2" data-bs-toggle="modal"
           data-bs-target="#canHelpModal">Запропонувати&nbsp;допомогу</button>
       </div>
     </section>
@@ -468,11 +462,11 @@
                   <div class="text-end">
                     <p id="data">19.07.2022</p>
                   </div>
-                  <p>У квітні 2022 року наша компанія BIJB запустила ініціативу&nbsp;#Ihelpukrainianwomen,&nbsp;основну
+                  <p>У квітні 2022 року наша компанія BIJB запустила ініціативу&nbsp;#Ihelpukrainianwomen,&nbsp;основною
                     метою&nbsp;якоЇ була&nbsp;реальна допомога&nbsp;українським жінкам,&nbsp;вимушеним&nbsp;тікати
-                    від&nbsp;війна.
+                    від&nbsp;війни.
                     Один&nbsp;із&nbsp;головних
-                    напрямків &nbsp;допомага тим дівчатам, які&nbsp;хочуть&nbsp;змінити спеціальність і&nbsp;почати
+                    напрямків&nbsp;допомагати тим дівчатам, які&nbsp;хочуть&nbsp;змінити спеціальність і&nbsp;почати
                     працювати&nbsp;в&nbsp;ІТ.
                     Наразі&nbsp;ми&nbsp;маємо
                     &nbsp;можливість&nbsp;допомогти досвідченим IT-фахівцям (як дівчатам, так і хлопцям), що залишилися
@@ -497,7 +491,7 @@
                   <p>Якщо у вас є&nbsp;бажання та&nbsp;можливість, тоді пишіть на&nbsp;мейл <a
                       href="mailto:contact@bijb.study">contact@bijb.study</a></p>
                   <div class="text-end my-2">
-                    <a href="uk/news.html" class="btn btn-outline-primary">Більше новин</a>
+                    <a href="news.html" class="btn btn-outline-primary">Більше новин</a>
                   </div>
                 </div>
               </div>
@@ -519,7 +513,7 @@
                     Завдяки&nbsp;вкладу&nbsp;<span class="fw-bold">Сансіро Фудзімото, українці в&nbsp;Токіо
                       та&nbsp;Чіба отримали 20
                       нових
-                      велосипедів</span>.</p>
+                      велосипедів.</span></p>
                   <p>В Японії велосипеди є&nbsp;основним видом&nbsp;транспорту для&nbsp; багато жителів.
                     &nbsp;ставлення
                     щодо велосипедів&nbsp;серйозне.
@@ -529,7 +523,7 @@
                   <p>Це&nbsp;настільки&nbsp;потрібний і&nbsp;важливий для нас транспорт,&nbsp;що
                     деякі&nbsp;прибули сьогодні ще до&nbsp;відкриття&nbsp;магазину. 😄</p>
                   <div class="text-end my-2">
-                    <a href="uk/news.html" class="btn btn-outline-primary">Більше новин</a>
+                    <a href="news.html" class="btn btn-outline-primary">Більше новин</a>
                   </div>
                 </div>
               </div>
@@ -543,12 +537,12 @@
                     alt="Spech in the Japanese parliament">
                 </div>
                 <div class="col-lg-6">
-                  <h6 class="fs-5 fw-bold">Зустрічі в&nbsp;японському&nbsp;парламенті</h6>
+                  <h6 class="fs-5 fw-bold">Зустрічі в&nbsp;Японському&nbsp;парламенті</h6>
                   <div class="text-end">
                     <p id="data">29.06.2022</p>
                   </div>
                   <ol>
-                    <p>Обговорювали потреби&nbsp;українців та&nbsp;що <span class="fw-bold">уряд може&nbsp;зробити
+                    <p>Обговорювали потреби&nbsp;українців, та&nbsp;що <span class="fw-bold">уряд може&nbsp;зробити
                         для&nbsp;нас</span>. Чим вони
                       &nbsp;готові&nbsp;допомогти прямо&nbsp;зараз:
                     </p>
@@ -562,7 +556,7 @@
                     <li class="mb-2">Та багато іншого</li>
                   </ol>
                   <div class="text-end my-2">
-                    <a href="uk/news.html" class="btn btn-outline-primary">Більше новин</a>
+                    <a href="news.html" class="btn btn-outline-primary">Більше новин</a>
                   </div>
                 </div>
               </div>
@@ -575,12 +569,12 @@
                   <img class="news-img" src="../assets/img/news/RomanKotik.jpg" alt="Roman Kotik, psychotherapist">
                 </div>
                 <div class="col-lg-6">
-                  <h6 class="fs-5 fw-bold">Повний курс&nbsp;терапії,&nbsp;безкоштовно
+                  <h6 class="fs-5 fw-bold">Повний&nbsp;курс&nbsp;терапії, безкоштовно
                   </h6>
                   <div class="text-end">
                     <p id="data">17.06.2022</p>
                   </div>
-                  <p class="">Важко&nbsp;змінити своє&nbsp;життя&nbsp;зараз. Це завжди проходить зі страхом,
+                  <p>Важко&nbsp;змінити своє&nbsp;життя&nbsp;зараз. Це завжди проходить зі страхом,
                     емоційним&nbsp;стрессом.
                   </p>
                   <p>У кожного свої&nbsp;проблеми. Деякі&nbsp;бояться&nbsp;виїжджати з&nbsp;бомбардованого міста,
@@ -597,7 +591,7 @@
                     на&nbsp;цю&nbsp;тему.
                   </p>
                   <div class="text-end my-2">
-                    <a href="uk/news.html" class="btn btn-outline-primary">Більше новин</a>
+                    <a href="news.html" class="btn btn-outline-primary">Більше новин</a>
                   </div>
                 </div>
               </div>
@@ -610,23 +604,23 @@
                   <img class="news-img news-img__center" src="../assets/img/news/cream.jpg" alt="cream">
                 </div>
                 <div class="col-lg-6">
-                  <h6 class="fs-5 fw-bold">100 тюбиків&nbsp;крему&nbsp;поїдуть до&nbsp;дівчат
+                  <h6 class="fs-5 fw-bold">100 тюбиків&nbsp;крему поїдуть&nbsp;до&nbsp;дівчат
                   </h6>
                   <div class="text-end">
                     <p id="data">10.06.2022</p>
                   </div>
-                  <p>В&nbsp;Японії сонце дуже сильне. Необхідність&nbsp;захищатися від його променів, носити
-                    певний&nbsp;стиль&nbsp;одягу, та&nbsp;наносити&nbsp;захист. Він
-                    повинен
+                  <p>В&nbsp;Японії сонце дуже сильне. Постійно є&nbsp;необхідність&nbsp;захищатися від його променів,
+                    носити
+                    певний&nbsp;стиль&nbsp;одягу, та&nbsp;наносити&nbsp;додатковий захист. Він&nbsp;повинен
                     бути&nbsp;багатофакторним.</p>
-                  <p>Одним&nbsp;із&nbsp;кроків є&nbsp;обов'язкове&nbsp;користування&nbsp;сонцезахисним кремом.
+                  <p>Одним&nbsp;із&nbsp;кроків є&nbsp;обов'язкове користування сонцезахисним кремом.
                     Завдяки&nbsp;&nbsp;<span class="fw-bold">Намбі Мічіо</span> наші&nbsp;дівчата отримали
                     можливість&nbsp;користуватись такими
                     креми. Нам дали <span class="fw-bold">100&nbsp;тюбиків&nbsp;крему</span>. Ми
                     роздамо&nbsp;дівчатам
                     у&nbsp;Токіо, Тіба, Мітака.</p>
                   <div class="text-end my-2">
-                    <a href="uk/news.html" class="btn btn-outline-primary">Більше новин</a>
+                    <a href="news.html" class="btn btn-outline-primary">Більше новин</a>
                   </div>
                 </div>
               </div>
@@ -649,26 +643,25 @@
                     #Ihelpukrainianwomen <span class="fw-bold">Софія&nbsp;Білая</span>. Вона&nbsp;вестиме <span
                       class="fw-bold">дві безкоштовні&nbsp;англійські
                       мовні&nbsp;групи</span> для&nbsp;тих дівчат, які&nbsp;хочуть&nbsp;працювати
-                    у&nbsp;сфері&nbsp;ІТ&nbsp;.
-                    <blockquote class="fst-italic m-3">
-                      <p>
-                        <img src="../assets/icons/quotes-open.svg" alt="цитата">
-                        Привіт всім. Мене звуть Софія. Мені&nbsp;31. І&nbsp;я&nbsp;мама&nbsp;двох чудовий синів.
-                        Також я допомогаю людям&nbsp;закохатися в&nbsp;англійську
-                        мову, знаю&nbsp;як&nbsp;навчитися цьому&nbsp;швидко та&nbsp;ефективно.</p>
-                      <p>Пропоную поглиблене вивчення&nbsp;англійської мови з ентузіазмом і&nbsp;позитивом. Це&nbsp;те,
-                        що&nbsp;вирізняє мене
-                        як&nbsp;вчителя
-                        від
-                        курсів
-                        і&nbsp;програм.
-                        <img src="../assets/icons/quotes-close.svg" alt="quote">
-                      </p>
-                    </blockquote>
+                    у&nbsp;сфері&nbsp;ІТ&nbsp;.</p>
+                  <blockquote class="fst-italic m-3">
+                    <p>
+                      <img src="../assets/icons/quotes-open.svg" alt="цитата">
+                      Привіт всім. Мене звуть Софія. Мені&nbsp;31. І&nbsp;я&nbsp;мама&nbsp;двох чудовий синів.
+                      Також я допомогаю людям&nbsp;закохатися в&nbsp;англійську
+                      мову, знаю&nbsp;як&nbsp;навчитися цьому&nbsp;швидко та&nbsp;ефективно.</p>
+                    <p>Пропоную поглиблене вивчення&nbsp;англійської мови з ентузіазмом і&nbsp;позитивом. Це&nbsp;те,
+                      що&nbsp;вирізняє мене
+                      як&nbsp;вчителя
+                      від
+                      курсів і&nbsp;програм.
+                      <img src="../assets/icons/quotes-close.svg" alt="quote">
+                    </p>
+                  </blockquote>
 
-                    <div class="text-end my-2">
-                      <a href="uk/news.html" class="btn btn-outline-primary">Більше новин</a>
-                    </div>
+                  <div class="text-end my-2">
+                    <a href="news.html" class="btn btn-outline-primary">Більше новин</a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -711,7 +704,7 @@
                         alt="quote"></p>
                   </blockquote>
                   <div class="text-end my-2">
-                    <a href="uk/news.html" class="btn btn-outline-primary">Більше новин</a>
+                    <a href="news.html" class="btn btn-outline-primary">Більше новин</a>
                   </div>
                 </div>
               </div>
@@ -735,17 +728,6 @@
 
       </div>
 
-
-      <!--  <div class="d-grid gap-2 d-md-flex justify-content-center mt-5 mb-4 mb-lg-3">
-        <button type="button" class="btn btn-primary btn-lg px-4 me-md-2 fw-bold">Допомогти</button>
-        <button type="button" class="btn btn-outline-primary btn-lg px-4 me-md-2 fw-bold" data-bs-toggle="modal"
-          data-bs-target="#canHelpModal">Other&nbsp;help</button>
-      </div>
-
-      <div class="mx-2 text-center my-3">
-        <button class="btn btn-primary btn-lg fw-bold my-1 me-2" type="button">Допомогти</button>
-        <button class="btn btn-outline-primary my-1 me-2" type="button">Read&nbsp;more</button>
-      </div> -->
 
     </section>
     <!-- ./news -->
@@ -778,10 +760,10 @@
       <div class="d-grid gap-2 d-md-flex justify-content-center mt-5 mb-4 mb-lg-3">
         <form name="formPaypal" action="https://www.paypal.com/donate" method="post" target="_top">
           <input type="hidden" name="hosted_button_id" value="5UYQ6SRMXK5U6" />
-          <input type="submit" class="btn btn-primary btn-lg px-5 me-md-2 fw-bold" value="Допомогти">
+          <input type="submit" class="btn btn-primary px-5 me-md-2 fw-bold" value="Задонатити">
 
         </form>
-        <button type="button" class="btn btn-outline-primary btn-lg px-3 me-md-2 fw-bold" data-bs-toggle="modal"
+        <button type="button" class="btn btn-outline-primary px-3 me-md-2" data-bs-toggle="modal"
           data-bs-target="#canHelpModal">Запропонувати&nbsp;допомогу</button>
       </div>
 
@@ -973,9 +955,9 @@
                 <textarea class="form-control" rows="3" id="validationTextarea" name="message" required></textarea>
               </div>
             </div>
-            <div class="row text-light offset-sm-2 mb-3">*Обов'язково для заповнення</div>
+            <div class="row text-light offset-sm-3 mb-3">*Обов'язково для заповнення</div>
             <div class="row mb-3">
-              <div class="col-sm-10 offset-sm-2">
+              <div class="col-sm-10 offset-sm-3">
                 <div class="form-check">
                   <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
                   <label class="form-check-label text-light" for="invalidCheck2">

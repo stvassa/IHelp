@@ -45,10 +45,15 @@
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="../css/news.css">
 
+  <!-- language -->
+  <link rel="alternate" hreflang="en" href="https://ihelpukrainianwomen.com/news.html/">
+  <link rel="alternate" hreflang="uk" href="https://ihelpukrainianwomen.com/uk/news.html/">
+  <link rel="alternate" hreflang="ru" href="https://ihelpukrainianwomen.com/uk/news.html/">
+
   <!-- js -->
   <script defer src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script defer src="../js/swiperslider.js"></script>
-  <script defer src="../js/main.js"></script>
+  <script defer src="../js/mainua.js"></script>
 
 </head>
 
@@ -59,7 +64,7 @@
         <a class="navbar-brand py-2" href="#">
           <img class="navbar-brand__thumb p-0" src="../assets/icons/logo.png" alt="Logo: IHelpUkrainianWomen">
         </a>
-        <div class="col-3 col-sm-9 col-lg-6 text-light navbar-brand__text">
+        <div class="col-3 col-sm-8 col-lg-4 text-light navbar-brand__text">
           Aid&nbsp;fund&nbsp;for&nbsp;Ukrainian&nbsp;women
           <br>Initiative&nbsp;of&nbsp;Julia&nbsp;Bernatska, owner&nbsp;of&nbsp;BIJB's&nbsp;Kyiv's&nbsp;office.</div>
 
@@ -69,26 +74,23 @@
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="navbar-collapse collapse order-lg-3" id="navbarCollapse" style="transition: 0.8s;">
+        <div class="navbar-collapse collapse order-lg-3 mb-4 mb-lg-0" id="navbarCollapse" style="transition: 0.8s;">
           <ul class="navbar-nav me-auto mb-md-0 align-items-lg-center">
             <li class="nav-item pt-2">
               <a class="nav-link" href="index.html">Головна</a>
             </li>
             <li class="nav-item pt-2">
-              <a class="nav-link active" aria-current="page"
-                href="news.html">Наші&nbsp;досягнення&nbsp;та&nbsp;новини</a>
+              <a class="nav-link active" href="news.html">Досягнення&nbsp;та&nbsp;новини</a>
             </li>
             <li class="dropdown nav-item language me-3">
               <button class="language-btn d-flex dropdown-toggle align-items-center" type="button"
                 id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
-                <svg class="d-none d-lg-block ms-lg-3 icon icon-light">
+                <svg class="ms-lg-3 icon icon-light">
                   <use xlink:href="../assets/icons/icons.svg#ri_translate-2"></use>
                 </svg>
-                <span class="d-block d-lg-none">Language</span>
               </button>
               <ul style="width: 25%; background: rgba(255, 255, 255, 0.9);" class="dropdown-menu border-0"
                 aria-labelledby="dropdownMenuButton2">
-                <!-- <li><a class="dropdown-item" href="#">Українська</a></li> -->
                 <li><a class="dropdown-item" href="../news.html">English</a></li>
                 <!-- <li><a class="dropdown-item" href="#">日本</a></li> -->
               </ul>
@@ -96,15 +98,9 @@
           </ul>
           <!-- ./nav-bar -->
           <div class="m-2 text-center">
-            <!-- PayPal form -->
-            <form name="formPaypal" action="https://www.paypal.com/donate" method="post" target="_top">
-              <input type="hidden" name="hosted_button_id" value="5UYQ6SRMXK5U6" />
-              <input type="submit" class="btn btn-light my-1 me-2" value="Donate&nbsp;now">
-              <!--input id="paypalBtn" type="image" src="/images/donate.png" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" /-->
-              <!-- <img alt="" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" /> -->
-            </form>
+            <button type="button" class="btn btn-warning" data-bs-toggle="modal"
+              data-bs-target="#needHelpModal">Мені&nbsp;потрібна&nbsp;допомога</button>
           </div>
-          <!-- ./PayPal button -->
         </div>
       </div>
     </nav>
@@ -114,71 +110,69 @@
     <div class="p-5 p-md-5 mb-6 text-white rounded bg-primary">
       <div class="container">
         <div class="col-lg-8 pt-5">
-          <h1 class="display-3 fw-bold">Initiative
-            <span class="text-warning">I&nbsp;help Ukrainian women</span>
-            was&nbsp;launched In&nbsp;April&nbsp;2022
+          <h1 class="display-3 fw-bold">Ініціатива
+            <span class="text-warning">Я&nbsp;допомогаю Українкам</span>
+            була&nbsp;заснована в&nbsp;квітні&nbsp;2022
           </h1>
-          <p class="lead my-3 text-secondary">During the existence of the initiative, various things were collected
-            and
-            donated
-            to help mothers with children who left Ukraine because of the war. Here you can read about all the
-            activities
-            and our achievements</p>
+          <p class="lead my-3 text-secondary">За час існування&nbsp;ініціативи було&nbsp;отримано і&nbsp;відправлено
+            різні
+            речі
+            на&nbsp;допомогу матерям з&nbsp;дітьми, які&nbsp;покинули Україну через війну. Тут&nbsp;ви&nbsp;можете
+            ознайомитися з&nbsp;усією&nbsp;нашою&nbsp;діяльносттю та&nbsp;досягненнями</p>
         </div>
         <div class="d-grid gap-2 d-md-flex justify-content-md-start justify-content-center mt-5 mb-4 mb-lg-3">
           <form name="formPaypal" action="https://www.paypal.com/donate" method="post" target="_top">
             <input type="hidden" name="hosted_button_id" value="5UYQ6SRMXK5U6" />
-            <input type="submit" class="btn btn-light btn-lg px-5 me-md-2 fw-bold" value="Donate&nbsp;now">
-            <!--input id="paypalBtn" type="image" src="/images/donate.png" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" /-->
-            <img alt="" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+            <input type="submit" class="btn btn-light px-5 me-md-2 fw-bold" value="Задонатити">
           </form>
-          <button type="button" class="btn btn-outline-light btn-lg px-3 me-md-2 fw-bold" data-bs-toggle="modal"
-            data-bs-target="#canHelpModal">Provide&nbsp;assistance</button>
+          <button type="button" class="btn btn-outline-light px-3 me-md-2 fw-bold" data-bs-toggle="modal"
+            data-bs-target="#canHelpModal">Запропонувати&nbsp;допомогу</button>
         </div>
       </div>
     </div>
 
     <div class="container row text-center mt-5 mb-6 mx-auto">
       <div class="col m-2">
-        <p class="fw-bold display-6 text-primary">50+&nbsp;people</p>
-        <p>received advice on employment, housing and moving to different countries of the world</p>
+        <p class="fw-bold display-6 text-primary">50+&nbsp;жінок</p>
+        <p>отримали поради з &nbsp;працевлаштування, розміщення та &nbsp;переізду в&nbsp;різні &nbsp;країни світу</p>
       </div>
       <div class="col m-2">
-        <p class="fw-bold display-6 text-primary">23&nbsp;people</p>
-        <p>trained and got a new profession - Power BI analyst</p>
+        <p class="fw-bold display-6 text-primary">23&nbsp;жінки</p>
+        <p>здобули нову професію - Power BI analyst</p>
       </div>
       <div class="col m-2">
-        <p class="fw-bold display-6 text-primary">4&nbsp;families</p>
-        <p>received financial support</p>
+        <p class="fw-bold display-6 text-primary">4&nbsp;родини</p>
+        <p>отримали фінансову&nbsp;підтримку</p>
       </div>
       <div class="col m-2">
-        <p class="fw-bold display-6 text-primary">35&nbsp;items</p>
-        <p>donated to refugees in Japan, such as bicycles, tablets, irons</p>
+        <p class="fw-bold display-6 text-primary">35&nbsp;речей</p>
+        <p>були подаровані біженцям в&nbsp;Японії: велосипеди, планшети, праски</p>
       </div>
     </div>
 
 
     <section class="pt container" id="achievements">
-      <h2 class="display-2 fw-bold lh-2 text-center mb-5"><span class="square">Our</span> results & news</h2>
+      <h2 class="display-2 fw-bold lh-2 text-center mb-5"><span class="square">Наші</span> досягнення та&nbsp;новини
+      </h2>
       <div class="achievements-items wrapper">
         <div class="shadow mb-5 p-3 achievement-accordion">
           <div class="achievement-text">
             <div class="row align-items-start">
               <div class="card-body col-lg-6">
-                <h3 class="fw-bold">Employment in&nbsp;Japan</h3>
+                <h3 class="fw-bold">Працевлаштування в&nbsp;Японії</h3>
                 <div class="date text-end pb-3">19.07.2022</div>
-                <p>In April 2022, our company BIJB launched the&nbsp;#Ihelpukrainianwomen initiative, the&nbsp;main
-                  goal of&nbsp;which was&nbsp;real help to&nbsp;Ukrainian women who&nbsp;were&nbsp;forced to&nbsp;flee
-                  the&nbsp;war.</p>
-                <p> One&nbsp;of&nbsp;the&nbsp;main
-                  directions
-                  is&nbsp;helping those girls who&nbsp;want to&nbsp;change their major and&nbsp;start
-                  working&nbsp;in&nbsp;IT.</p>
-                <p>Now&nbsp;we&nbsp;have
-                  an&nbsp;opportunity to&nbsp;help experienced IT specialists (both girls and boys) remaining
-                  in&nbsp;Ukraine
-                  with&nbsp;remote employment.</p>
-                <p>The&nbsp;work is&nbsp;sufficient.</p>
+                <p>У квітні 2022 року наша компанія BIJB запустила ініціативу&nbsp;#Ihelpukrainianwomen,&nbsp;основну
+                  метою&nbsp;якоЇ була&nbsp;реальна допомога&nbsp;українським жінкам,&nbsp;вимушеним&nbsp;тікати
+                  від&nbsp;війни.</p>
+                <p>Один&nbsp;із&nbsp;головних
+                  напрямків&nbsp;допомагати тим дівчатам, які&nbsp;хочуть&nbsp;змінити спеціальність і&nbsp;почати
+                  працювати&nbsp;в&nbsp;ІТ.</p>
+                <p>Наразі&nbsp;ми&nbsp;маємо
+                  &nbsp;можливість&nbsp;допомогти досвідченим IT-фахівцям (як дівчатам, так і хлопцям), що
+                  залишилися
+                  в&nbsp;Україні
+                  з&nbsp;дистанційним працевлаштуванням.</p>
+                <p>Роботи&nbsp;достатньо.</p>
               </div>
               <div class="col-lg-6 text-center">
                 <video class="achievement-video" src="../assets/video/IMG_0114.MOV" controls></video>
@@ -187,47 +181,44 @@
           </div>
           <div class="row mt-2 collapse" id="panel7">
             <div class="col-lg-6">
-              <p class="fw-bold">Mandatory conditions of employment:</p>
+              <p class="fw-bold">Обов'язкові умови працевлаштування:</p>
               <ol>
-                <li>Experience in&nbsp;web development from&nbsp;3&nbsp;years</li>
-                <li>Free communication in&nbsp;English</li>
+                <li>Досвід&nbsp;веб-розробки від&nbsp;3&nbsp;років</li>
+                <li>Вільне володіння&nbsp;англійською</li>
               </ol>
-              <p>I want to say that hiring workers, who do&nbsp;not live in&nbsp;Japan and do&nbsp;not&nbsp;even
-                speak
-                Japanese, is&nbsp;a&nbsp;new
-                experience for&nbsp;Japan. There&nbsp;is&nbsp;such a&nbsp;practice here,
-                but&nbsp;to&nbsp;a&nbsp;very
-                limited
-                extent.</p>
-              <p>Therefore,
-                the&nbsp;fact that <span class="fw-bold">we were able to&nbsp;agree on&nbsp;such
-                  opportunities</span> for&nbsp;Ukrainian
-                developers is&nbsp;a&nbsp;big
-                step in&nbsp;the&nbsp;beginning of&nbsp;the&nbsp;development of&nbsp;relations between Ukraine
-                and&nbsp;Japan.
+              <p>Я хочу додати, що наймання працівників, які&nbsp;не живуть у&nbsp;Японії і навіть не&nbsp;говорять
+                Японською,&nbsp;це&nbsp;новий
+                досвід для&nbsp;Японії. Тут&nbsp;є&nbsp;така&nbsp;практика,
+                але&nbsp;дуже на обмеженому рівні.
+                Тому&nbsp;те, що <span class="fw-bold">ми змогли&nbsp;домовитися щодо&nbsp;таких
+                  можливостей</span> для&nbsp;українських
+                розробників є&nbsp;великим
+                кроком для&nbsp;розвитку&nbsp;відносин між Україною
+                і&nbsp;Японії.
               </p>
-              <p>If you have the&nbsp;desire and&nbsp;the&nbsp;opportunity, then write to&nbsp;the&nbsp;mail <a
+              <p>Якщо у вас є&nbsp;бажання та&nbsp;можливість, тоді пишіть на&nbsp;мейл <a
                   href="mailto:contact@bijb.study">contact@bijb.study</a></p>
             </div>
           </div>
           <button class="btn btn-outline-primary mt-1 achievements-btn" type="button" data-bs-toggle="collapse"
-            data-bs-target="#panel7" aria-expanded="false" aria-controls="panel7">Read more</button>
+            data-bs-target="#panel7" aria-expanded="false" aria-controls="panel7">Читати більше</button>
         </div>
 
         <div class="shadow mb-5 p-3 achievement-accordion">
           <div class="achievement-text">
             <div class="row align-items-start">
               <div class="card-body col-lg-6">
-                <h3 class="fw-bold">New bicycles for&nbsp;Ukrainians</h3>
+                <h3 class="fw-bold">Нові велосипеди для&nbsp;українців</h3>
                 <div class="date text-end pb-3">15.07.2022</div>
-                <p>Japan is very supportive of&nbsp;Ukrainians both at&nbsp;the&nbsp;state and&nbsp;private levels.
-                  Thanks&nbsp;to&nbsp;the&nbsp;efforts
-                  of&nbsp;<span class="fw-bold">Sanshiro Fujimoto, Ukrainians in&nbsp;Tokyo and&nbsp;Chiba received 20
-                    new
-                    bicycles.</span></p>
-                <p>In Japan, bicycles are&nbsp;the&nbsp;main form of&nbsp;transportation for&nbsp; many residents.
-                  The&nbsp;attitude
-                  towards bicycles is&nbsp;serious.</p>
+                <p>Японія дуже підтримує&nbsp;українцок як на&nbsp;державному, так&nbsp;і&nbsp;на&nbsp;приватному
+                  рівнях.
+                  Завдяки&nbsp;вкладу&nbsp;<span class="fw-bold">Сансіро Фудзімото, українці в&nbsp;Токіо
+                    та&nbsp;Чіба отримали 20
+                    нових
+                    велосипедів.</span></p>
+                <p>В Японії велосипеди є&nbsp;основним видом&nbsp;транспорту для&nbsp; багато жителів.
+                  &nbsp;ставлення
+                  щодо велосипедів&nbsp;серйозне.</p>
               </div>
               <div class="col-lg-6 text-lg-end">
                 <img class="achievement-img m-1" src="../assets/img/news/bicycle2.jpg" alt="">
@@ -236,11 +227,11 @@
           </div>
           <div class="row mt-2 collapse" id="panel6">
             <div class="col-lg-6">
-              <p>They&nbsp;are&nbsp;registered and&nbsp;issued numbers like a&nbsp;car. The police can stop you
-                at&nbsp;any&nbsp;time and&nbsp;check if&nbsp;you
-                really&nbsp;are&nbsp;the&nbsp;owner of&nbsp;the&nbsp;bike.</p>
-              <p>This&nbsp;is&nbsp;such a&nbsp;necessary and&nbsp;important transport for us&nbsp;that
-                some&nbsp;arrived today even before the&nbsp;opening of&nbsp;the&nbsp;store😄</p>
+              <p>Їх&nbsp;реєструють і&nbsp;видають номери, як&nbsp;на&nbsp;машини. Поліція може вас зупинити
+                у&nbsp;будь-який&nbsp;час і&nbsp;перевірте, чи&nbsp;ви
+                дійсно&nbsp;є&nbsp;власником&nbsp;велосипеда.</p>
+              <p>Це&nbsp;настільки&nbsp;потрібний і&nbsp;важливий для нас транспорт,&nbsp;що
+                деякі&nbsp;прибули сьогодні ще до&nbsp;відкриття&nbsp;магазину. 😄</p>
             </div>
             <div class="col">
               <img class="achievement-img m-1" src="../assets/img/news/bicycle.jpg" alt="">
@@ -250,31 +241,28 @@
             </div>
           </div>
           <button class="btn btn-outline-primary mt-1 achievements-btn" type="button" data-bs-toggle="collapse"
-            data-bs-target="#panel6" aria-expanded="false" aria-controls="panel6">Read more</button>
+            data-bs-target="#panel6" aria-expanded="false" aria-controls="panel6">Читати більше</button>
         </div>
 
         <div class="shadow mb-5 p-3 achievement-accordion">
           <div class="achievement-text">
             <div class="row align-items-start">
               <div class="card-body col-lg-6">
-                <h3 class="fw-bold">Meetings in&nbsp;the&nbsp;Japanese&nbsp;parliament</h3>
+                <h3 class="fw-bold">Зустрічі в&nbsp;Японському&nbsp;парламенті</h3>
                 <div class="date text-end pb-3" id="data">29.06.2022</div>
                 <ol>
-                  <p>Discussed the needs of&nbsp;Ukrainians and&nbsp;what more <span class="fw-bold">the&nbsp;government
-                      can&nbsp;do&nbsp;for&nbsp;us</span>. What they
-                    are&nbsp;ready to&nbsp;help
-                    in&nbsp;addition
-                    right&nbsp;now:
+                  <p>Обговорювали потреби&nbsp;українців, та&nbsp;що <span class="fw-bold">уряд може&nbsp;зробити
+                      для&nbsp;нас</span>. Чим вони
+                    &nbsp;готові&nbsp;допомогти прямо&nbsp;зараз:
                   </p>
-                  <li class="mb-2">Specialised
-                    kindergartens for&nbsp;disabled children</li>
-                  <li class="mb-2">Kindergartens for&nbsp;children of&nbsp;all&nbsp;ages during school
-                    holidays</li>
-                  <li class="mb-2">Fresh vegetables (pulses)</li>
-                  <li class="mb-2">Bicycles</li>
-                  <li class="mb-2">Special help for&nbsp;mothers with small
-                    children (each case is&nbsp;considered separately)</li>
-                  <li class="mb-2"> And more</li>
+                  <li class="mb-2">Спеціалізований
+                    дитячі садки для&nbsp;дітей-інвалідів</li>
+                  <li class="mb-2">Дитячі садки для&nbsp;дітей&nbsp;будь-якого&nbsp;віку під час навчання та свят</li>
+                  <li class="mb-2">Свіжі овочі (бобові)</li>
+                  <li class="mb-2">Велосипеди</li>
+                  <li class="mb-2">Особлива допомога для&nbsp;матерів з малими
+                    дітьми (кожен випадок&nbsp;розглядається окремо)</li>
+                  <li class="mb-2">Та багато іншого</li>
                 </ol>
               </div>
               <div class="col-lg-6 text-lg-end">
@@ -307,22 +295,24 @@
             </div>
           </div>
           <button class="btn btn-outline-primary mt-1 achievements-btn" type="button" data-bs-toggle="collapse"
-            data-bs-target="#panel5" aria-expanded="false" aria-controls="panel5">Read more</button>
+            data-bs-target="#panel5" aria-expanded="false" aria-controls="panel5">Читати більше</button>
         </div>
 
         <div class="shadow mb-5 p-3 achievement-accordion">
           <div class="achievement-text">
             <div class="row align-items-start">
               <div class="card-body col-lg-6">
-                <h3 class="fw-bold">Full course of&nbsp;therapy, free&nbsp;of&nbsp;charge</h3>
+                <h3 class="fw-bold">Повний&nbsp;курс&nbsp;терапії, безкоштовно</h3>
                 <div class="date text-end pb-3">17.06.2022</div>
-                <p class="">It's hard to&nbsp;change your&nbsp;life&nbsp;now. It always comes with fear, stress,
-                  emotional&nbsp;distress.
+                <p>Важко&nbsp;змінити своє&nbsp;життя&nbsp;зараз. Це завжди проходить зі страхом,
+                  емоційним&nbsp;стрессом.
                 </p>
-                <p>Everyone has their own&nbsp;problems. Some are&nbsp;afraid of&nbsp;leaving the&nbsp;bombarded city,
-                  some
-                  send&nbsp;a&nbsp;CV, some&nbsp;cannot adapt in&nbsp;a&nbsp;new city, some miss home a&nbsp;lot,
-                  some&nbsp;feel&nbsp;guilty.
+                <p>У кожного свої&nbsp;проблеми. Деякі&nbsp;бояться&nbsp;виїжджати
+                  з&nbsp;бомбардованого міста,
+                  деякі
+                  надіслати&nbsp;CV, деякі&nbsp;не можуть адаптуватися в&nbsp;новому місті, деякі дуже
+                  сумують
+                  за&nbsp;домом, або&nbsp;почуваються&nbsp;винними.
                 </p>
               </div>
               <div class="col-lg-6 text-lg-end">
@@ -332,37 +322,35 @@
           </div>
           <div class="row mt-2 collapse" id="panel4">
             <div class="col">
-              <p>We&nbsp;want to&nbsp;help&nbsp;you cope with&nbsp;fear and&nbsp;anxiety.
-                As part of&nbsp;#Ihelpukrainianwomen, we&nbsp;have partnered with&nbsp;a&nbsp;psychologist
-                who has&nbsp;agreed
-                to&nbsp;take <span class="fw-bold">3&nbsp;people for&nbsp;a&nbsp;full course of&nbsp;therapy,
-                  free&nbsp;of&nbsp;charge</span>.
-                Here is a&nbsp;<a href=" https://vebcon.customer.smartsender.eu/lp/gPM28tuF">
-                  link</a> to&nbsp;a&nbsp;free webinar on&nbsp;the&nbsp;subject.
-              </p>
+              <p>Ми&nbsp;хочемо&nbsp;допомогти&nbsp;впоратися зі&nbsp;страхом і&nbsp;тривогою.
+                У рамках&nbsp;#Ihelpukrainianwomen ми&nbsp;співпрацювали з&nbsp;психологом що&nbsp;погодився
+                &nbsp;взяти <span class="fw-bold">3&nbsp;людей на&nbsp;повний курс&nbsp;терапії,
+                  безкоштовно&nbsp;&nbsp;</span>.
+                Тут&nbsp;<a href=" https://vebcon.customer.smartsender.eu/lp/gPM28tuF">посилання
+                  на&nbsp;безкоштовний вебінар</a>
+                на&nbsp;цю&nbsp;тему. </p>
             </div>
           </div>
           <button class="btn btn-outline-primary mt-1 achievements-btn" type="button" data-bs-toggle="collapse"
-            data-bs-target="#panel4" aria-expanded="false" aria-controls="panel4">Read more</button>
+            data-bs-target="#panel4" aria-expanded="false" aria-controls="panel4">Читати більше</button>
         </div>
 
         <div class="shadow mb-5 p-3 achievement-accordion">
           <div class="achievement-text">
             <div class="row align-items-start">
               <div class="card-body col-lg-6">
-                <h3 class="fw-bold">100 tubes of&nbsp;cream will&nbsp;go&nbsp;to&nbsp;girls</h3>
+                <h3 class="fw-bold">100 тюбиків&nbsp;крему поїдуть&nbsp;до&nbsp;дівчат</h3>
                 <div class="date text-end pb-3">10.06.2022</div>
-                <p class="">The sun is very strong inJ&nbsp;apan. The need to&nbsp;protect yourself from its rays
-                  determines the&nbsp;style of&nbsp;clothing, behavior and&nbsp;methods of&nbsp;protection. Protection
-                  must
-                  be&nbsp;multifactorial.</p>
-                <p>One&nbsp;of&nbsp;the&nbsp;steps is&nbsp;the&nbsp;mandatory use of&nbsp;sunscreen.
-                  Thanks&nbsp;to&nbsp;<span class="fw-bold">Namba Michiyo</span>, our&nbsp;girls have
-                  the&nbsp;opportunity to&nbsp;use such
-                  creams. We were given <span class="fw-bold">100&nbsp;tubes of&nbsp;cream</span>. Packing packages,
-                  we
-                  will distribute to&nbsp;girls
-                  in&nbsp;Tokyo, Chiba, Mitaka.</p>
+                <p>В&nbsp;Японії сонце дуже сильне. Постійно є&nbsp;необхідність&nbsp;захищатися від його променів,
+                  носити
+                  певний&nbsp;стиль&nbsp;одягу, та&nbsp;наносити&nbsp;додатковий захист. Він&nbsp;повинен
+                  бути&nbsp;багатофакторним.</p>
+                <p>Одним&nbsp;із&nbsp;кроків є&nbsp;обов'язкове користування сонцезахисним кремом.
+                  Завдяки&nbsp;&nbsp;<span class="fw-bold">Намбі Мічіо</span> наші&nbsp;дівчата отримали
+                  можливість&nbsp;користуватись такими
+                  креми. Нам дали <span class="fw-bold">100&nbsp;тюбиків&nbsp;крему</span>. Ми
+                  роздамо&nbsp;дівчатам
+                  у&nbsp;Токіо, Тіба, Мітака.</p>
               </div>
               <div class="col-lg-6 text-lg-end">
                 <img class="achievement-img m-1" src="../assets/img/news/cream.jpg" alt="">
@@ -379,34 +367,27 @@
             <div class="col d-none d-md-block"></div>
           </div>
           <button class="btn btn-outline-primary mt-1 achievements-btn" type="button" data-bs-toggle="collapse"
-            data-bs-target="#panel3" aria-expanded="false" aria-controls="panel3">Read more</button>
+            data-bs-target="#panel3" aria-expanded="false" aria-controls="panel3">Читати більше</button>
         </div>
 
         <div class="shadow mb-5 p-3 achievement-accordion">
           <div class="achievement-text">
             <div class="row align-items-start">
               <div class="card-body col-lg-6">
-                <h3 class="fw-bold">Free English language groups for&nbsp;girls</h3>
+                <h3 class="fw-bold">Безкоштовні курси англійської мови для&nbsp;дівчат</h3>
                 <div class="date text-end pb-3">06.06.2022</div>
-                <p class="">Introducing an&nbsp;excellent English&nbsp;teacher and&nbsp;our&nbsp;volunteer
-                  at&nbsp;initiative
-                  #Ihelpukrainianwomen <span class="fw-bold">Sofia&nbsp;Belaya</span>.
-                  <p>She&nbsp;will hold <span class="fw-bold">two
-                      free&nbsp;English
-                      language&nbsp;groups</span> for&nbsp;those girls who&nbsp;want to&nbsp;work
-                    in&nbsp;the&nbsp;IT&nbsp;field.</p>
-                  <blockquote class="fst-italic m-3">
-                    <p>
-                      <img src="../assets/icons/quotes-open.svg" alt="quote">
-                      Hello everybody. My name is Sophia. I&nbsp;am&nbsp;31. And&nbsp;I&nbsp;am&nbsp;a&nbsp;mother
-                      of&nbsp;two
-                      wonderful
-                      sons.
-                      Also I
-                      help
-                      people to fall in&nbsp;love with the&nbsp;English
-                      language, &nbsp; well&nbsp;as to&nbsp;learn it&nbsp;quickly and&nbsp;effectively.</p>
-                </p>
+                <p>Представляємо&nbsp;чудового&nbsp;вчителя англійської мови та&nbsp;нашого&nbsp;волонтера
+                  з&nbsp;ініціативи
+                  #Ihelpukrainianwomen <span class="fw-bold">Софія&nbsp;Білая</span>. Вона&nbsp;вестиме <span
+                    class="fw-bold">дві безкоштовні&nbsp;англійські
+                    мовні&nbsp;групи</span> для&nbsp;тих дівчат, які&nbsp;хочуть&nbsp;працювати
+                  у&nbsp;сфері&nbsp;ІТ&nbsp;.</p>
+                <blockquote class="fst-italic m-3">
+                  <p><img src="../assets/icons/quotes-open.svg" alt="quote">
+                    Всім привіт. Мене звати Софія. Мені 31. І я матуся двох чудових синів. А ще я допомагаю людям
+                    полюбити англійську мову, а також швидко та ефективно вивчити її. Я пропоную глибоке вивчення
+                    англійської мови з ентузіазмом та позитивом. Саме це відрізняє мене як репетитора від курсів та
+                    програм, які допомагають вивчити мову. </p>
                 </blockquote>
               </div>
               <div class="col-lg-6 text-lg-end">
@@ -417,13 +398,22 @@
           <div class="row mt-2 collapse" id="panel2">
             <div class="col-lg-6">
               <blockquote class="fst-italic m-3">
-                <p>I offer in-depth study of&nbsp;the&nbsp;English
-                  language with enthusiasm and&nbsp;positivity. This&nbsp;is&nbsp;what distinguishes
-                  me
-                  as&nbsp;a&nbsp;tutor
-                  from
-                  courses
-                  and&nbsp;programs that help to&nbsp;learn a&nbsp;language.
+                <p></p>
+                <p>Я закінчила Дніпропетровський національний університет, факультет англійської філології. Займаюсь
+                  репетиторством близько 7 років. Деякий час мала досвід роботи з технічною англійською (переклади
+                  документації, переговорів з іноземними колегами, підготовка презентацій англійською мовою). Зараз
+                  викладаю англійську мову онлайн. Працюю індивідуально з кожним. Підбираю програму, підручники тощо.
+                  Для кожного свого студента я - і викладач, і друг. Моя мета навчити англійській якогомога більше
+                  людей. </p>
+                <p>Що може дати вам англійська? Свободу. Можливість вільно подорожувати або працювати у міжнародних
+                  компаніях. Мої студенти легко здають іспити в школах та університетах, проходять ЗНО та інші іспити,
+                  знаходять роботу і успішно проходять співбесіду на переїзд до англомовних країн.</p>
+                <p>Я завжди починаю навчання з ваших цілей. Наприклад, якщо я працюю з людиною, яка хоче працювати в
+                  IT-сфері, разом ми вивчаємо англійську від специфічної термінології до написання свого резюме, листів
+                  тощо. Я обов’язково проводжу коригування у вивченні граматики, розмовної мови, без цього зараз ніяк.
+                </p>
+                <p>Загалом, «золоті гори» я обіцяти не буду. Але якщо комусь цікаво і дійсно потрібна ефективна допомога
+                  у вивченні англійської мови, звертайтесь. Буду рада допомогти.
                   <img src="../assets/icons/quotes-close.svg" alt="quote">
                 </p>
               </blockquote>
@@ -433,27 +423,25 @@
             </div>
           </div>
           <button class="btn btn-outline-primary mt-1 achievements-btn" type="button" data-bs-toggle="collapse"
-            data-bs-target="#panel2" aria-expanded="false" aria-controls="panel2">Read more</button>
+            data-bs-target="#panel2" aria-expanded="false" aria-controls="panel2">Читати більше</button>
         </div>
 
         <div class="shadow mb-5 p-3 achievement-accordion">
           <div class="achievement-text">
             <div class="row align-items-start">
               <div class="card-body col-lg-6">
-                <h3 class="fw-bold">Cost-free webinar for&nbsp;those who&nbsp;want to&nbsp;start working
-                  in&nbsp;IT</h3>
+                <h3 class="fw-bold">Безкоштовний вебінар для&nbsp;тих, хто&nbsp;хоче&nbsp;розпочати роботу
+                  в&nbsp;ІТ</h3>
                 <div class="date text-end pb-3">06.05.2022</div>
-                <p class="">As part of our #Ihelpukrainianwomen&nbsp;initiative, a&nbsp;cost-free webinar
-                  is&nbsp;being
-                  held for&nbsp;those who&nbsp;want to&nbsp;change their profession and&nbsp;start working in&nbsp;IT.
+                <p class="">У рамках нашої ініціативи #Ihelpukrainianwomen&nbsp;безкоштовний вебінар проводився
+                  для&nbsp;тих, хто&nbsp;бажає&nbsp;змінити професію та&nbsp;розпочати роботу в&nbsp;ІТ.
                 </p>
-                <p>Let's
-                  talk to
-                  a&nbsp;smart person. For the girls, a&nbsp;welcome gift from our speaker - hi&nbsp;is&nbsp;ready
-                  to&nbsp;give
-                  mentoring for&nbsp;the&nbsp;girls and&nbsp;help them in&nbsp;their IT&nbsp;careers.</p>
-                <p class="fw-bold">20 April &bull; 15.00 (by Kiev) &bull; Live online</p>
-                <p class="fw-bold">Free of charge</p>
+                <p>Давайтепоспілкуємося з
+                  &nbsp;розумною людиною. Дівчатам&nbsp;вітальний подарунок від нашого спікера - Привіт&nbsp;готовий
+                  &nbsp;давати
+                  наставництво для&nbsp;дівчат і&nbsp;допомогти їм в&nbsp;ІТ&nbsp;кар'єрі.</p>
+                <p class="fw-bold">20 квітня &bull; 15.00 (по Києву) &bull; Прямий ефір</p>
+                <p class="fw-bold">Безкоштовно</p>
               </div>
               <div class="col-lg-6 text-lg-end">
                 <img class="achievement-img m-1" src="../assets/img/news/webinar.jpg" alt="">
@@ -463,19 +451,24 @@
           <div class="row mt-2 collapse" id="panel1">
             <div class="col">
               <blockquote class="fst-italic m-3">
-                <p><img src="../assets/icons/quotes-open.svg" alt="quote">Hello everyone,
-                  My name is <span class="fw-bold">Nikita Barsukov</span>. I am a programmer-analyst, 15 years in
-                  IT. Now, work at
-                  the Danish pharmaceutical company Novo Nordisk, I commend for the development of analytical
-                  solutions for the analysis and planning of clinical follow-up.</p>
-                <p>At the webinar, we will talk about how to start your career in IT, and specifically in analytics.
-                  Let's talk about those who go to IT vzagali, and to analytics - the whole possibility is real for
-                  a person from any previous profession.<img src="../assets/icons/quotes-close.svg" alt="quote"></p>
+                <p><img src="../assets/icons/quotes-open.svg" alt="quote">Всім привіт, мене звати <span
+                    class="fw-bold">Нікіта Барсуков.</span> Я програміст-аналітік, в айті 15 рoків. Зараз працюю в
+                  данській фармацевтичній компанії Ново Нордіск, відповідаю за розробку аналітичних рішень для аналізу
+                  та планування кліничних досліджень. Живу в Копенгагені вже майже десять років із дружиною, трьома
+                  синамі та лисою кішкою, достатньо щоб вивчити данську та навчитися готувати смачні данські
+                  смореброди.</p>
+                <p>На вебінарі ми будемо говорити про те, як почати свою кар’єру в айті, і конкретно в аналітиці. Я сам
+                  вперше почав програмувати в 25 років із дипломом "Управління персоналу" харківського політеху. Будемо
+                  розмовляти про те, чому перейті в айті взагалі, і в аналітику - цілком реальна можливість для людини
+                  із будь-якою попередньою професією. Окремо я розповім про загальні поради для тих, хто вирішив почати
+                  кар’єру в айті, та декілька практичних порад, яких мені дуже бракувало в свій час, коли я сам робив
+                  свої перші кроки в індустрії.
+                  <img src="../assets/icons/quotes-close.svg" alt="quote"></p>
               </blockquote>
             </div>
           </div>
           <button class="btn btn-outline-primary mt-1 achievements-btn" type="button" data-bs-toggle="collapse"
-            data-bs-target="#panel1" aria-expanded="false" aria-controls="panel1">Read more</button>
+            data-bs-target="#panel1" aria-expanded="false" aria-controls="panel1">Читати більше</button>
         </div>
 
 
@@ -491,11 +484,11 @@
       <section class="border-bottom" id="contacts">
         <div class="row align-items-start justify-content-md-start">
           <div class="col-md-3 col mt-0 mb-3 me-3">
-            <h2 class="fw-bold text-light fz-md">Contacts</h2>
+            <h2 class="fw-bold text-light fz-md">Контакти</h2>
           </div>
 
           <div class="col-lg-3 my-3 me-3">
-            <h5 class="lh-2 mb-3 text-light">You can contact us in any convenient way:</h5>
+            <h5 class="lh-2 mb-3 text-light">Ви можете зв'язатися з нами у будь-якийспосіб:</h5>
             <div class="my-2">
               <a class="text-light" href="tel:+17326250554">
                 <svg class="icon icon-light me-2">
@@ -522,44 +515,43 @@
           </div>
 
           <form action="send.php" method="POST" class="col-lg-5 my-3">
-            <h5 class="lh-2 mb-3 text-light">You can send in the form any ideas for help or
-              cooperation:</h5>
+            <h5 class="lh-2 mb-3 text-light">Є ідеї допомоги чи кооперації? Напишіть нам:</h5>
             <div class="row mb-3">
-              <label for="validationDefault01" class="col-sm-2 col-form-label text-light">Name*</label>
-              <div class="col-sm-10">
+              <label for="validationDefault01" class="col-sm-3 col-form-label text-light">Ім'я*</label>
+              <div class="col-sm-9">
                 <input type="text" class="form-control" id="validationDefault01" name="name" required>
               </div>
             </div>
             <div class="row mb-3">
-              <label for="validationDefault02" class="col-sm-2 col-form-label text-light">Email*</label>
-              <div class="col-sm-10">
+              <label for="validationDefault02" class="col-sm-3 col-form-label text-light">Пошта*</label>
+              <div class="col-sm-9">
                 <input type="email" class="form-control" id="validationDefault02" name="email" required>
               </div>
             </div>
             <div class="row mb-3">
-              <label for="validationTextarea" class="col-sm-2 col-form-label text-light">Message*</label>
-              <div class="col-sm-10">
+              <label for="validationTextarea" class="col-sm-3 col-form-label text-light">Повідомлення*</label>
+              <div class="col-sm-9">
                 <textarea class="form-control" rows="3" id="validationTextarea" name="message" required></textarea>
               </div>
             </div>
-            <div class="row text-light offset-sm-2 mb-3">* Required to fill</div>
+            <div class="row text-light offset-sm-3 mb-3">*Обов'язково для заповнення</div>
             <div class="row mb-3">
-              <div class="col-sm-10 offset-sm-2">
+              <div class="col-sm-10 offset-sm-3">
                 <div class="form-check">
                   <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
                   <label class="form-check-label text-light" for="invalidCheck2">
-                    I agree to the data processing
+                    Я даю згоду на обробку персональних данних
                   </label>
                 </div>
               </div>
             </div>
             <div class="text-end">
-              <button type="submit" class="btn btn-outline-light px-4 px-lg-5">Send</button>
+              <button type="submit" class="btn btn-outline-light px-4 px-lg-5">Відправити</button>
             </div>
           </form>
         </div>
       </section>
-      <div class="my-3"><span class="text-light">©All rights reserved 2022 #Ihelpukranianwoman</span></div>
+      <div class="my-3"><span class="text-light">©Всі права захищені 2022 #Ihelpukranianwoman</span></div>
     </div>
   </footer>
 
@@ -634,43 +626,43 @@
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title text-primary" id="exampleModalLabel2">Write your variant of help</h5>
+          <h5 class="modal-title text-primary" id="exampleModalLabel2">Напишіть Ваш варінт допомоги</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
           <form action="send.php" method="POST" class="col my-3">
             <div class="row mb-3">
-              <label for="inputName3" class="col-sm-2 col-form-label text-dark">Name*</label>
+              <label for="inputName3" class="col-sm-2 col-form-label text-dark">Ім'я*</label>
               <div class="col">
                 <input type="text" class="form-control" id="inputName3" name="name" required>
               </div>
             </div>
             <div class="row mb-3">
-              <label for="inputEmail3" class="col-sm-2 col-form-label text-dark">Email*</label>
+              <label for="inputEmail3" class="col-sm-2 col-form-label text-dark">Пошта*</label>
               <div class="col">
                 <input type="email" class="form-control" id="inputEmail3" name="email" required>
               </div>
             </div>
             <div class="row mb-3">
-              <label for="validationTextarea2" class="col-sm-3 col-form-label text-dark">Message*</label>
+              <label for="validationTextarea2" class="col-sm-3 col-form-label text-dark">Повідомлення*</label>
               <div class="col-sm-9">
                 <textarea class="form-control" id="validationTextarea2" rows="3" placeholder="" name="message"
                   required></textarea>
               </div>
             </div>
-            <div class="col mb-3">* Required to fill</div>
+            <div class="col mb-3">*Обов'язково для заповнення</div>
             <div class="row mb-3">
               <div class="col">
                 <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="gridCheck1" required>
-                  <label class="form-check-label text-dark" for="gridCheck1">
-                    I agree to the data processing
+                  <input class="form-check-input" type="checkbox" value="" id="Check3" required>
+                  <label class="form-check-label text-dark" for="Check3">
+                    я погоджуюсь на обробку данних
                   </label>
                 </div>
               </div>
             </div>
             <div class="text-end">
-              <button type="submit" class="btn btn-primary px-4 px-lg-5">Send</button>
+              <button type="submit" class="btn btn-primary px-4 px-lg-5">Відправити</button>
             </div>
           </form>
         </div>
