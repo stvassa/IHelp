@@ -1,9 +1,13 @@
-.language-btn {
+.menu-item {
   padding-left: 0;
   padding-top: 7px;
   background-color: transparent;
   color: var(--light);
   border: none;
+}
+
+.menu-item:hover {
+  color: var(--accent);
 }
 
 .navbar-brand__thumb {

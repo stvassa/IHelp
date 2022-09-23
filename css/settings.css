@@ -52,6 +52,10 @@ blockquote {
   }
 }
 
+.navbar-collapse {
+  flex-grow: 0;
+}
+
 /* style element for h2 */
 .square {
   position: relative;
@@ -151,6 +155,14 @@ a {
 
 .navbar-brand__text {
   font-size: 0.75rem;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #ffffff !important;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: var(--accent) !important;
 }
 
 .icon {

@@ -61,30 +61,35 @@
   <header>
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-primary p-0" id="navbar">
       <div class="container">
-        <a class="navbar-brand py-2" href="#">
-          <img class="navbar-brand__thumb p-0" src="assets/icons/logo.png" alt="Logo: IHelpUkrainianWomen">
-        </a>
-        <div class="col-3 col-sm-8 col-lg-4 text-light navbar-brand__text">
-          Aid&nbsp;fund&nbsp;for&nbsp;Ukrainian&nbsp;women
-          <br>Initiative&nbsp;of&nbsp;Julia&nbsp;Bernatska, owner&nbsp;of&nbsp;BIJB's&nbsp;Kyiv's&nbsp;office.</div>
+        <div class="d-flex align-items-center">
+          <a class="navbar-brand py-2" href="#">
+            <img class="navbar-brand__thumb p-0" src="assets/icons/logo.png" alt="Logo: IHelpUkrainianWomen">
+          </a>
+          <span class="text-light navbar-brand__text">
+            Aid&nbsp;fund&nbsp;for&nbsp;Ukrainian&nbsp;women
+            <br>Initiative&nbsp;of&nbsp;Julia&nbsp;Bernatska, owner&nbsp;of&nbsp;BIJB's&nbsp;Kyiv's&nbsp;office.</span>
+        </div>
 
-        <button class="navbar-toggler collapsed ps-5 ps-sm-0 ms-5 ms-sm-2" type="button" data-bs-toggle="collapse"
+        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
           data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
           aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="navbar-collapse collapse order-lg-3 mb-4 mb-lg-0" id="navbarCollapse" style="transition: 0.8s;">
-          <ul class="navbar-nav me-auto mb-md-0 align-items-lg-center">
-            <li class="dropdown language me-2">
-              <button class="language-btn d-flex dropdown-toggle align-items-center" type="button"
-                id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                <a href="index.html" class="nav-link active">Home</a>
+          <ul class="navbar-nav mb-md-0 align-items-lg-center">
+            <li class="dropdown ms-1 me-lg-2">
+              <button class="menu-item d-flex dropdown-toggle align-items-center" type="button" id="dropdownMenuButton1"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                <a href="index.html" class="nav-link active fs-5">Home</a>
               </button>
-              <ul style="width: 25%; background: rgba(255, 255, 255, 0.9);" class="dropdown-menu border-0"
+              <ul style="width: 25%; background: rgba(255, 255, 255, 0.9);" class="dropdown-menu border-0 shadow"
                 aria-labelledby="dropdownMenuButton1">
                 <li>
                   <a class="dropdown-item" aria-current="page" href="#aboutus">About&nbsp;Us</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" aria-current="page" href="#howhelp">How&nbsp;help</a>
                 </li>
                 <li>
                   <a class="dropdown-item" aria-current="page" href="#team">Our&nbsp;team</a>
@@ -103,19 +108,20 @@
                 </li>
               </ul>
             </li>
-            <li class="nav-item pt-2">
-              <a class="nav-link" aria-current="page" href="news.html">Our&nbsp;results&nbsp;&&nbsp;news</a>
+            <li class="pt-2 mx-1 mx-lg-3 mb-3 mb-lg-0">
+              <a class="menu-item fs-5" aria-current="page" href="news.html">Our&nbsp;results&nbsp;&&nbsp;news</a>
             </li>
-            <li class="dropdown nav-item language me-3">
-              <button class="language-btn d-flex dropdown-toggle align-items-center" type="button"
+            <li class="dropdown nav-item mx-0 ms-lg-3 me-lg-5">
+              <button class="menu-item d-flex dropdown-toggle align-items-center fs-5" type="button"
                 id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
-                <svg class="ms-lg-3 icon icon-light">
-                  <use xlink:href="assets/icons/icons.svg#ri_translate-2"></use>
+                <svg class="icon icon-light">
+                  <use xlink:href="assets/icons/icons.svg#language"></use>
                 </svg>
+                English
               </button>
-              <ul style="width: 25%; background: rgba(255, 255, 255, 0.9);" class="dropdown-menu border-0"
+              <ul style="width: 25%; background: rgba(255, 255, 255, 0.9);" class="dropdown-menu border-0 shadow"
                 aria-labelledby="dropdownMenuButton2">
-                <li><a class="dropdown-item" href="uk/index.html">Українська</a></li>
+                <li><a class="dropdown-item " href="uk/index.html">Українська</a></li>
                 <!-- <li><a class="dropdown-item" href="#">English</a></li> -->
                 <!-- <li><a class="dropdown-item" href="#">日本</a></li> -->
               </ul>
@@ -127,8 +133,6 @@
             <form name="formPaypal" action="https://www.paypal.com/donate" method="post" target="_top">
               <input type="hidden" name="hosted_button_id" value="5UYQ6SRMXK5U6" />
               <input type="submit" class="btn btn-light my-1 me-2" value="Donate&nbsp;now">
-              <!--input id="paypalBtn" type="image" src="/images/donate.png" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" /-->
-              <!-- <img alt="" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" /> -->
             </form>
           </div>
           <!-- ./PayPal button -->
@@ -251,7 +255,7 @@
         </div>
       </div>
 
-      <div class="mb-6">
+      <div class="mb-6 pt" id="howhelp">
         <div class=" container mx-auto row">
           <h2 class="display-2 fw-bold lh-2 mb-4"><span class="square">How</span> do we help</h2>
           <div class="col-lg-4 col-md-12 px-4 my-2">
