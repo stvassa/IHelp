@@ -1,13 +1,13 @@
 <?php
 // Импортируем классы PHPMailer в глобальное пространство имен
 // Эти строки должны быть вначале скрипта, не внутри функции
-use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\Exception;
-use PHPMailer\PHPMailer\SMTP;
-
 require 'PHPMailer/src/Exception.php';
 require 'PHPMailer/src/PHPMailer.php';
 require 'PHPMailer/src/SMTP.php';
+
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+use PHPMailer\PHPMailer\SMTP;
 
 
 // Переменные, которые отправляет пользователь
@@ -30,14 +30,15 @@ $mail = new PHPMailer(true);
 
 try {
     //Server settings
-    $mail->SMTPDebug = SMTP::DEBUG_SERVER;                      //Enable verbose debug output
-    $mail->isSMTP();                                            //Send using SMTP
-    $mail->Host       = 'smtp.gmail.com';                     //Set the SMTP server to send through
-    $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
-    $mail->Username   = 'ihelpuw@gmail.com';                     //SMTP username
-    $mail->Password   = 'wwapbtqnlnzhzhqp';                               //SMTP password
-    $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
-    $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
+    $mail->SMTPDebug = SMTP::DEBUG_SERVER;   //Enable verbose debug output
+    $mail->isSMTP();                         //Send using SMTP
+    $mail->CharSet = "UTF-8";
+    $mail->Host       = 'smtp.gmail.com';    //Set the SMTP server to send through
+    $mail->SMTPAuth   = true;                //Enable SMTP authentication
+    $mail->Username   = 'ihelpuw@gmail.com'; //SMTP username
+    $mail->Password   = 'wwapbtqnlnzhzhqp';  //SMTP password
+    $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;//Enable implicit TLS encryption
+    $mail->Port       = 465;    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
     //Recipients
     $mail->setFrom('ihelpuw@gmail.com', 'Елена Рязанова');

@@ -326,3 +326,13 @@
 #show {
   display: none;
 }
+
+.partner-card {
+  max-width: 320px;
+  border: 1px solid #3184FF;
+  border-radius: 1rem;
+  color: #3184FF;
+  font-family: 'Ubuntu';
+  font-weight: bold;
+  text-transform: uppercase
+}
