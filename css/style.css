@@ -327,12 +327,16 @@
   display: none;
 }
 
-.partner-card {
-  max-width: 320px;
+.partner-cards {
+  flex-wrap: wrap;
+  margin: 75px 0;
+}
+
+.partner__card {
+  width: 300px;
+  height: 180px;
   border: 1px solid #3184FF;
   border-radius: 1rem;
   color: #3184FF;
   font-family: 'Ubuntu';
-  font-weight: bold;
-  text-transform: uppercase
 }

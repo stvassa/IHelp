@@ -50,6 +50,10 @@ blockquote {
   blockquote {
     font-size: 1rem !important;
   }
+
+  .partner-cards {
+    margin: 25px 0;
+  }
 }
 
 .navbar-collapse {
