@@ -335,12 +335,11 @@
 .partner__card {
   width: 300px;
   height: 180px;
-  /* border: 2px solid #3184FF; */
   border-radius: 1rem;
   font-family: 'Ubuntu';
-  /* color: #3184FF; */
   color: var(--secondary);
   background: var(--primary);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .partner__card:hover {
