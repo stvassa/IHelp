@@ -79,34 +79,9 @@
         <div class="navbar-collapse collapse order-lg-3 mb-4 mb-lg-0" id="navbarCollapse" style="transition: 0.8s;">
           <ul class="navbar-nav mb-md-0 align-items-lg-center">
             <li class="dropdown ms-1 me-lg-3">
-              <button class="menu-item d-flex dropdown-toggle align-items-center" type="button" id="dropdownMenuButton1"
-                data-bs-toggle="dropdown" aria-expanded="false">
+              <button class="menu-item d-flex align-items-center" type="button">
                 <a href="index.html" class="nav-link active fs-5">Головна</a>
               </button>
-              <ul style="width: 25%; background: rgba(255, 255, 255, 0.9);" class="dropdown-menu border-0 shadow"
-                aria-labelledby="dropdownMenuButton1">
-                <li>
-                  <a class="dropdown-item" aria-current="page" href="#aboutus">Про&nbsp;нас</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" aria-current="page" href="#howhelp">Види&nbsp;допомоги</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" aria-current="page" href="#team">Наша&nbsp;команда</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" aria-current="page" href="#help">Вже&nbsp;допомогли</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" aria-current="page" href="#news">Новини</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" aria-current="page" href="#partners">Партнери</a>
-                </li>
-                <li class="nav-item">
-                  <a class="dropdown-item" aria-current="page" href="#contacts">Контакти</a>
-                </li>
-              </ul>
             </li>
             <li class="pt-2 mx-1 mb-3 mb-lg-0">
               <a class="menu-item fs-5" aria-current="page" href="news.html">Досягнення&nbsp;та&nbsp;Новини</a>
@@ -138,6 +113,46 @@
   </header>
 
   <main class="mt-5">
+    <div class="p-5 p-md-5 mb-5 text-white rounded bg-primary">
+      <div class="container">
+        <div class="col-lg-9 pt-5">
+          <h1 class="display-3 fw-bold"><span class="text-warning">Основи Power&nbsp;BI</span>
+            Курс від компанії&nbsp;BIJB для&nbsp;українок
+          </h1>
+          <p class="lead my-3 text-secondary"></p>
+        </div>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-start justify-content-center mt-5 mb-4 mb-lg-3">
+          <form name="formPaypal" action="https://www.paypal.com/donate" method="post" target="_top">
+            <input type="hidden" name="hosted_button_id" value="5UYQ6SRMXK5U6" />
+            <input type="submit" class="btn btn-outline-light px-5 me-md-2 fw-bold" value="Задонатити">
+          </form>
+          <button type="button" class="btn btn-light px-3 me-md-2 fw-bold" data-bs-toggle="modal"
+            data-bs-target="#">Подати&nbsp;заявку</button>
+        </div>
+      </div>
+    </div>
+
+    <section class="presentation container mb-5">
+      <h2 class="display-2 fw-bold lh-2 text-center"><span class="square">Отримати</span> професію та роботу в умовах
+        євакуації</h2>
+      <div class="">
+        При підтримці наштих партнерів, а також японських компаній ми організовуємо 10 безкоштовних місць для навчання
+        на курсах аналітики Power BI, по закінченню яких Ви отримаєте не тільки сертифікат і професію Junior analist
+        Power BI, а й можливіть отримати роботу в компанії.
+      </div>
+    </section>
+    <!-- ./presentation -->
+
+    <section class="container conditions">
+      <h2 class="display-2 fw-bold lh-2 text-center"><span class="square">Умови навчання</span></h2>
+      <p>Щоб пройти відбір на навчання необхідно пройти три простих кроки:</p>
+      <ol>
+        <li>Подати заявку</li>
+        <li>Продивитися 1,5 годинний підготовче відео</li>
+        <li>Пройти тестування</li>
+      </ol>
+    </section>
+    <!-- ./conditions -->
 
     <!-- Programm -->
     <div class="">
@@ -148,244 +163,269 @@
           <!-- 1 -->
           <div class="accordion-item">
             <h2 class="accordion-header" id="headingOne">
-              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
-                aria-expanded="true" aria-controls="collapseOne">
-                Блок 1 Подключение к данным
+              <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Блок 1 Підключення до даних
               </button>
             </h2>
-            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+            <div id="collapseOne" class="accordion-collapse collapse show " aria-labelledby="headingOne"
               data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                <strong>This is the first item's accordion body.</strong> It is shown by default, until the
-                collapse
-                plugin adds the appropriate classes that we use to style each element. These classes control the
-                overall
-                appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with
-                custom
-                CSS or overriding our default variables. It's also worth noting that just about any HTML can go
-                within
-                the
-                <code>.accordion-body</code>, though the transition does limit overflow.
+              <div class="accordion-body pt-0">
+                <p class="fw-bold mb-0">Теорія</p>
+                <ul>
+                  <li> Тип підключення Live Connection</li>
+                  <li>Тип підключення Direct Query</li>
+                  <li>Тип підключення імпорт даних</li>
+                  <li>Огляд конекторів у Power BI</li>
+                </ul>
+
+                <p class="fw-bold mb-0">Практика</p>
+                <ul>
+                  <li> Підключення шляхом імпорту даних.</li>
+                  <li>До локальних джерел: Excel, CSV</li>
+                  <li>До хмарних джерел: Google Analytics, Сайты, Пошта Exchange Online o365</li>
+                </ul>
               </div>
             </div>
           </div>
           <!-- 2 -->
           <div class="accordion-item">
             <h2 class="accordion-header" id="headingTwo">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
                 data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                Блок 2 Преобразование данных
+                Блок 2 Перетворення даних
               </button>
             </h2>
             <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
               data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                <strong>This is the second item's accordion body.</strong> It is hidden by default, until the
-                collapse
-                plugin adds the appropriate classes that we use to style each element. These classes control the
-                overall
-                appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with
-                custom
-                CSS or overriding our default variables. It's also worth noting that just about any HTML can go
-                within
-                the
-                <code>.accordion-body</code>, though the transition does limit overflow.
+              <div class="accordion-body pt-0">
+                <p class="fw-bold mb-0">Теорія</p>
+                <ul>Робота з Power Query та використання функціоналу Power Query для перетворення вихідних даних:
+                  <li>Очищення</li>
+                  <li>Перетворення</li>
+                  <li>Створення</li>
+                </ul>
+
+                <p class="fw-bold mb-0">Практика</p>
+                <ul>Робота з перетворенням даних на прикладах:
+                  <li>Транспонування таблиць</li>
+                  <li>Зміна типу даних</li>
+                  <li>Заміна значень</li>
+                  <li>Заповнення «вниз»</li>
+                  <li>Заповнення «вниз»</li>
+                  <li>Додавання обчислюваних стовпців</li>
+                </ul>
               </div>
             </div>
           </div>
           <!-- 3 -->
           <div class="accordion-item">
             <h2 class="accordion-header" id="headingThree">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
                 data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                Блок 3 Создание модели
+                Блок 3 Створення моделі
               </button>
             </h2>
             <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
               data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
-                collapse
-                plugin adds the appropriate classes that we use to style each element. These classes control the
-                overall
-                appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with
-                custom
-                CSS or overriding our default variables. It's also worth noting that just about any HTML can go
-                within
-                the
-                <code>.accordion-body</code>, though the transition does limit overflow.
+              <div class="accordion-body pt-0">
+                <p class="fw-bold mb-0">Теорія</p>
+
+                <ul>
+                  <li>Поняття «модель даних»</li>
+                  <li>Типи моделей даних</li>
+                  <li>Види зв'язків у моделі даних:</li>
+                  <li class="ms-4" style="list-style: none">&#8211;&nbsp;Активні та неактивні зв'язки. Їх особливості
+                  </li>
+                  <li class="ms-4" style="list-style: none">&#8211;&nbsp;Односторонні та двосторонні зв'язки. Їх
+                    особливості
+                  </li>
+                  <li>Зв'язки: один до багатьох, багато до одного, багато до багатьох</li>
+                  <li>Принцип побудови моделі даних</li>
+                  <li>Автоматичне виявлення зв'язків і чому його не можна використовувати</li>
+                </ul>
+
+                <p class="fw-bold mb-0">Практика</p>
+                <ul>
+                  <li>Створення моделі даних</li>
+                  <li> Налаштування зв'язків у моделі</li>
+                  <li> Робота з різними видами зв'язків</li>
+                </ul>
               </div>
             </div>
           </div>
           <!-- 4 -->
           <div class="accordion-item">
             <h2 class="accordion-header" id="headingFour">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
                 data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                Блок 4 Основы языка DAX
+                Блок 4 Основи мови DAX
               </button>
             </h2>
             <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
               data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
-                collapse
-                plugin adds the appropriate classes that we use to style each element. These classes control the
-                overall
-                appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with
-                custom
-                CSS or overriding our default variables. It's also worth noting that just about any HTML can go
-                within
-                the
-                <code>.accordion-body</code>, though the transition does limit overflow.
+              <div class="accordion-body pt-0">
+                <p class="fw-bold mb-0">Теорія</p>
+                <ul>
+                  <li>Що таке DAX</li>
+                  <li>Введення у контексти обчислень DAX:
+                  </li>
+                  <li class="ms-4" style="list-style: none">&#8211;&nbsp;Контекст запиту</li>
+                  <li class="ms-4" style="list-style: none">&#8211;&nbsp;Контекст рядка</li>
+                  <li class="ms-4" style="list-style: none">&#8211;&nbsp;Контекст фільтра</li>
+                  <li>Призначення функції CALCULATE</li>
+                </ul>
+
+                <p class="fw-bold mb-0">Практика</p>
+                <ul>
+                  <li>Створення автоматичної таблиці-довідника дат (CALENDAR, CALENDARAUTO)
+                  </li>
+                  <li>Застосування DAX для практичних завдань:</li>
+                  <li class="ms-4" style="list-style: none">&#8211;&nbsp;Функції дат</li>
+                  <li class="ms-4" style="list-style: none">&#8211;&nbsp;Функції фільтрації</li>
+                  <li class="ms-4" style="list-style: none">&#8211;&nbsp;Використання CALCULATE для трансформації
+                    контексту</li>
+                </ul>
               </div>
             </div>
           </div>
           <!-- 5 -->
           <div class="accordion-item">
             <h2 class="accordion-header" id="headingFive">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
                 data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                Блок 5 Визуализация отчетов
+                Блок 5 Візуалізація звітів
               </button>
             </h2>
             <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
               data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
-                collapse
-                plugin adds the appropriate classes that we use to style each element. These classes control the
-                overall
-                appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with
-                custom
-                CSS or overriding our default variables. It's also worth noting that just about any HTML can go
-                within
-                the
-                <code>.accordion-body</code>, though the transition does limit overflow.
+              <div class="accordion-body pt-0">
+                <p class="fw-bold mb-0">Теорія</p>
+                <ul>
+                  <li>Основні правила роботи з візуальними об'єктами</li>
+                  <li>Особливості стандартної візуалізації</li>
+                  <li> Особливості роботи з візуалізаціями з Маркет плейсу</li>
+                  <li>Види діаграм та варіанти їх застосування: таблиці, діаграми, фільтри, картки, слайсери, KPI</li>
+                </ul>
+
+                <p class="fw-bold mb-0">Практика</p>
+                <ul>
+                  <li>Створення візуальних об'єктів на основі стандартних візуалізацій</li>
+                  <li>Створення візуальних об'єктів на основі візуалізацій із маркет плейсу</li>
+                  <li> Налаштування динамічного форматування візуалізацій</li>
+                  <li> Створення кастомірних підказок</li>
+                  <li> Налаштування навігації звітування за допомогою закладок</li>
+                </ul>
               </div>
             </div>
           </div>
           <!-- 6 -->
           <div class="accordion-item">
             <h2 class="accordion-header" id="headingSix">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
                 data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                Блок 6 Прогнозирование
+                Блок 6 Прогнозування
               </button>
             </h2>
             <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
               data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
-                collapse
-                plugin adds the appropriate classes that we use to style each element. These classes control the
-                overall
-                appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with
-                custom
-                CSS or overriding our default variables. It's also worth noting that just about any HTML can go
-                within
-                the
-                <code>.accordion-body</code>, though the transition does limit overflow.
+              <div class="accordion-body pt-0">
+                <p class="fw-bold mb-0">Теорія</p>
+                <ul>
+                  <li>Види прогнозування в Power BI Desktop та варіанти їх застосування</li>
+                </ul>
+
+                <p class="fw-bold mb-0">Практика</p>
+                <ul>
+                  <li>Створення прогнозу за допомогою функцій what if</li>
+                  <li>Робота з функцією Q&A</li>
+                  <li>Створення прогнозу за допомогою візуалізацій</li>
+                </ul>
               </div>
             </div>
           </div>
           <!-- 7 -->
           <div class="accordion-item">
             <h2 class="accordion-header" id="headingSeven">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
                 data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-                Блок 7 Безопасность
+                Блок 7 Безпека
               </button>
             </h2>
             <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven"
               data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
-                collapse
-                plugin adds the appropriate classes that we use to style each element. These classes control the
-                overall
-                appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with
-                custom
-                CSS or overriding our default variables. It's also worth noting that just about any HTML can go
-                within
-                the
-                <code>.accordion-body</code>, though the transition does limit overflow.
+              <div class="accordion-body pt-0">
+                <p class="fw-bold mb-0">Теорія</p>
+                <ul>
+                  <li>Захист даних у хмарних ресурсах Майкрософт</li>
+                  <li>Функціональні можливості Row Level Security</li>
+                </ul>
+
+                <p class="fw-bold mb-0">Практика</p>
+                <ul>
+                  <li>Формування публічних посилань на звіти</li>
+                  <li>Формування коду для інтеграції звіту до сайту</li>
+                  <li>Формування захищених посилань на звіти</li>
+                  <li> Налаштування безпеки на рівні рядків</li>
+                </ul>
               </div>
             </div>
           </div>
           <!-- 8 -->
           <div class="accordion-item">
             <h2 class="accordion-header" id="headingEight">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
                 data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
-                Блок 8 Настройка автоматических обновлений и мобильного приложения
+                Блок 8 Налаштування автоматичних оновлень та мобільного додатку
               </button>
             </h2>
             <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight"
               data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
-                collapse
-                plugin adds the appropriate classes that we use to style each element. These classes control the
-                overall
-                appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with
-                custom
-                CSS or overriding our default variables. It's also worth noting that just about any HTML can go
-                within
-                the
-                <code>.accordion-body</code>, though the transition does limit overflow.
+              <div class="accordion-body pt-0">
+                <p class="fw-bold mb-0">Теорія</p>
+                <ul>
+                  <li>Особливості оновлення даних для хмарних та локальних джерел</li>
+                  <li>Призначення та принципи роботи локального шлюзу даних</li>
+                  <li> Що таке мобільний додаток та його функціональні можливості</li>
+                </ul>
+
+                <p class="fw-bold mb-0">Практика</p>
+                <ul>
+                  <li>Налаштування оновлень на локальному шлюзі даних
+                  </li>
+                  <li> Налаштування відображення звіту для мобільного пристрою</li>
+                </ul>
               </div>
             </div>
           </div>
           <!-- 9 -->
           <div class="accordion-item">
             <h2 class="accordion-header" id="headingNine">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
                 data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
-                Блок 9 Совместная работа в Power BI pro
+                Блок 9 Спільна робота в Power BI pro
               </button>
             </h2>
             <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine"
               data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
-                collapse
-                plugin adds the appropriate classes that we use to style each element. These classes control the
-                overall
-                appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with
-                custom
-                CSS or overriding our default variables. It's also worth noting that just about any HTML can go
-                within
-                the
-                <code>.accordion-body</code>, though the transition does limit overflow.
-              </div>
-            </div>
-          </div>
-          <!-- 10 -->
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingTen">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
-                Блок 10 Использование Power BI с "Облачной платформой"
-              </button>
-            </h2>
-            <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTen"
-              data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
-                collapse
-                plugin adds the appropriate classes that we use to style each element. These classes control the
-                overall
-                appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with
-                custom
-                CSS or overriding our default variables. It's also worth noting that just about any HTML can go
-                within
-                the
-                <code>.accordion-body</code>, though the transition does limit overflow.
-              </div>
-            </div>
-          </div>
+              <div class="accordion-body pt-0">
+                <p class="fw-bold mb-0">Теорія</p>
+                <ul>
+                  <li>Огляд основних функцій Power BI Pro</li>
+                  <li>Огляд робочої області сервісу Power BI Pro</li>
+                  <li>Призначення та застосування розділів</li>
+                </ul>
 
+                <p class="fw-bold mb-0">Практика</p>
+                <ul>
+                  <li>Функції розділу «Набори даних» (Увімкнення безпеки)</li>
+                  <li>Функції розділу «звіти»</li>
+                  <li>Створення панелі DashBoard</li>
+                  <li> Вивантаження даних у Excel, Power Рoint, csv</li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </div>
