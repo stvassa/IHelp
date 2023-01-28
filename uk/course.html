@@ -115,49 +115,57 @@
   <main class="mt-5">
     <div class="p-5 p-md-5 mb-5 text-white rounded bg-primary">
       <div class="container">
-        <div class="col-lg-9 pt-5">
-          <h1 class="display-3 fw-bold"><span class="text-warning">Основи Power&nbsp;BI</span>
-            Курс від компанії&nbsp;BIJB для&nbsp;українок
+        <div class="col-lg-9 py-lg-4">
+
+          <h1 class="display-3 fw-bold text-uppercase mt-4 mb-4">
+            3 кроки <br>
+            до професії <br>
+            <span class="text-warning">Аналітик Power&nbsp;BI</span>
           </h1>
-          <p class="lead my-3 text-secondary"></p>
+          <span class="lead fw-bold text-uppercase text-secondary me-4">10 місць</span>
+          <span class="lead fw-bold text-uppercase text-secondary">Безкоштовно</span>
         </div>
+
         <div class="d-grid gap-2 d-md-flex justify-content-md-start justify-content-center mt-5 mb-4 mb-lg-3">
+          <button type="button" class="btn btn-light px-3 me-md-2 fw-bold" data-bs-toggle="modal"
+            data-bs-target="#questionnaire">Подати&nbsp;заявку</button>
           <form name="formPaypal" action="https://www.paypal.com/donate" method="post" target="_top">
             <input type="hidden" name="hosted_button_id" value="5UYQ6SRMXK5U6" />
             <input type="submit" class="btn btn-outline-light px-5 me-md-2 fw-bold" value="Задонатити">
           </form>
-          <button type="button" class="btn btn-light px-3 me-md-2 fw-bold" data-bs-toggle="modal"
-            data-bs-target="#">Подати&nbsp;заявку</button>
         </div>
       </div>
     </div>
 
-    <section class="presentation container mb-5">
-      <h2 class="display-2 fw-bold lh-2 text-center"><span class="square">Отримати</span> професію та роботу в умовах
-        євакуації</h2>
-      <div class="">
-        При підтримці наштих партнерів, а також японських компаній ми організовуємо 10 безкоштовних місць для навчання
-        на курсах аналітики Power BI, по закінченню яких Ви отримаєте не тільки сертифікат і професію Junior analist
-        Power BI, а й можливіть отримати роботу в компанії.
-      </div>
-    </section>
-    <!-- ./presentation -->
-
-    <section class="container conditions">
-      <h2 class="display-2 fw-bold lh-2 text-center"><span class="square">Умови навчання</span></h2>
-      <p>Щоб пройти відбір на навчання необхідно пройти три простих кроки:</p>
+    <section class="container conditions pt-5">
+      <h2 class="display-5 fw-bold lh-2 text-center"><span class="square">Умови</span> навчання
+      </h2>
+      <p>Щоб пройти відбір на навчання необхідно пройти декількка простих кроків:</p>
       <ol>
-        <li>Подати заявку</li>
-        <li>Продивитися 1,5 годинний підготовче відео</li>
-        <li>Пройти тестування</li>
+        <li>Подати заявку та отримати листа з допуском до платформи для навчання</li>
+        <li>Продивитися 1,5 годинний підготовче відео та пройти тестування</li>
+        <li>Отримати більше 70% правильних відповідей та пройти співбесіду</li>
       </ol>
     </section>
     <!-- ./conditions -->
 
+    <section class="presentation container pt-5">
+      <h2 class="display-5 fw-bold lh-2 text-center"><span class="square">Отримати</span> нову спеціальність та шанс
+        отримати роботу в Японії</h2>
+      <div class="">
+        За фінансової підтримки с ми маємо змогу надати 10
+        безкоштовних місць для навчання
+        на курсах аналітики Power BI, по закінченню яких Ви отримаєте не тільки сертифікат і професію Junior analist
+        Power BI, а й можливіть отримати роботу в Японськії компанії за новим фахом.
+      </div>
+    </section>
+    <!-- ./presentation -->
+
+
     <!-- Programm -->
     <div class="">
-      <section class="container pt-5 pb-5">
-        <h2 class="display-2 fw-bold lh-2 text-center"><span class="square">Программа курсу</span></h2>
+      <section class="container pt-5">
+        <h2 class="display-5 fw-bold lh-2 text-center"><span class="square">Программа курсу</span></h2>
 
         <div class="accordion" id="accordionExample">
           <!-- 1 -->
@@ -467,7 +475,7 @@
             </div>
           </div>
 
-          <form action="send.php" method="POST" class="col-lg-5 my-3">
+          <form action="questionnaire.php" method="POST" class="col-lg-5 my-3">
             <h5 class="lh-2 mb-3 text-light">Є ідеї допомоги чи кооперації? Напишіть нам:</h5>
             <div class="row mb-3">
               <label for="validationDefault01" class="col-sm-3 col-form-label text-light">Ім'я*</label>
@@ -502,6 +510,7 @@
               <button type="submit" class="btn btn-outline-light px-4 px-lg-5">Відправити</button>
             </div>
           </form>
+
         </div>
       </section>
       <div class="my-3"><span class="text-light">©Всі права захищені 2022 #Ihelpukranianwoman</span></div>
@@ -572,54 +581,8 @@
     </div>
   </div>
 
-  <!-- Modal I can help-->
-  <div class="modal fade" id="canHelpModal" tabindex="-1" aria-labelledby="canHelpModal" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title text-primary" id="exampleModalLabel2">Напишіть Ваш варінт допомоги</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <form action="send.php" method="POST" class="col my-3">
-            <div class="row mb-3">
-              <label for="inputName3" class="col-sm-2 col-form-label text-dark">Ім'я*</label>
-              <div class="col">
-                <input type="text" class="form-control" id="inputName3" name="name" required>
-              </div>
-            </div>
-            <div class="row mb-3">
-              <label for="inputEmail3" class="col-sm-2 col-form-label text-dark">Пошта*</label>
-              <div class="col">
-                <input type="email" class="form-control" id="inputEmail3" name="email" required>
-              </div>
-            </div>
-            <div class="row mb-3">
-              <label for="validationTextarea2" class="col-sm-3 col-form-label text-dark">Повідомлення*</label>
-              <div class="col-sm-9">
-                <textarea class="form-control" id="validationTextarea2" rows="3" placeholder="" name="message"
-                  required></textarea>
-              </div>
-            </div>
-            <div class="col mb-3">*Обов'язково для заповнення</div>
-            <div class="row mb-3">
-              <div class="col">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="Check3" required>
-                  <label class="form-check-label text-dark" for="Check3">
-                    я погоджуюсь на обробку данних
-                  </label>
-                </div>
-              </div>
-            </div>
-            <div class="text-end">
-              <button type="submit" class="btn btn-primary px-4 px-lg-5">Відправити</button>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
+
+
 
   <!-- Bootstrap Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
