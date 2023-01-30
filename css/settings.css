@@ -115,7 +115,7 @@ a {
 }
 
 .text-muted {
-  color: var(--gray) !important;
+  color: var(--lggray) !important;
 }
 
 .text-secondary {

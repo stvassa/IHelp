@@ -345,3 +345,7 @@
 .partner__card:hover {
   color: var(--accent);
 }
+
+.course-img {
+  max-width: 280px;
+}

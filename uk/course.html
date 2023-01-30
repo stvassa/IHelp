@@ -83,8 +83,11 @@
                 <a href="index.html" class="nav-link active fs-5">Головна</a>
               </button>
             </li>
-            <li class="pt-2 mx-1 mb-3 mb-lg-0">
-              <a class="menu-item fs-5" aria-current="page" href="news.html">Досягнення&nbsp;та&nbsp;Новини</a>
+            <li class="pt-2 mx-3 mb-3 mb-lg-0">
+              <a class="menu-item nav-link fs-5" aria-current="page" href="news.html">Всі&nbsp;Новини</a>
+            </li>
+            <li class="pt-2 mx-3 mb-3 mb-lg-0">
+              <a class="menu-item nav-link fs-5" aria-current="page" href="course.html">Курси</a>
             </li>
             <li class="dropdown nav-item mx-0 ms-lg-4 me-lg-5">
               <button class="menu-item d-flex dropdown-toggle align-items-center fs-5" type="button"
@@ -116,8 +119,7 @@
     <div class="p-5 p-md-5 mb-5 text-white rounded bg-primary">
       <div class="container">
         <div class="col-lg-9 py-lg-4">
-
-          <h1 class="display-3 fw-bold text-uppercase mt-4 mb-4">
+          <h1 class="display-2 fw-bold text-uppercase mt-4 mb-4">
             3 кроки <br>
             до професії <br>
             <span class="text-warning">Аналітик Power&nbsp;BI</span>
@@ -128,7 +130,7 @@
 
         <div class="d-grid gap-2 d-md-flex justify-content-md-start justify-content-center mt-5 mb-4 mb-lg-3">
           <button type="button" class="btn btn-light px-3 me-md-2 fw-bold" data-bs-toggle="modal"
-            data-bs-target="#questionnaire">Подати&nbsp;заявку</button>
+            data-bs-target="#">Подати&nbsp;заявку</button>
           <form name="formPaypal" action="https://www.paypal.com/donate" method="post" target="_top">
             <input type="hidden" name="hosted_button_id" value="5UYQ6SRMXK5U6" />
             <input type="submit" class="btn btn-outline-light px-5 me-md-2 fw-bold" value="Задонатити">
@@ -137,306 +139,420 @@
       </div>
     </div>
 
-    <section class="container conditions pt-5">
-      <h2 class="display-5 fw-bold lh-2 text-center"><span class="square">Умови</span> навчання
+    <section class="presentation container pt-5 mb-6">
+      <h2 class="display-3 fw-bold lh-2 text-center"><span class="square">Безкоштовне</span>&nbsp;навчання
+        для&nbsp;українців
+        що&nbsp;євакуювалися
+        до&nbsp;Японії
       </h2>
-      <p>Щоб пройти відбір на навчання необхідно пройти декількка простих кроків:</p>
-      <ol>
-        <li>Подати заявку та отримати листа з допуском до платформи для навчання</li>
-        <li>Продивитися 1,5 годинний підготовче відео та пройти тестування</li>
-        <li>Отримати більше 70% правильних відповідей та пройти співбесіду</li>
-      </ol>
-    </section>
-    <!-- ./conditions -->
-
-    <section class="presentation container pt-5">
-      <h2 class="display-5 fw-bold lh-2 text-center"><span class="square">Отримати</span> нову спеціальність та шанс
-        отримати роботу в Японії</h2>
-      <div class="">
-        За фінансової підтримки с ми маємо змогу надати 10
-        безкоштовних місць для навчання
-        на курсах аналітики Power BI, по закінченню яких Ви отримаєте не тільки сертифікат і професію Junior analist
-        Power BI, а й можливіть отримати роботу в Японськії компанії за новим фахом.
+      <div class="row justify-content-center align-items-center">
+        <div class="col-lg-7 col-md-12 fs-4 text-start mx-xxl-5">
+          <p class="text-muted">За фінансовою підтримки <span class="fw-bold">Ryugasaki
+              International Association</span> ми маємо можливіть надати нову спеціальність молодший аналітик Power
+            BI.</p>
+          <p class="text-muted"> Ті хто успішно пройдуть навчання отримають шанс влаштуватися на роботу в Японську
+            компанію</p>
+        </div>
+        <div class="col mx-xl-5 text-center">
+          <img class="course-img" src="../assets/img/news/photo_2022-12-16_12-58-49.jpg" alt="Ms. Hiroko Niwa president of Ryugasaki
+          International Association">
+        </div>
       </div>
     </section>
     <!-- ./presentation -->
 
+    <section class="place container pt mb-6">
+      <div class="card col-md-9 bg-primary text-center px-5 py-5 mx-auto shadow">
+        <p class="display-4 text-warning fw-bold mt-4 mb-2">Усього 10 місць</p>
+        <p class="display-4 text-light fw-bold mb-4">Безкоштовне навчання</p>
+        <p class="fs-4 text-light mt-2">Зареєструйся вже зараз</p>
+        <div class="mt-5 mb-3"> <button type="button" class="btn btn-light px-3 me-md-2 fw-bold" data-bs-toggle="modal"
+            data-bs-target="#">Подати&nbsp;заявку</button></div>
+      </div>
+    </section>
 
-    <!-- Programm -->
-    <div class="">
-      <section class="container pt-5">
-        <h2 class="display-5 fw-bold lh-2 text-center"><span class="square">Программа курсу</span></h2>
-
-        <div class="accordion" id="accordionExample">
-          <!-- 1 -->
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingOne">
-              <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse"
-                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                Блок 1 Підключення до даних
-              </button>
-            </h2>
-            <div id="collapseOne" class="accordion-collapse collapse show " aria-labelledby="headingOne"
-              data-bs-parent="#accordionExample">
-              <div class="accordion-body pt-0">
-                <p class="fw-bold mb-0">Теорія</p>
-                <ul>
-                  <li> Тип підключення Live Connection</li>
-                  <li>Тип підключення Direct Query</li>
-                  <li>Тип підключення імпорт даних</li>
-                  <li>Огляд конекторів у Power BI</li>
-                </ul>
-
-                <p class="fw-bold mb-0">Практика</p>
-                <ul>
-                  <li> Підключення шляхом імпорту даних.</li>
-                  <li>До локальних джерел: Excel, CSV</li>
-                  <li>До хмарних джерел: Google Analytics, Сайты, Пошта Exchange Online o365</li>
-                </ul>
-              </div>
-            </div>
+    <section class="who container pt mb-6">
+      <h2 class="display-3 fw-bold lh-2 text-center"><span class="square">Хто</span> проводить навчання</h2>
+      <div class="who-wrapper">
+        <div class="row w-100 py-xl-5 py-lg-4 py-2">
+          <div class="col-lg-4 p-2"> <img style="width: 360px;" src="../assets/img/_IMG_9045.JPG" alt="">
           </div>
-          <!-- 2 -->
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingTwo">
-              <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
-                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                Блок 2 Перетворення даних
-              </button>
-            </h2>
-            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-              data-bs-parent="#accordionExample">
-              <div class="accordion-body pt-0">
-                <p class="fw-bold mb-0">Теорія</p>
-                <ul>Робота з Power Query та використання функціоналу Power Query для перетворення вихідних даних:
-                  <li>Очищення</li>
-                  <li>Перетворення</li>
-                  <li>Створення</li>
-                </ul>
-
-                <p class="fw-bold mb-0">Практика</p>
-                <ul>Робота з перетворенням даних на прикладах:
-                  <li>Транспонування таблиць</li>
-                  <li>Зміна типу даних</li>
-                  <li>Заміна значень</li>
-                  <li>Заповнення «вниз»</li>
-                  <li>Заповнення «вниз»</li>
-                  <li>Додавання обчислюваних стовпців</li>
-                </ul>
-              </div>
-            </div>
+          <div class="col-xl-5">
+            <h3 class="text-primary fw-bold">BIJB Study</h3>
+            <p class="lead text-muted">Платформа для навчання розроблена для команд аналітиків Power BI</p>
+            <ul>
+              <li>BIJB Mіжнародна компанія, яка спеціалізується на бізнес-аналітиці за допомогою Power BI</li>
+              <li>Cрібний партнер Microsoft</li>
+              <li>Проводить комплексне, систематичне та диференційоване навчання аналітиків</li>
+            </ul>
           </div>
-          <!-- 3 -->
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingThree">
-              <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
-                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                Блок 3 Створення моделі
-              </button>
-            </h2>
-            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-              data-bs-parent="#accordionExample">
-              <div class="accordion-body pt-0">
-                <p class="fw-bold mb-0">Теорія</p>
-
-                <ul>
-                  <li>Поняття «модель даних»</li>
-                  <li>Типи моделей даних</li>
-                  <li>Види зв'язків у моделі даних:</li>
-                  <li class="ms-4" style="list-style: none">&#8211;&nbsp;Активні та неактивні зв'язки. Їх особливості
-                  </li>
-                  <li class="ms-4" style="list-style: none">&#8211;&nbsp;Односторонні та двосторонні зв'язки. Їх
-                    особливості
-                  </li>
-                  <li>Зв'язки: один до багатьох, багато до одного, багато до багатьох</li>
-                  <li>Принцип побудови моделі даних</li>
-                  <li>Автоматичне виявлення зв'язків і чому його не можна використовувати</li>
-                </ul>
-
-                <p class="fw-bold mb-0">Практика</p>
-                <ul>
-                  <li>Створення моделі даних</li>
-                  <li> Налаштування зв'язків у моделі</li>
-                  <li> Робота з різними видами зв'язків</li>
-                </ul>
-              </div>
-            </div>
+        </div>
+        <div class="row w-100 justify-content-xl-end pt-xl-5 pt-lg-4 py-2">
+          <div class="col-lg-4 p-2 order-xl-2">
+            <img style="width: 360px;" src="../assets/img/ІринаДубровська.jpg" alt="Ірина Дубровська">
           </div>
-          <!-- 4 -->
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingFour">
-              <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
-                data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                Блок 4 Основи мови DAX
-              </button>
-            </h2>
-            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
-              data-bs-parent="#accordionExample">
-              <div class="accordion-body pt-0">
-                <p class="fw-bold mb-0">Теорія</p>
-                <ul>
-                  <li>Що таке DAX</li>
-                  <li>Введення у контексти обчислень DAX:
-                  </li>
-                  <li class="ms-4" style="list-style: none">&#8211;&nbsp;Контекст запиту</li>
-                  <li class="ms-4" style="list-style: none">&#8211;&nbsp;Контекст рядка</li>
-                  <li class="ms-4" style="list-style: none">&#8211;&nbsp;Контекст фільтра</li>
-                  <li>Призначення функції CALCULATE</li>
-                </ul>
-
-                <p class="fw-bold mb-0">Практика</p>
-                <ul>
-                  <li>Створення автоматичної таблиці-довідника дат (CALENDAR, CALENDARAUTO)
-                  </li>
-                  <li>Застосування DAX для практичних завдань:</li>
-                  <li class="ms-4" style="list-style: none">&#8211;&nbsp;Функції дат</li>
-                  <li class="ms-4" style="list-style: none">&#8211;&nbsp;Функції фільтрації</li>
-                  <li class="ms-4" style="list-style: none">&#8211;&nbsp;Використання CALCULATE для трансформації
-                    контексту</li>
-                </ul>
-              </div>
-            </div>
+          <div class="col-xl-5 order-xl-1 me-lg-5">
+            <h3 class="text-primary fw-bold">Ірина Дубровська</h3>
+            <p class="lead text-muted">Практикуючий коуч, сертифікований коуч ICF Міжнародної Федерації Коучинга, НЛП
+              практик,
+              бізнес тренер. Власник та директор аудиторської фірми, яка супроводжує малий та середній бізнес
+            </p>
+            <ul>
+              <li>Що таке коучінг?</li>
+              <p>Під час навчання на нашому курсі, у Вас є можливість скористатись підтримкою професійного коуча. Ви
+                можете
+                взяти дві коуч сесії - одну на початку навчання, іншу у другій половині начального процесу. Коуч
+                допоможе
+                Вам поставити цілі на період навчання, знайти в собі мотивацію продовжувати навчатись , допоможе
+                вирішити
+                внутрішні протиріччя, які заважають досягати Ваших життєвих цілей.</p>
+              <li>Що пропонуємо?</li>
+              <p>Кожна людина має можливості та усі необхідні ресурси для досягнення своїх цілей. Але не усі знають, як
+                використати свій потенціал. Коуч, шляхом задавання правильних питань, створює можливість відкрити ці
+                сховані ресурси у людині і використати їх для побудови дійсно цікавого , насиченого, кольорового і
+                щасливого життя. Людина досягає своїх цілей і створюєте життя, про яке вона мріє.</p>
+            </ul>
           </div>
-          <!-- 5 -->
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingFive">
-              <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
-                data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                Блок 5 Візуалізація звітів
-              </button>
-            </h2>
-            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
-              data-bs-parent="#accordionExample">
-              <div class="accordion-body pt-0">
-                <p class="fw-bold mb-0">Теорія</p>
-                <ul>
-                  <li>Основні правила роботи з візуальними об'єктами</li>
-                  <li>Особливості стандартної візуалізації</li>
-                  <li> Особливості роботи з візуалізаціями з Маркет плейсу</li>
-                  <li>Види діаграм та варіанти їх застосування: таблиці, діаграми, фільтри, картки, слайсери, KPI</li>
-                </ul>
+        </div>
+      </div>
+    </section>
 
-                <p class="fw-bold mb-0">Практика</p>
-                <ul>
-                  <li>Створення візуальних об'єктів на основі стандартних візуалізацій</li>
-                  <li>Створення візуальних об'єктів на основі візуалізацій із маркет плейсу</li>
-                  <li> Налаштування динамічного форматування візуалізацій</li>
-                  <li> Створення кастомірних підказок</li>
-                  <li> Налаштування навігації звітування за допомогою закладок</li>
-                </ul>
-              </div>
-            </div>
+    <section class="container conditions text-md-center pt mb-6">
+      <h2 class="display-3 fw-bold lh-2 text-center"><span class="square">Кроки</span> реєстрації</h2>
+      <p class="lead fw-bold mb-4">Щоб пройти відбір на навчання необхідно пройти декількка простих кроків:</p>
+      <div class="row justify-content-center lead text-light mb-4">
+        <div class="col-lg-5 col-md-9 p-3 mx-3 my-3 bg-primary rounded align-items-center text-start row">
+          <div class="col-lg-2 col-1 fw-bold display-2">1</div>
+          <div class="col">Подати заявку та
+            отримати листа з допуском
+            до платформи
+            <span class="fw-bold">BIJB&nbsp;Study</span>
+            для&nbsp;навчання</div>
+        </div>
+        <div class="col-lg-5 col-md-9 p-3 mx-3 my-3 bg-primary rounded align-items-center text-start row">
+          <div class="col-lg-2 col-1 fw-bold display-2">2</div>
+          <div class="col">Подивитися підготовче відео та&nbsp;пройти
+            тестування до&nbsp;<span class="fw-bold">20&nbsp;лютого</span></div>
+        </div>
+        <div class="col-lg-5 col-md-9 p-3 mx-3 my-3 bg-primary rounded align-items-center text-start row">
+          <div class="col-lg-2 col-1 fw-bold display-2">3</div>
+          <div class="col">Пройти фінальну співбесіду <span class="fw-bold">(20&nbsp;-&nbsp;26&nbsp;лютого)</span>
           </div>
-          <!-- 6 -->
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingSix">
-              <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
-                data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                Блок 6 Прогнозування
-              </button>
-            </h2>
-            <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
-              data-bs-parent="#accordionExample">
-              <div class="accordion-body pt-0">
-                <p class="fw-bold mb-0">Теорія</p>
-                <ul>
-                  <li>Види прогнозування в Power BI Desktop та варіанти їх застосування</li>
-                </ul>
+        </div>
+      </div>
+      <p class="lead fw-bold">Навчання розпочинається з 1 березня</p>
+      <p class="lead fw-bold ">Пройди реєстрацію вже зараз</p>
+      <div class="d-grid d-md-flex justify-content-center mt-4">
+        <button type="button" class="btn btn-primary px-5 py-2 fw-bold" data-bs-toggle="modal"
+          data-bs-target="#">Подати&nbsp;заявку</button>
+      </div>
+    </section>
+    <!-- ./conditions -->
 
-                <p class="fw-bold mb-0">Практика</p>
-                <ul>
-                  <li>Створення прогнозу за допомогою функцій what if</li>
-                  <li>Робота з функцією Q&A</li>
-                  <li>Створення прогнозу за допомогою візуалізацій</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <!-- 7 -->
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingSeven">
-              <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
-                data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-                Блок 7 Безпека
-              </button>
-            </h2>
-            <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven"
-              data-bs-parent="#accordionExample">
-              <div class="accordion-body pt-0">
-                <p class="fw-bold mb-0">Теорія</p>
-                <ul>
-                  <li>Захист даних у хмарних ресурсах Майкрософт</li>
-                  <li>Функціональні можливості Row Level Security</li>
-                </ul>
+    <section class="container pt mb-6">
+      <h2 class="display-3 fw-bold lh-2 text-center"><span class="square">Программа курсу</span></h2>
 
-                <p class="fw-bold mb-0">Практика</p>
-                <ul>
-                  <li>Формування публічних посилань на звіти</li>
-                  <li>Формування коду для інтеграції звіту до сайту</li>
-                  <li>Формування захищених посилань на звіти</li>
-                  <li> Налаштування безпеки на рівні рядків</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <!-- 8 -->
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingEight">
-              <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
-                data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
-                Блок 8 Налаштування автоматичних оновлень та мобільного додатку
-              </button>
-            </h2>
-            <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight"
-              data-bs-parent="#accordionExample">
-              <div class="accordion-body pt-0">
-                <p class="fw-bold mb-0">Теорія</p>
-                <ul>
-                  <li>Особливості оновлення даних для хмарних та локальних джерел</li>
-                  <li>Призначення та принципи роботи локального шлюзу даних</li>
-                  <li> Що таке мобільний додаток та його функціональні можливості</li>
-                </ul>
+      <div class="accordion" id="accordionExample">
+        <!-- 1 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Блок 1 Підключення до даних
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show " aria-labelledby="headingOne"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body pt-0">
+              <p class="fw-bold mb-0">Теорія</p>
+              <ul>
+                <li> Тип підключення Live Connection</li>
+                <li>Тип підключення Direct Query</li>
+                <li>Тип підключення імпорт даних</li>
+                <li>Огляд конекторів у Power BI</li>
+              </ul>
 
-                <p class="fw-bold mb-0">Практика</p>
-                <ul>
-                  <li>Налаштування оновлень на локальному шлюзі даних
-                  </li>
-                  <li> Налаштування відображення звіту для мобільного пристрою</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <!-- 9 -->
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingNine">
-              <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
-                data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
-                Блок 9 Спільна робота в Power BI pro
-              </button>
-            </h2>
-            <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine"
-              data-bs-parent="#accordionExample">
-              <div class="accordion-body pt-0">
-                <p class="fw-bold mb-0">Теорія</p>
-                <ul>
-                  <li>Огляд основних функцій Power BI Pro</li>
-                  <li>Огляд робочої області сервісу Power BI Pro</li>
-                  <li>Призначення та застосування розділів</li>
-                </ul>
-
-                <p class="fw-bold mb-0">Практика</p>
-                <ul>
-                  <li>Функції розділу «Набори даних» (Увімкнення безпеки)</li>
-                  <li>Функції розділу «звіти»</li>
-                  <li>Створення панелі DashBoard</li>
-                  <li> Вивантаження даних у Excel, Power Рoint, csv</li>
-                </ul>
-              </div>
+              <p class="fw-bold mb-0">Практика</p>
+              <ul>
+                <li> Підключення шляхом імпорту даних.</li>
+                <li>До локальних джерел: Excel, CSV</li>
+                <li>До хмарних джерел: Google Analytics, Сайты, Пошта Exchange Online o365</li>
+              </ul>
             </div>
           </div>
         </div>
-      </section>
-    </div>
+        <!-- 2 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Блок 2 Перетворення даних
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body pt-0">
+              <p class="fw-bold mb-0">Теорія</p>
+              <ul>Робота з Power Query та використання функціоналу Power Query для перетворення вихідних даних:
+                <li>Очищення</li>
+                <li>Перетворення</li>
+                <li>Створення</li>
+              </ul>
+
+              <p class="fw-bold mb-0">Практика</p>
+              <ul>Робота з перетворенням даних на прикладах:
+                <li>Транспонування таблиць</li>
+                <li>Зміна типу даних</li>
+                <li>Заміна значень</li>
+                <li>Заповнення «вниз»</li>
+                <li>Заповнення «вниз»</li>
+                <li>Додавання обчислюваних стовпців</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- 3 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Блок 3 Створення моделі
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body pt-0">
+              <p class="fw-bold mb-0">Теорія</p>
+
+              <ul>
+                <li>Поняття «модель даних»</li>
+                <li>Типи моделей даних</li>
+                <li>Види зв'язків у моделі даних:</li>
+                <li class="ms-4" style="list-style: none">&#8211;&nbsp;Активні та неактивні зв'язки. Їх особливості
+                </li>
+                <li class="ms-4" style="list-style: none">&#8211;&nbsp;Односторонні та двосторонні зв'язки. Їх
+                  особливості
+                </li>
+                <li>Зв'язки: один до багатьох, багато до одного, багато до багатьох</li>
+                <li>Принцип побудови моделі даних</li>
+                <li>Автоматичне виявлення зв'язків і чому його не можна використовувати</li>
+              </ul>
+
+              <p class="fw-bold mb-0">Практика</p>
+              <ul>
+                <li>Створення моделі даних</li>
+                <li> Налаштування зв'язків у моделі</li>
+                <li> Робота з різними видами зв'язків</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- 4 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFour">
+            <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+              Блок 4 Основи мови DAX
+            </button>
+          </h2>
+          <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body pt-0">
+              <p class="fw-bold mb-0">Теорія</p>
+              <ul>
+                <li>Що таке DAX</li>
+                <li>Введення у контексти обчислень DAX:
+                </li>
+                <li class="ms-4" style="list-style: none">&#8211;&nbsp;Контекст запиту</li>
+                <li class="ms-4" style="list-style: none">&#8211;&nbsp;Контекст рядка</li>
+                <li class="ms-4" style="list-style: none">&#8211;&nbsp;Контекст фільтра</li>
+                <li>Призначення функції CALCULATE</li>
+              </ul>
+
+              <p class="fw-bold mb-0">Практика</p>
+              <ul>
+                <li>Створення автоматичної таблиці-довідника дат (CALENDAR, CALENDARAUTO)
+                </li>
+                <li>Застосування DAX для практичних завдань:</li>
+                <li class="ms-4" style="list-style: none">&#8211;&nbsp;Функції дат</li>
+                <li class="ms-4" style="list-style: none">&#8211;&nbsp;Функції фільтрації</li>
+                <li class="ms-4" style="list-style: none">&#8211;&nbsp;Використання CALCULATE для трансформації
+                  контексту</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- 5 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFive">
+            <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+              Блок 5 Візуалізація звітів
+            </button>
+          </h2>
+          <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body pt-0">
+              <p class="fw-bold mb-0">Теорія</p>
+              <ul>
+                <li>Основні правила роботи з візуальними об'єктами</li>
+                <li>Особливості стандартної візуалізації</li>
+                <li> Особливості роботи з візуалізаціями з Маркет плейсу</li>
+                <li>Види діаграм та варіанти їх застосування: таблиці, діаграми, фільтри, картки, слайсери, KPI</li>
+              </ul>
+
+              <p class="fw-bold mb-0">Практика</p>
+              <ul>
+                <li>Створення візуальних об'єктів на основі стандартних візуалізацій</li>
+                <li>Створення візуальних об'єктів на основі візуалізацій із маркет плейсу</li>
+                <li> Налаштування динамічного форматування візуалізацій</li>
+                <li> Створення кастомірних підказок</li>
+                <li> Налаштування навігації звітування за допомогою закладок</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- 6 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingSix">
+            <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+              Блок 6 Прогнозування
+            </button>
+          </h2>
+          <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body pt-0">
+              <p class="fw-bold mb-0">Теорія</p>
+              <ul>
+                <li>Види прогнозування в Power BI Desktop та варіанти їх застосування</li>
+              </ul>
+
+              <p class="fw-bold mb-0">Практика</p>
+              <ul>
+                <li>Створення прогнозу за допомогою функцій what if</li>
+                <li>Робота з функцією Q&A</li>
+                <li>Створення прогнозу за допомогою візуалізацій</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- 7 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingSeven">
+            <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+              Блок 7 Безпека
+            </button>
+          </h2>
+          <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body pt-0">
+              <p class="fw-bold mb-0">Теорія</p>
+              <ul>
+                <li>Захист даних у хмарних ресурсах Майкрософт</li>
+                <li>Функціональні можливості Row Level Security</li>
+              </ul>
+
+              <p class="fw-bold mb-0">Практика</p>
+              <ul>
+                <li>Формування публічних посилань на звіти</li>
+                <li>Формування коду для інтеграції звіту до сайту</li>
+                <li>Формування захищених посилань на звіти</li>
+                <li> Налаштування безпеки на рівні рядків</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- 8 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingEight">
+            <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+              Блок 8 Налаштування автоматичних оновлень та мобільного додатку
+            </button>
+          </h2>
+          <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body pt-0">
+              <p class="fw-bold mb-0">Теорія</p>
+              <ul>
+                <li>Особливості оновлення даних для хмарних та локальних джерел</li>
+                <li>Призначення та принципи роботи локального шлюзу даних</li>
+                <li> Що таке мобільний додаток та його функціональні можливості</li>
+              </ul>
+
+              <p class="fw-bold mb-0">Практика</p>
+              <ul>
+                <li>Налаштування оновлень на локальному шлюзі даних
+                </li>
+                <li> Налаштування відображення звіту для мобільного пристрою</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- 9 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingNine">
+            <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+              Блок 9 Спільна робота в Power BI pro
+            </button>
+          </h2>
+          <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body pt-0">
+              <p class="fw-bold mb-0">Теорія</p>
+              <ul>
+                <li>Огляд основних функцій Power BI Pro</li>
+                <li>Огляд робочої області сервісу Power BI Pro</li>
+                <li>Призначення та застосування розділів</li>
+              </ul>
+
+              <p class="fw-bold mb-0">Практика</p>
+              <ul>
+                <li>Функції розділу «Набори даних» (Увімкнення безпеки)</li>
+                <li>Функції розділу «звіти»</li>
+                <li>Створення панелі DashBoard</li>
+                <li> Вивантаження даних у Excel, Power Рoint, csv</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ./Programm -->
+
+    <section class="donat container pt mb-6">
+      <h2 class="display-3 fw-bold lh-2 text-center"><span class="square">Кожен</span> може допомогти</h2>
+      <p class="fs-4 text-muted mb-4 text-center col-8 mx-auto">Будь-хто має можливіать допомогти і&nbsp;надати місце
+        для&nbsp;навчання
+        більшій
+        кількості
+        людей, просто оплативши, частково або&nbsp;повністю, навчання&nbsp;на&nbsp;курсі.</p>
+      <p class="lead text-muted mb-4"></p>
+      <div class="row justify-content-between">
+        <div class="col-md-5">
+          <p class="lead">Благодійний рахунок <span class="fw-bold">у Японії</span> для підтримки навчання
+            українських
+            біженців:</p>
+          <p class="fw-bold">SMBS MITSUBISHI BANK KINSHICHO BRUNCH
+            ウクライナシエンニホンカイ トカチョワオクサナ
+            615 0 7718627</p>
+        </div>
+        <div class="col-md-5">
+          <p class="lead">Для <span class="fw-bold">інших країн</span> діє можливість донату через PayPal</p>
+          <div class="d-grid d-md-flex justify-content-md-start justify-content-center">
+            <form name="formPaypal" action="https://www.paypal.com/donate" method="post" target="_top">
+              <input type="hidden" name="hosted_button_id" value="5UYQ6SRMXK5U6" />
+              <input type="submit" class="btn btn-outline-primary px-5 fw-bold" value="Задонатити">
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
     <!-- ./content container -->
   </main>
 
@@ -475,7 +591,7 @@
             </div>
           </div>
 
-          <form action="questionnaire.php" method="POST" class="col-lg-5 my-3">
+          <form action="send.php" method="POST" class="col-lg-5 my-3">
             <h5 class="lh-2 mb-3 text-light">Є ідеї допомоги чи кооперації? Напишіть нам:</h5>
             <div class="row mb-3">
               <label for="validationDefault01" class="col-sm-3 col-form-label text-light">Ім'я*</label>
@@ -551,7 +667,71 @@
               <input type="text" class="form-control" id="custom2" aria-describedby="custom2" name="country" required>
             </div>
             <div class="mb-3">
-              <label for="custom3" class="form-label">Яку допомогу Ви потребуєте:*</label>
+              <label for="" class="form-label">Якими мовами володієте:*</label>
+              <select class="" aria-label="" id="" name="" required>
+                <li>Українська </li>
+                <li>Японська </li>
+                <li>психологічна підтримка</li>
+                <li>курси аналітика Power BI</li>
+                <li>курс англійської мови</li>
+                <li value="other">інше</li>
+              </select>
+            </div>
+
+            <div class="col mb-3">* Обов'язково для заповнення</div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" value="" id="Check2" required>
+              <label class="form-check-label" for="Check2">Я даю згоду на обробку персональних
+                данних</label>
+            </div>
+            <div class="text-end">
+              <button type="submit" class="btn btn-outline-primary px-4 px-lg-5">Відправити</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Переробити на анкету -->
+  <div class="modal fade" id="questionnaire" tabindex="-1" aria-labelledby="questionnaire" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="text-primary" id="exampleModalLabel1">Заповніть форму, щоб зареєструватися на курси</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form action="questionnaire.php" method="POST">
+            <div class="mb-3">
+              <label for="name1" class="form-label">Ім'я та Прізвище*</label>
+              <input type="text" name="name" class="form-control" id="name1" placeholder="Ім'я та Прізвище" required>
+            </div>
+            <div class="mb-3">
+              <label for="Email1" class="form-label">Е-мейл*</label>
+              <input type="email" class="form-control" id="Email1" aria-describedby="Email1" name="email"
+                placeholder="name@mail.com" required>
+            </div>
+            <div class="mb-3">
+              <label for="Email1" class="form-label">Е-мейл</label>
+              <input type="email" class="form-control" id="Email2" aria-describedby="Email2" name="email"
+                placeholder="name@mail.com" required>
+            </div>
+            <div class="mb-3">
+              <label for="Phone1" class="form-label">Телефон з кодом країни*</label>
+              <input type="tel" class="form-control" id="Phone1" name="phone" placeholder="+38 077 777 77 77" required>
+            </div>
+            <div class="mb-3">
+              <label for="custom1" class="form-label">Громадянство*</label>
+              <input type="text" class="form-control" id="custom1" aria-describedby="custom1" name="citizenship"
+                required>
+            </div>
+            <div class="mb-3">
+              <label for="custom2" class="form-label">Країна перебування*</label>
+              <input type="text" class="form-control" id="custom2" aria-describedby="custom2" name="country" required>
+            </div>
+            <div class="mb-3">
+              <label for="custom3" class="form-label">Якими мовами володієте:*</label>
               <select class="form-select" aria-label="custom3" id="custom3" name="select" required onchange="i()">
                 <option value="" selected>оберіть варіант</option>
                 <option value="финансова підтримка">финансова підтримка</option>
@@ -580,7 +760,6 @@
       </div>
     </div>
   </div>
-
 
 
 
