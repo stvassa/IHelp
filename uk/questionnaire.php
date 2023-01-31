@@ -15,12 +15,12 @@ $email = $_POST['email'];
 $message = $_POST['message'];
 
 // Формирование самого письма
-$title_1 = "Лист 1";
-$body_1 = "Тестовий лист 1 на имейл відправника";
+$title1 = "Лист 1";
+$body1 = "Тестовий лист 1 на имейл відправника";
 
 // Формирование самого письма
-$title_2 = "Лист 2";
-$body_2 = "Тестовий лист 2 на имейл адміна";
+$title2 = "Лист 2";
+$body2 = "Тестовий лист 2 на имейл адміна";
 
 // Настройки PHPMailer
 $mail = new PHPMailer(true);
@@ -43,16 +43,16 @@ try {
     $mail->addAddress($email);    
     // Отправка сообщения
 $mail->isHTML(true);
-$mail->Subject_1 = $title_1;
-$mail->Body_1 = $body_1; 
+$mail->Subject1 = $title1;
+$mail->Body1 = $body1; 
 
     //Recipients
     $mail->setFrom('ihelpuw@gmail.com', 'Елена Рязанова');
     $mail->addAddress('st.vassa@gmail.com', 'Васса Степанова');    
 // Отправка сообщения
 $mail->isHTML(true);
-$mail->Subject_2 = $title_2;
-$mail->Body_2 = $body_2;   
+$mail->Subject2 = $title2;
+$mail->Body2 = $body2;   
 
 // Проверяем отравленность сообщения
 if ($mail->send()) {$result = "success";} 
