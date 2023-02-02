@@ -4,7 +4,7 @@
 <head>
   <title>Ihelpukranianwoman</title>
 
-  <meta name="description" content="">
+  <meta name="description" content="Новини, досягення та результати діяльності ініціативи Ihelpukranianwoman">
 
   <link rel="icon" type="image/x-icon" href="../assets/icons/favicons/Vectorheart.ico">
 
@@ -26,14 +26,10 @@
   <script src="../js/google.js"></script>
 
   <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;500;600;700;800;1,300&family=Ubuntu:wght@400;500;700&display=swap"
-    rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&ampfamily=Ubuntu:wght@400;500;700&ampdisplay=swap" rel="stylesheet">
 
-  <!-- Slider -->
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -51,17 +47,24 @@
   <link rel="alternate" hreflang="ru" href="https://ihelpukrainianwomen.com/uk/news.html/">
 
   <!-- js -->
-  <script defer src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <script defer src="../js/swiperslider.js"></script>
   <script defer src="../js/mainua.js"></script>
+  
+  <!--recaptcha-->
+  
+     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+     <script>
+       function onSubmit(token) {
+         document.getElementById("demo-form").submit();
+       }
+     </script>
 
 </head>
 
 <body data-bs-spy="scroll" data-bs-target="#navbar">
   <header>
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-primary p-0" id="navbar">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-primary p-0 shadow-sm" id="navbar">
       <div class="container">
-        <div class="d-flex align-items-center">
+        <div class="d-flex col align-items-center">
           <a class="navbar-brand py-2" href="#">
             <img class="navbar-brand__thumb p-0" src="../assets/icons/logo.png" alt="Logo: IHelpUkrainianWomen">
           </a>
@@ -77,19 +80,19 @@
         </button>
 
         <div class="navbar-collapse collapse order-lg-3 mb-4 mb-lg-0" id="navbarCollapse" style="transition: 0.8s;">
-          <ul class="navbar-nav mb-md-0 align-items-lg-center">
-            <li class="ms-1 me-lg-2">
+          <ul class="navbar-nav align-items-lg-center  mb-5 mb-md-0">
+            <li class="dropdown pt-2 pb-lg-2 ms-1 me-lg-3 mb-2 mb-lg-0">
               <button class="menu-item d-flex align-items-center" type="button">
                 <a href="index.html" class="nav-link active fs-5">Головна</a>
               </button>
             </li>
-            <li class="pt-2 mx-3 mb-3 mb-lg-0">
-              <a class="menu-item nav-link fs-5" aria-current="page" href="news.html">Всі&nbsp;Новини</a>
+            <li class="pt-2 ms-1 me-lg-3 mb-2 mb-lg-0">
+              <a class="menu-item nav-link fs-5" aria-current="page" href="news.html">Всі&nbsp;новини</a>
             </li>
-            <li class="pt-2 mx-3 mb-3 mb-lg-0">
+            <li class="pt-2 ms-1 me-lg-3 mb-3 mb-lg-0">
               <a class="menu-item nav-link fs-5" aria-current="page" href="course.html">Курси</a>
             </li>
-            <li class="dropdown nav-item mx-0 ms-lg-3 me-lg-5">
+            <li class="dropdown nav-item">
               <button class="menu-item d-flex dropdown-toggle align-items-center fs-5" type="button"
                 id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
                 <svg class="icon icon-light">
@@ -164,7 +167,7 @@
       <h2 class="display-2 fw-bold lh-2 text-center mb-5"><span class="square">Наші</span> досягнення та&nbsp;новини
       </h2>
       <div class="achievements-items wrapper">
-        <div class="shadow mb-5 p-3 achievement-accordion">
+                  <div class="shadow mb-5 p-3 achievement-accordion">
           <div class="achievement-text">
             <div class="row align-items-start">
               <div class="card-body col-lg-6">
@@ -202,7 +205,6 @@
           <button class="btn btn-outline-primary mt-1 achievements-btn" type="button" data-bs-toggle="collapse"
             data-bs-target="#panel8" aria-expanded="false" aria-controls="panel8">Читати більше</button>
         </div>
-
         <div class="shadow mb-5 p-3 achievement-accordion">
           <div class="achievement-text">
             <div class="row align-items-start">
@@ -473,8 +475,8 @@
           <button class="btn btn-outline-primary mt-1 achievements-btn" type="button" data-bs-toggle="collapse"
             data-bs-target="#panel2" aria-expanded="false" aria-controls="panel2">Читати більше</button>
         </div>
-
-        <div class="shadow mb-5 p-3 achievement-accordion">
+        
+                <div class="shadow mb-5 p-3 achievement-accordion">
           <div class="achievement-text">
             <div class="row align-items-start">
               <div class="card-body col-lg-6">
@@ -590,6 +592,7 @@
     </section>
 
   </main>
+  
 
   <footer class="bg-primary pt-5 pb-1">
     <div class="container">
@@ -626,7 +629,7 @@
             </div>
           </div>
 
-          <form action="send.php" method="POST" class="col-lg-5 my-3">
+          <form id="demo-form" action="send.php" method="POST" class="col-lg-5 my-3">
             <h5 class="lh-2 mb-3 text-light">Є ідеї допомоги чи кооперації? Напишіть нам:</h5>
             <div class="row mb-3">
               <label for="validationDefault01" class="col-sm-3 col-form-label text-light">Ім'я*</label>
@@ -658,7 +661,7 @@
               </div>
             </div>
             <div class="text-end">
-              <button type="submit" class="btn btn-outline-light px-4 px-lg-5">Відправити</button>
+              <button type="submit" data-sitekey="6Lcs1oQhAAAAABqM_wL0HmXw9t2B-lgQAWnCACL6" data-callback='onSubmit' class="g-recaptcha btn btn-outline-light px-4 px-lg-5">Відправити</button>
             </div>
           </form>
         </div>
@@ -781,6 +784,7 @@
       </div>
     </div>
   </div>
+  
 
   <!-- Bootstrap Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"

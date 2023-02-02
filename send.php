@@ -1,14 +1,14 @@
 <?php
 // Импортируем классы PHPMailer в глобальное пространство имен
 // Эти строки должны быть вначале скрипта, не внутри функции
-require 'PHPMailer/src/Exception.php';
-require 'PHPMailer/src/PHPMailer.php';
-require 'PHPMailer/src/SMTP.php';
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 use PHPMailer\PHPMailer\SMTP;
 
+require 'PHPMailer/src/Exception.php';
+require 'PHPMailer/src/PHPMailer.php';
+require 'PHPMailer/src/SMTP.php';
 
 // Переменные, которые отправляет пользователь
 $name = $_POST['name'];
@@ -16,7 +16,7 @@ $email = $_POST['email'];
 $message = $_POST['message'];
 
 // Формирование самого письма
-$title = "Contact form";
+$title = "Contact form en";
 $body = "
 <h2>Пропозиція допомоги або співпраці</h2>
 <b>Імя:</b> $name<br>
@@ -24,27 +24,34 @@ $body = "
 <b>Повідомлення:</b><br>$message
 ";
 
+
 // Настройки PHPMailer
 $mail = new PHPMailer(true);
 
 
 try {
     //Server settings
-    $mail->SMTPDebug = SMTP::DEBUG_SERVER;   //Enable verbose debug output
-    $mail->isSMTP();                         //Send using SMTP
+    //$mail->SMTPDebug = SMTP::DEBUG_SERVER;        //Enable verbose debug output
+    $mail->isSMTP();                              //Send using SMTP
     $mail->CharSet = "UTF-8";
-    $mail->Host       = 'smtp.gmail.com';    //Set the SMTP server to send through
-    $mail->SMTPAuth   = true;                //Enable SMTP authentication
-    $mail->Username   = 'ihelpuw@gmail.com'; //SMTP username
-    $mail->Password   = 'wwapbtqnlnzhzhqp';  //SMTP password
-    $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;//Enable implicit TLS encryption
-    $mail->Port       = 465;    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
+    $mail->Host       = 'smtp.gmail.com';         //Set the SMTP server to send through
+    $mail->SMTPAuth   = true; 
+    $mail->Username   = 'ihelpuw@gmail.com';     //SMTP username 
+    $mail->Password   = 'wwapbtqnlnzhzhqp';                 
+    //Enable SMTP authentication
+                            //SMTP password
+    $mail->SMTPSecure = 'ssl';  //PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
+    $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
     //Recipients
-    $mail->setFrom('ihelpuw@gmail.com', 'Елена Рязанова');
-    $mail->addAddress('olena@ihelpukrainianwomen.com');    //Add a recipient 
-    $mail->addAddress('contact@bijb.study');   //Name is optional
-       
+    $mail->setFrom('ihelpuw@gmail.com', 'Elena Ryazanceva');
+    $mail->addAddress('vassatret@gmail.com'); 
+    // $mail->addAddress('julia@bijb.study');  
+    // $mail->addAddress('contact@ihelpukrainianwomen.com');
+    
+    
+
+    
 
 // Отправка сообщения
 $mail->isHTML(true);

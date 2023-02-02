@@ -10,7 +10,6 @@ require '../PHPMailer/src/PHPMailer.php';
 require '../PHPMailer/src/SMTP.php';
 
 // Переменные, которые отправляет пользователь
-<<<<<<< HEAD
 $name = $_POST['name3'];
 $email = $_POST['email3'];
 $email2 = $_POST['emaildop'];
@@ -22,17 +21,9 @@ $country = $_POST['country3'];
 // $languages = $_POST['languages3'];
 $job = $_POST['job3'];
 $message = $_POST['message3'];
+$linkmail = '<a href="mailto:julia@bijb.study">julia@bijb.study</a>';
 
-=======
-$name = $_POST['name'];
-$email = $_POST['email'];
-$email2 = $_POST['email2'];
-$phone = $_POST['phone'];
-$citizenship = $_POST['citizenship'];
-$country = $_POST['country'];
-$job = $_POST['job'];
-$text = $_POST['message2'];
->>>>>>> 27dbb5065a6d5765c1a9d894a41325810d8fd8b5
+
 
 
 
@@ -40,7 +31,6 @@ $text = $_POST['message2'];
 $title1 = "Questionnaire form";
 $body1 = "
 <h2>Анкета кандидата</h2>
-<<<<<<< HEAD
 <p><b>Ім'я та Прізвище:</b> $name</p>
 <p><b>Е-мейл:</b> $email</p>
 <p><b>Е-мейл додатковий:</b> $email2</p>
@@ -49,17 +39,6 @@ $body1 = "
 <p><b>Країна перебування</b> $country</p>
 <p><b>Професія:</b> $job</p>
 <p><b>Чому ви хочете пройти цей курс:</b> $message</p>
-=======
-<b>Ім'я та Прізвище:</b> $name<br><br>
-<b>Е-мейл:</b> $email<br><br>
-<b>Е-мейл додатковий:</b> $email2<br><br>
-<b>Телефон:</b> $phone<br><br>
-<b>Громадянство:</b> $citizenship<br><br>
-<b>Країна перебування</b> $country<br><br>
-<b>Мова</b>                       <br><br>
-<b>Професія:</b> $job<br><br>
-<b>Чому ви хочете пройти цей курс?:</b> $message2<br>
->>>>>>> 27dbb5065a6d5765c1a9d894a41325810d8fd8b5
 ";
 
 $title2 = "Power BI courses";
@@ -74,18 +53,11 @@ https://www.bijb.study/create-account/?i=ukr
 Тест можна пройти декілька разів, якщо хочете підвищити шанси на навчання.<br>
 Співбесіди відбудуться <b>з 20 по 26 лютого</b>. Запрошення на співбесіду буде надіслано окремо.<br><br>
 Починайте прокладати свій шлях до змін зараз! <br><br>
-Якщо у Вас є питання по курсу чи ініціативі I helpukrainian women, ви можете написати Нам на пошту julia@bijb.study <br>
-<<<<<<< HEAD
+Якщо у Вас є питання по курсу чи ініціативі I helpukrainian women, ви можете написати Нам на пошту $linkmail.<br>
 
 А ми бажаємо Вам натхнення та успіхів!<br><br>
 ";
 
-=======
-
-А ми бажаємо Вам натхнення та успіхів!<br><br>
-";
-
->>>>>>> 27dbb5065a6d5765c1a9d894a41325810d8fd8b5
 
 //Create an instance; passing `true` enables exceptions
 $mail = new PHPMailer(true);
@@ -104,9 +76,8 @@ try {
     $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
     //Recipients
-    $mail->setFrom('ihelpuw@gmail.com', 'Елена Рязанова');
-    $mail->addAddress('vassatret@gmail.com');   //Add a recipient
-    // $mail->addAddress('');   //Name is optional
+    $mail->setFrom('ihelpuw@gmail.com', 'Ihelpukrainianwomen');
+    $mail->addAddress('julia@bijb.study');   //Add a recipient
 
 // Отправка сообщения
 $mail->isHTML(true);
@@ -122,12 +93,8 @@ else {$result = "error";}
     $status = "The message was not sent. Cause of error: {$mail->ErrorInfo}";
 }
 // Отображение результата
-<<<<<<< HEAD
-// header('Location: course.html');
-=======
-header('Location: course.html');
->>>>>>> 27dbb5065a6d5765c1a9d894a41325810d8fd8b5
-// убрать для теста
+header('Location: success.html');
+
 
 //Create an instance; passing `true` enables exceptions
 $mail = new PHPMailer(true);
@@ -146,9 +113,8 @@ try {
     $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
     //Recipients
-    $mail->setFrom('ihelpuw@gmail.com', 'Елена Рязанова');
+    $mail->setFrom('ihelpuw@gmail.com', 'Ihelpukrainianwomen');
     $mail->addAddress($email);   //Add a recipient
-    // $mail->addAddress('');   //Name is optional
 
 // Отправка сообщения
 $mail->isHTML(true);
@@ -164,6 +130,5 @@ else {$result = "error";}
     $status = "The message was not sent. Cause of error: {$mail->ErrorInfo}";
 }
 // Отображение результата
-header('Location: course.html');
-
+header('Location: success.html');
 ?>

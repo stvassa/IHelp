@@ -27,11 +27,9 @@
   <script src="../js/google.js"></script>
 
   <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;500;600;700;800;1,300&family=Ubuntu:wght@400;500;700&display=swap"
-    rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&ampfamily=Ubuntu:wght@400;500;700&ampdisplay=swap" rel="stylesheet">
 
   <!-- Slider -->
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
@@ -54,6 +52,15 @@
   <script defer src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script defer src="../js/swiperslider.js"></script>
   <script defer src="../js/main.js"></script>
+  
+  <!--recaptcha-->
+  
+     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+     <script>
+       function onSubmit(token) {
+         document.getElementById("demo-form").submit();
+       }
+     </script>
 
 </head>
 
@@ -61,7 +68,7 @@
   <header>
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-primary p-0" id="navbar">
       <div class="container">
-        <div class="d-flex align-items-center">
+        <div class="d-flex col align-items-center">
           <a class="navbar-brand py-2" href="#">
             <img class="navbar-brand__thumb p-0" src="../assets/icons/logo.png" alt="Logo: IHelpUkrainianWomen">
           </a>
@@ -77,8 +84,8 @@
         </button>
 
         <div class="navbar-collapse collapse order-lg-3 mb-4 mb-lg-0" id="navbarCollapse" style="transition: 0.8s;">
-          <ul class="navbar-nav mb-md-0 align-items-lg-center">
-            <li class="dropdown ms-1 me-lg-3">
+          <ul class="navbar-nav align-items-lg-center mb-5 mb-md-0">
+            <li class="dropdown pt-2 pb-lg-2 ms-1 me-lg-3 mb-2 mb-lg-0">
               <button class="menu-item d-flex dropdown-toggle align-items-center" type="button" id="dropdownMenuButton1"
                 data-bs-toggle="dropdown" aria-expanded="false">
                 <a href="index.html" class="nav-link active fs-5">Головна</a>
@@ -108,13 +115,13 @@
                 </li>
               </ul>
             </li>
-            <li class="pt-2 mx-3 mb-3 mb-lg-0">
-              <a class="menu-item nav-link fs-5" aria-current="page" href="news.html">Всі&nbsp;Новини</a>
+            <li class="pt-2 ms-1 me-lg-3 mb-2 mb-lg-0">
+              <a class="menu-item nav-link fs-5" aria-current="page" href="news.html">Всі&nbsp;новини</a>
             </li>
-            <li class="pt-2 mx-3 mb-3 mb-lg-0">
+            <li class="pt-2 ms-1 me-lg-3 mb-3 mb-lg-0">
               <a class="menu-item nav-link fs-5" aria-current="page" href="course.html">Курси</a>
             </li>
-            <li class="dropdown nav-item mx-0 ms-lg-4 me-lg-5">
+            <li class="dropdown nav-item">
               <button class="menu-item d-flex dropdown-toggle align-items-center fs-5" type="button"
                 id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
                 <svg class="icon icon-light">
@@ -125,8 +132,6 @@
               <ul style="width: 25%; background: rgba(255, 255, 255, 0.9);" class="dropdown-menu border-0 shadow"
                 aria-labelledby="dropdownMenuButton2">
                 <li><a class="dropdown-item " href="../index.html">English</a></li>
-                <!-- <li><a class="dropdown-item" href="#">English</a></li> -->
-                <!-- <li><a class="dropdown-item" href="#">日本</a></li> -->
               </ul>
             </li>
           </ul>
@@ -139,6 +144,7 @@
       </div>
     </nav>
   </header>
+
 
   <main class="mt-5">
     <div class="container">
@@ -280,20 +286,18 @@
               </div>
             </div>
           </div>
-          <div class="d-grid gap-2 d-md-flex justify-content-center mt-5 mb-4 mb-lg-3">
-            <form name="formPaypal" action="https://www.paypal.com/donate" method="post" target="_top">
-              <input type="hidden" name="hosted_button_id" value="5UYQ6SRMXK5U6" />
-              <input type="submit" class="btn btn-primary px-5 me-md-2 fw-bold" value="Задонатити">
-            </form>
-            <button type="button" class="btn btn-outline-primary px-3 me-md-2 fw-bold" data-bs-toggle="modal"
-              data-bs-target="#canHelpModal">Запропонувати&nbsp;допомогу</button>
-          </div>
+        <div class="d-grid gap-2 d-md-flex justify-content-center mt-5 mb-4 mb-lg-3">
+            <button type="button" class="btn btn-warning px-5 me-md-2" data-bs-toggle="modal"
+          data-bs-target="#needHelpModal">Мені&nbsp;потрібна&nbsp;допомога</button>
+            <button type="button" class="btn btn-outline-primary px-3 me-md-2" data-bs-toggle="modal"
+          data-bs-target="#canHelpModal">Запропонувати&nbsp;допомогу</button>
+         </div>
         </div>
       </div>
 
 
       <div class=" container text-center pt mb-6" id="team">
-        <h2 class="display-2 fw-bold lh-2 mb-4">Наша <span class="square">команда</span></h2>
+        <h2 class="display-2 fw-bold lh-2 mb-4"><span class="square">Наша</span> команда</h2>
         <div class="row justify-content-between">
           <div class="col-md-6 col-lg-3 my-5 text-start order-lg-2">
             <div class="team-img ms-5 mt-5 mb-4"><img class="team-thumb" src="../assets/img/Julia.jpg" alt="Julia">
@@ -394,7 +398,7 @@
 
     <!-- Slider main container -->
     <section class="pt mb-6" id="help">
-      <h2 class="display-2 fw-bold lh-2 text-center">Ми <span class="square">допомогли</span></h2>
+      <h2 class="display-2 fw-bold lh-2 text-center"><span class="square">Ми</span> допомогли</h2>
 
       <div class="container mb-1">
         <div class="swiper help-swiper">
@@ -450,16 +454,15 @@
 
 
     <section class="news mb-6 pt pb-5" id="news">
-      <h2 class="display-2 fw-bold lh-2 text-center mb-5">Наші <span class="square">Новини</span>
-      </h2>
+      <h2 class="display-2 fw-bold lh-2 text-center mb-5"><span class="square">Наші</span>новини</h2>
 
       <!-- Slider main container -->
       <div class="swiper news-swiper">
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper news-wrapper">
           <!-- Slides -->
-          <div class="swiper-slide news-slide">
-            <div class="container row justify-content-between mx-auto mb-4">
+                   <div class="swiper-slide news-slide">
+          <div class="container row justify-content-between mx-auto mb-4">
               <div class="row m-2">
                 <div class="col-lg-6 align-items-start justify-content-center mb-2">
                   <img class="news-img news-img__center" src="../assets/img/news/photo_2022-12-16_12-58-47.jpg" alt="">
@@ -471,25 +474,19 @@
                   <div class="text-end">
                     <p id="data">16.12.2022</p>
                   </div>
-                  <p><span class="fw-bold">Юлія Бернацька</span>, засновниця I&nbsp;Help Ukrainian Women, зустрілася
-                    вчора
+                  <p><span class="fw-bold">Юлія Бернацька</span>, засновниця I&nbsp;Help Ukrainian Women, зустрілася вчора
                     з&nbsp;<span class="fw-bold">пані&nbsp;Хіроко&nbsp;Ніва,
                       президентом
-                      Міжнародної асоціації&nbsp;Рюгасакі та&nbsp;пані&nbsp;Маріко&nbsp;Укійо,
-                      представницею&nbsp;JME.</span>
-                    Під час&nbsp;зустрічі обговорено&nbsp;питання&nbsp;допомоги евакуйованим
-                    до&nbsp;Японії&nbsp;українцям
-                    та&nbsp;тим,&nbsp;хто&nbsp;залишився в&nbsp;Україні. На&nbsp;зустрічі&nbsp;обговорили
-                    один&nbsp;з&nbsp;найважливіших і&nbsp;ефективних методів
+                      Міжнародної асоціації&nbsp;Рюгасакі та&nbsp;пані&nbsp;Маріко&nbsp;Укійо, представницею&nbsp;JME.</span>
+                    Під час&nbsp;зустрічі обговорено&nbsp;питання&nbsp;допомоги евакуйованим до&nbsp;Японії&nbsp;українцям
+                    та&nbsp;тим,&nbsp;хто&nbsp;залишився в&nbsp;Україні. На&nbsp;зустрічі&nbsp;обговорили один&nbsp;з&nbsp;найважливіших і&nbsp;ефективних методів
                     &nbsp;допомоги: адресну допомогу&nbsp;постраждалим,
                     &nbsp;а також&nbsp;попередню кваліфікацію та&nbsp;можливість&nbsp;отримати
                     &nbsp;нову&nbsp;професію.
                     «Я&nbsp;допомагаю українкам» підтримує&nbsp;політику, спрямовану на&nbsp;надання нових можливостей
-                    для&nbsp;евакуйованих українок. А до&nbsp;нового року ми&nbsp;маємо намір&nbsp;підготувати та
-                    запустити&nbsp;новий курс навчання в ІТ спеціальність. Навчання українців буде&nbsp;безкоштовним.
-                  </p>
+                    для&nbsp;евакуйованих українок. А до&nbsp;нового року ми&nbsp;маємо намір&nbsp;підготувати та запустити&nbsp;новий курс навчання в ІТ спеціальність. Навчання українців буде&nbsp;безкоштовним.</p>
                   <div class="text-end my-2">
-                    <a href="news.html" class="btn btn-outline-primary">More news</a>
+                    <a href="news.html" class="btn btn-outline-primary">Більше новин</a>
                   </div>
                 </div>
               </div>
@@ -777,9 +774,22 @@
     <!-- ./news -->
 
     <section class="text-center pt mb-6" id="partners">
-      <h2 class="display-2 fw-bold lh-2 text-center mb-4">Наші <span class="square">партнери</span></h2>
-      <span class="fs-4 mb-5">
-        Українки вдячні Вам за&nbsp;допомогу та підтримку!
+      <h2 class="display-2 fw-bold lh-2 text-center mb-4"><span class="square">Наші</span> партнери</h2>
+      <p class="fs-2 mb-5">
+        Українські&nbsp;жінки вдячні за&nbsp;підтримку&nbsp;та&nbsp;допомогу!</p>
+      <p class="fs-2 fst-italic mb-2 text-muted">Наші офоційні партнери</p>
+      <div class="d-flex justify-content-evenly align-items-center partner-cards pb-3">
+        <a target="_blank" href="https://castglobalgroup.com/en/" class="partner__card p-4 m-3">
+          <p class="fs-5 fw-bold text-uppercase pb-0">Castglobalgroup
+            Одне&nbsp;рішення для&nbsp;всіх юридичних&nbsp;питань</p>
+          <p class="fs-5 pb-0">castglobalgroup.com</p>
+        </a>
+        <a href="https://ls-ukr.jp/" target="_blank" class="partner__card p-4 m-3">
+          <p class="fs-5 fw-bold text-uppercase pb-0">Правова&nbsp;підтримка українців евакуйованих до&nbsp;Японії</p>
+          <p class="fs-5 pb-0">ls-ukr.jp</p>
+        </a>
+      </div>
+      <p class="fs-2 fst-italic mt-5 text-muted">Останні приватні пожертви</p>
       </span>
       <!-- бегущая строка цсс -->
       <div class="partnersticker pt-5">
@@ -814,133 +824,6 @@
     </section>
     <!-- ./partners -->
 
-    <!-- FAQ -->
-    <!-- <div class="">
-      <section class="container pt-5 pb-5">
-        <h2 class="display-2 fw-bold lh-2 text-center"><span class="square">FAQ</span></h2>
-        <div class="accordion" id="accordionExample">
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingOne">
-              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
-                aria-expanded="true" aria-controls="collapseOne">
-                Accordion Item #1
-              </button>
-            </h2>
-            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-              data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                <strong>This is the first item's accordion body.</strong> It is shown by default, until the
-                collapse
-                plugin adds the appropriate classes that we use to style each element. These classes control the
-                overall
-                appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with
-                custom
-                CSS or overriding our default variables. It's also worth noting that just about any HTML can go
-                within
-                the
-                <code>.accordion-body</code>, though the transition does limit overflow.
-              </div>
-            </div>
-          </div>
-
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingTwo">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                Accordion Item #2
-              </button>
-            </h2>
-            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-              data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                <strong>This is the second item's accordion body.</strong> It is hidden by default, until the
-                collapse
-                plugin adds the appropriate classes that we use to style each element. These classes control the
-                overall
-                appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with
-                custom
-                CSS or overriding our default variables. It's also worth noting that just about any HTML can go
-                within
-                the
-                <code>.accordion-body</code>, though the transition does limit overflow.
-              </div>
-            </div>
-          </div>
-
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingThree">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                Accordion Item #3
-              </button>
-            </h2>
-            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-              data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
-                collapse
-                plugin adds the appropriate classes that we use to style each element. These classes control the
-                overall
-                appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with
-                custom
-                CSS or overriding our default variables. It's also worth noting that just about any HTML can go
-                within
-                the
-                <code>.accordion-body</code>, though the transition does limit overflow.
-              </div>
-            </div>
-          </div>
-
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingFour">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                Accordion Item #4
-              </button>
-            </h2>
-            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
-              data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
-                collapse
-                plugin adds the appropriate classes that we use to style each element. These classes control the
-                overall
-                appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with
-                custom
-                CSS or overriding our default variables. It's also worth noting that just about any HTML can go
-                within
-                the
-                <code>.accordion-body</code>, though the transition does limit overflow.
-              </div>
-            </div>
-          </div>
-
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingFive">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                Accordion Item #5
-              </button>
-            </h2>
-            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
-              data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
-                collapse
-                plugin adds the appropriate classes that we use to style each element. These classes control the
-                overall
-                appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with
-                custom
-                CSS or overriding our default variables. It's also worth noting that just about any HTML can go
-                within
-                the
-                <code>.accordion-body</code>, though the transition does limit overflow.
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </div> -->
     <!-- ./content container -->
   </main>
 
@@ -979,7 +862,7 @@
             </div>
           </div>
 
-          <form action="send.php" method="POST" class="col-lg-5 my-3">
+          <form id="demo-form" action="send.php" method="POST" class="col-lg-5 my-3">
             <h5 class="lh-2 mb-3 text-light">Є ідеї допомоги чи кооперації? Напишіть нам:</h5>
             <div class="row mb-3">
               <label for="validationDefault01" class="col-sm-3 col-form-label text-light">Ім'я*</label>
@@ -1011,7 +894,7 @@
               </div>
             </div>
             <div class="text-end">
-              <button type="submit" class="btn btn-outline-light px-4 px-lg-5">Відправити</button>
+              <button data-sitekey="6Lcs1oQhAAAAABqM_wL0HmXw9t2B-lgQAWnCACL6" data-callback='onSubmit' type="submit" class="g-recaptcha btn btn-outline-light px-4 px-lg-5">Відправити</button>
             </div>
           </form>
         </div>

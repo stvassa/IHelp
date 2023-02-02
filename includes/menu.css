@@ -1,0 +1,118 @@
+.bar1, .bar2, .bar3 {
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    margin: 7.5px 0;
+    transition: 0.4s;
+}
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-12px, 6px);
+    transform: rotate(-45deg) translate(-12px, 3px);
+}
+
+.change .bar2 {opacity: 0; back}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-12px, -8px);
+    transform: rotate(45deg) translate(-12px, -3px);
+}
+.burger-box, .burger-box2 {position: absolute; top: 30px; right: 50px; cursor: pointer}
+.burger-inner {z-index:100}
+.burger-box {top: 10px; right: 10px}
+.burger-box.hidMenu, .burger-box2.hidMenu {opacity: 0}
+.burger-box2 {top: 2px; right: 10px}
+
+@media (min-width:320px) { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ 
+
+	#video1 {width: 95%}
+	.fItem{width: 100%; margin: 80px auto }
+	#main {width: 100%}
+	.w70  {width: 100%}
+	.icons.right { position: absolute; bottom: -12px; right: 5px}
+}
+
+@media screen and (min-width: 1200px) {
+	#video1{    width: calc(60% - 20px)}
+	.fItem {width: calc(50% - 2px); margin: 50px auto}
+	#main {width: 90%;}
+	.w70  {width: 70%; min-width: 500px}
+	.icons.right { position: absolute; bottom: -12px; right: 55px}
+}
+
+
+#menu {color: #1F41A2; 
+	
+	height: 420px;
+	transition: height 0.5s;
+	position: absolute;
+	width: 100%;
+	overflow: hidden;
+	z-index: 100}
+	
+#menu2{background-color: #eee; height: 100%;}
+#menu.hid{height: 0; padding: 0; margin: 0 auto; transition: height 0.5s; overflow: hidden; border: none}
+
+#menuFill {position:absolute; right:0; width: 100%;}
+
+#menuFill a	{color: #1F41A2}
+#menu ul { list-style-type: none; width: 95%;     max-width: 400px;
+    margin: 20px auto;
+    display: block;
+	padding: 0}
+#menu li {border-bottom: 1px solid #96A1C2; padding: 5px 20px; cursor: pointer}
+
+
+
+/* scroll text start*/
+
+.list span{margin-right: 50px}
+
+*, *::before, *::after{
+  box-sizing:padding-box;
+}
+
+body{
+  background:#CCC;
+}
+
+body,
+div,
+ul,
+li,
+p {
+  margin: 0;
+  padding: 0;
+  font-family: verdana;
+  font-size: 16pt;
+}
+  
+.tickerwrapper {
+  /* the outer div */
+  
+  position: relative;
+  left:0%;
+  width: 99.9%;
+  height: 30px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+ul.list {
+  position: relative;
+  display: inline-block;
+  list-style: none;
+  padding:0;
+  margin:0;
+}
+
+ul.list.cloned {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+ul.list li {
+  float: left;
+  padding-left: 20px;
+}
+/* scroll text end */

@@ -23,20 +23,23 @@ body {
   .mb-6 {
     margin-bottom: 150px;
   }
+  
+    blockquote {
+    font-size: 1rem !important;
+  }
+  
+    .partner-cards {
+    margin: 25px 0;
+  }
 }
 
-h1 {
-  font-family: 'Ubuntu',
-    sans-serif;
-}
-
+h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
   font-family: 'Ubuntu', sans-serif;
-  color: var(--gray);
 }
 
 
@@ -44,25 +47,19 @@ h2 {
   font-size: 3.5rem;
   font-weight: 700;
   padding-bottom: 1rem;
-
+  color: var(--gray);
 }
 
 blockquote {
   font-size: 0.85rem !important;
 }
 
-@media (min-width: 680px) {
-  blockquote {
-    font-size: 1rem !important;
-  }
-
-  .partner-cards {
-    margin: 25px 0;
-  }
-}
-
 .navbar-collapse {
-  flex-grow: 0;
+    -ms-box-flex: 0;
+    -moz-box-flex: 0;
+    -webkit-box-flex: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
 }
 
 /* style element for h2 */
@@ -80,6 +77,10 @@ blockquote {
   left: -0.2rem;
   bottom: 0.8rem;
   border-radius: 0.2rem;
+    -webkit-transform: rotate(20deg);
+    -ms-transform: rotate(20deg);
+    -o-transform: rotate(20deg);
+    -moz-transform: rotate(20deg);
   transform: rotate(20deg);
   z-index: -1;
 }
@@ -94,6 +95,10 @@ blockquote {
     left: -0.2rem;
     bottom: 0.5rem;
     border-radius: 0.2rem;
+        -o-transform: rotate(20deg);
+        -webkit-transform: rotate(20deg);
+        -moz-transform: rotate(20deg);
+        -ms-transform: rotate(20deg);
     transform: rotate(20deg);
     z-index: -1;
   }
@@ -120,7 +125,7 @@ a {
 }
 
 .text-muted {
-  color: var(--lggray) !important;
+  color: var(--gray) !important;
 }
 
 .text-secondary {
@@ -132,6 +137,8 @@ a {
 }
 
 .btn:focus {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
   box-shadow: none;
 }
 
@@ -173,6 +180,7 @@ a {
 .navbar-dark .navbar-nav .nav-link:hover {
   color: var(--accent) !important;
 }
+
 
 .icon {
   width: 24px;
