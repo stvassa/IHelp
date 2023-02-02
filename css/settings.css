@@ -25,13 +25,18 @@ body {
   }
 }
 
-h1,
+h1 {
+  font-family: 'Ubuntu',
+    sans-serif;
+}
+
 h2,
 h3,
 h4,
 h5,
 h6 {
   font-family: 'Ubuntu', sans-serif;
+  color: var(--gray);
 }
 
 
@@ -39,7 +44,7 @@ h2 {
   font-size: 3.5rem;
   font-weight: 700;
   padding-bottom: 1rem;
-  color: var(--gray);
+
 }
 
 blockquote {

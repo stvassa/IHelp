@@ -49,7 +49,7 @@ try {
     //Recipients
     $mail->setFrom('ihelpuw@gmail.com', 'Елена Рязанова');
     $mail->addAddress('olena@ihelpukrainianwomen.com');   //Add a recipient
-    $mail->addAddress('contact@bijb.study');   //Name is optional
+    $mail->addAddress('julia@bijb.study');   //Name is optional
      
 
 // Отправка сообщения

@@ -155,6 +155,10 @@
     right: -10px;
     z-index: 10;
   }
+
+  .who-img {
+    max-width: 320px;
+  }
 }
 
 .card-video {
@@ -348,4 +352,15 @@
 
 .course-img {
   max-width: 280px;
+}
+
+.who-img {
+  max-width: 420px
+}
+
+@media (max-width: 420px) {
+  .who-img {
+    max-width: 280px;
+  }
+
 }
