@@ -333,17 +333,18 @@
 }
 
 .partner__card {
-    width: 300px;
-    height: 200px;
-    border-radius: 1rem;
-    font-family: 'Ubuntu';
-    color: var(--secondary);
-    background: var(--primary);
-    box-shadow: 0px 2px 4px rgb(0 0 0 / 20%);
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;}
+  width: 300px;
+  height: 200px;
+  border-radius: 1rem;
+  font-family: 'Ubuntu';
+  color: var(--secondary);
+  background: var(--primary);
+  box-shadow: 0px 2px 4px rgb(0 0 0 / 20%);
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
 .partner__card:hover {
   color: var(--accent);
